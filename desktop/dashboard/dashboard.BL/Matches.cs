@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace dashboard.BL
@@ -7,7 +8,18 @@ namespace dashboard.BL
     public class Matches
     {
         DL.Matches matchDL = new DL.Matches();
-        public Boolean Update(EL.Matches matchEL)
+
+        public DataTable List(string str)
+        {
+            return matchDL.List(str);
+        }
+
+        public long Insert(EL.Matches matchEL)
+        {
+            return matchDL.Insert(matchEL);
+        }
+
+            public Boolean Update(EL.Matches matchEL)
         {
             return matchDL.Update(matchEL);
         }

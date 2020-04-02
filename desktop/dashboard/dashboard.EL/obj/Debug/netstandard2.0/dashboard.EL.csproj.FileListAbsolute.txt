@@ -1,6 +1,5 @@
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.EL\bin\Debug\netstandard2.0\dashboard.EL.deps.json
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.EL\bin\Debug\netstandard2.0\dashboard.EL.dll
-C:\xampp\htdocs\ves\desktop\dashboard\dashboard.EL\obj\Debug\netstandard2.0\dashboard.EL.csprojAssemblyReference.cache
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.EL\obj\Debug\netstandard2.0\dashboard.EL.AssemblyInfoInputs.cache
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.EL\obj\Debug\netstandard2.0\dashboard.EL.AssemblyInfo.cs
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.EL\bin\Debug\netstandard2.0\dashboard.EL.pdb

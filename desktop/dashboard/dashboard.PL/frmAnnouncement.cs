@@ -30,6 +30,14 @@ namespace dashboard.PL
             }
         }
 
+        public class BufferedPanel : Panel
+        {
+            public BufferedPanel()
+            {
+                DoubleBuffered = true;
+            }
+        }
+
         public void GetAnnouncement()
         {
             var dt = announcementBL.List();

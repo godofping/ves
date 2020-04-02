@@ -31,6 +31,14 @@ namespace dashboard.PL
             }
         }
 
+        public class BufferedPanel : Panel
+        {
+            public BufferedPanel()
+            {
+                DoubleBuffered = true;
+            }
+        }
+
         private void ChangePanelLocation(Panel x, Button y)
         {
             x.Height = y.Height;
@@ -57,6 +65,7 @@ namespace dashboard.PL
 
             ChangePanelLocation(pnlActiveButton, btnControlPanel);
             methods.ChangePanelDisplay(frmControlPanel, pnlMain);
+            frmControlPanel.GetMatchInformation();
 
             pleaseWait.Dispose();
         }

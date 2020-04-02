@@ -26,6 +26,14 @@ namespace dashboard.PL
                 return handleParam;
             }
         }
+
+        public class BufferedPanel : Panel
+        {
+            public BufferedPanel()
+            {
+                DoubleBuffered = true;
+            }
+        }
     }
 
 }

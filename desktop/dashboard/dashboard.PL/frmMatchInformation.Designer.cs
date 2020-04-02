@@ -32,9 +32,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDivision = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +48,16 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblTeamAResult = new System.Windows.Forms.Label();
+            this.lblTeamATimeOut5 = new System.Windows.Forms.Label();
+            this.lblTeamATimeOut4 = new System.Windows.Forms.Label();
+            this.lblTeamATimeOut3 = new System.Windows.Forms.Label();
+            this.lblTeamATimeOut2 = new System.Windows.Forms.Label();
+            this.lblTeamATimeOut1 = new System.Windows.Forms.Label();
+            this.lblTeamASet5 = new System.Windows.Forms.Label();
+            this.lblTeamASet4 = new System.Windows.Forms.Label();
+            this.lblTeamASet3 = new System.Windows.Forms.Label();
+            this.lblTeamASet2 = new System.Windows.Forms.Label();
             this.lblTeamASet1 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -67,16 +75,6 @@
             this.txtTeamAName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblTeamASet2 = new System.Windows.Forms.Label();
-            this.lblTeamASet3 = new System.Windows.Forms.Label();
-            this.lblTeamASet4 = new System.Windows.Forms.Label();
-            this.lblTeamASet5 = new System.Windows.Forms.Label();
-            this.lblTeamATimeOut1 = new System.Windows.Forms.Label();
-            this.lblTeamATimeOut2 = new System.Windows.Forms.Label();
-            this.lblTeamATimeOut3 = new System.Windows.Forms.Label();
-            this.lblTeamATimeOut4 = new System.Windows.Forms.Label();
-            this.lblTeamATimeOut5 = new System.Windows.Forms.Label();
-            this.lblTeamAResult = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblTeamBResult = new System.Windows.Forms.Label();
             this.lblTeamBTimeOut5 = new System.Windows.Forms.Label();
@@ -105,6 +103,8 @@
             this.txtTeamBName = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -120,7 +120,7 @@
             this.btnCancel.Location = new System.Drawing.Point(1100, 628);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(150, 62);
-            this.btnCancel.TabIndex = 12;
+            this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -135,7 +135,7 @@
             this.btnSave.Location = new System.Drawing.Point(944, 628);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 62);
-            this.btnSave.TabIndex = 13;
+            this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -152,9 +152,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.dtpTime);
+            this.panel1.Controls.Add(this.txtTime);
+            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.dtpDate);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtDivision);
             this.panel1.Controls.Add(this.label4);
@@ -173,17 +173,6 @@
             this.panel1.Size = new System.Drawing.Size(400, 613);
             this.panel1.TabIndex = 2;
             // 
-            // dtpTime
-            // 
-            this.dtpTime.CustomFormat = "h:mm tt";
-            this.dtpTime.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpTime.Location = new System.Drawing.Point(37, 556);
-            this.dtpTime.Name = "dtpTime";
-            this.dtpTime.ShowUpDown = true;
-            this.dtpTime.Size = new System.Drawing.Size(321, 29);
-            this.dtpTime.TabIndex = 19;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -194,16 +183,6 @@
             this.label7.Size = new System.Drawing.Size(43, 21);
             this.label7.TabIndex = 18;
             this.label7.Text = "Time";
-            // 
-            // dtpDate
-            // 
-            this.dtpDate.CustomFormat = "yyyy-MM-dd";
-            this.dtpDate.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(37, 485);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(321, 29);
-            this.dtpDate.TabIndex = 17;
             // 
             // label5
             // 
@@ -223,7 +202,7 @@
             this.txtDivision.Location = new System.Drawing.Point(37, 414);
             this.txtDivision.Name = "txtDivision";
             this.txtDivision.Size = new System.Drawing.Size(321, 29);
-            this.txtDivision.TabIndex = 15;
+            this.txtDivision.TabIndex = 7;
             // 
             // label4
             // 
@@ -243,7 +222,7 @@
             this.txtLineJudges4.Location = new System.Drawing.Point(37, 336);
             this.txtLineJudges4.Name = "txtLineJudges4";
             this.txtLineJudges4.Size = new System.Drawing.Size(321, 29);
-            this.txtLineJudges4.TabIndex = 13;
+            this.txtLineJudges4.TabIndex = 6;
             // 
             // txtLineJudges3
             // 
@@ -252,7 +231,7 @@
             this.txtLineJudges3.Location = new System.Drawing.Point(37, 286);
             this.txtLineJudges3.Name = "txtLineJudges3";
             this.txtLineJudges3.Size = new System.Drawing.Size(321, 29);
-            this.txtLineJudges3.TabIndex = 12;
+            this.txtLineJudges3.TabIndex = 5;
             // 
             // txtLineJudges2
             // 
@@ -261,7 +240,7 @@
             this.txtLineJudges2.Location = new System.Drawing.Point(37, 237);
             this.txtLineJudges2.Name = "txtLineJudges2";
             this.txtLineJudges2.Size = new System.Drawing.Size(321, 29);
-            this.txtLineJudges2.TabIndex = 11;
+            this.txtLineJudges2.TabIndex = 4;
             // 
             // txtLineJudges1
             // 
@@ -270,7 +249,7 @@
             this.txtLineJudges1.Location = new System.Drawing.Point(37, 190);
             this.txtLineJudges1.Name = "txtLineJudges1";
             this.txtLineJudges1.Size = new System.Drawing.Size(321, 29);
-            this.txtLineJudges1.TabIndex = 10;
+            this.txtLineJudges1.TabIndex = 3;
             // 
             // label3
             // 
@@ -290,7 +269,7 @@
             this.txtScorer.Location = new System.Drawing.Point(37, 113);
             this.txtScorer.Name = "txtScorer";
             this.txtScorer.Size = new System.Drawing.Size(321, 29);
-            this.txtScorer.TabIndex = 8;
+            this.txtScorer.TabIndex = 2;
             // 
             // label1
             // 
@@ -310,7 +289,7 @@
             this.txtReferee.Location = new System.Drawing.Point(37, 45);
             this.txtReferee.Name = "txtReferee";
             this.txtReferee.Size = new System.Drawing.Size(321, 29);
-            this.txtReferee.TabIndex = 6;
+            this.txtReferee.TabIndex = 1;
             // 
             // label6
             // 
@@ -325,7 +304,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(32)))), ((int)(((byte)(237)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -377,6 +356,116 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(400, 536);
             this.panel3.TabIndex = 17;
+            // 
+            // lblTeamAResult
+            // 
+            this.lblTeamAResult.AutoSize = true;
+            this.lblTeamAResult.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamAResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamAResult.Location = new System.Drawing.Point(141, 489);
+            this.lblTeamAResult.Name = "lblTeamAResult";
+            this.lblTeamAResult.Size = new System.Drawing.Size(20, 25);
+            this.lblTeamAResult.TabIndex = 30;
+            this.lblTeamAResult.Text = "-";
+            // 
+            // lblTeamATimeOut5
+            // 
+            this.lblTeamATimeOut5.AutoSize = true;
+            this.lblTeamATimeOut5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamATimeOut5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamATimeOut5.Location = new System.Drawing.Point(141, 451);
+            this.lblTeamATimeOut5.Name = "lblTeamATimeOut5";
+            this.lblTeamATimeOut5.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamATimeOut5.TabIndex = 29;
+            this.lblTeamATimeOut5.Text = "0";
+            // 
+            // lblTeamATimeOut4
+            // 
+            this.lblTeamATimeOut4.AutoSize = true;
+            this.lblTeamATimeOut4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamATimeOut4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamATimeOut4.Location = new System.Drawing.Point(141, 417);
+            this.lblTeamATimeOut4.Name = "lblTeamATimeOut4";
+            this.lblTeamATimeOut4.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamATimeOut4.TabIndex = 28;
+            this.lblTeamATimeOut4.Text = "0";
+            // 
+            // lblTeamATimeOut3
+            // 
+            this.lblTeamATimeOut3.AutoSize = true;
+            this.lblTeamATimeOut3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamATimeOut3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamATimeOut3.Location = new System.Drawing.Point(141, 387);
+            this.lblTeamATimeOut3.Name = "lblTeamATimeOut3";
+            this.lblTeamATimeOut3.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamATimeOut3.TabIndex = 27;
+            this.lblTeamATimeOut3.Text = "0";
+            // 
+            // lblTeamATimeOut2
+            // 
+            this.lblTeamATimeOut2.AutoSize = true;
+            this.lblTeamATimeOut2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamATimeOut2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamATimeOut2.Location = new System.Drawing.Point(141, 357);
+            this.lblTeamATimeOut2.Name = "lblTeamATimeOut2";
+            this.lblTeamATimeOut2.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamATimeOut2.TabIndex = 26;
+            this.lblTeamATimeOut2.Text = "0";
+            // 
+            // lblTeamATimeOut1
+            // 
+            this.lblTeamATimeOut1.AutoSize = true;
+            this.lblTeamATimeOut1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamATimeOut1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamATimeOut1.Location = new System.Drawing.Point(141, 325);
+            this.lblTeamATimeOut1.Name = "lblTeamATimeOut1";
+            this.lblTeamATimeOut1.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamATimeOut1.TabIndex = 25;
+            this.lblTeamATimeOut1.Text = "0";
+            // 
+            // lblTeamASet5
+            // 
+            this.lblTeamASet5.AutoSize = true;
+            this.lblTeamASet5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamASet5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamASet5.Location = new System.Drawing.Point(141, 292);
+            this.lblTeamASet5.Name = "lblTeamASet5";
+            this.lblTeamASet5.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamASet5.TabIndex = 24;
+            this.lblTeamASet5.Text = "0";
+            // 
+            // lblTeamASet4
+            // 
+            this.lblTeamASet4.AutoSize = true;
+            this.lblTeamASet4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamASet4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamASet4.Location = new System.Drawing.Point(141, 260);
+            this.lblTeamASet4.Name = "lblTeamASet4";
+            this.lblTeamASet4.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamASet4.TabIndex = 23;
+            this.lblTeamASet4.Text = "0";
+            // 
+            // lblTeamASet3
+            // 
+            this.lblTeamASet3.AutoSize = true;
+            this.lblTeamASet3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamASet3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamASet3.Location = new System.Drawing.Point(141, 227);
+            this.lblTeamASet3.Name = "lblTeamASet3";
+            this.lblTeamASet3.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamASet3.TabIndex = 22;
+            this.lblTeamASet3.Text = "0";
+            // 
+            // lblTeamASet2
+            // 
+            this.lblTeamASet2.AutoSize = true;
+            this.lblTeamASet2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamASet2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblTeamASet2.Location = new System.Drawing.Point(141, 194);
+            this.lblTeamASet2.Name = "lblTeamASet2";
+            this.lblTeamASet2.Size = new System.Drawing.Size(23, 25);
+            this.lblTeamASet2.TabIndex = 21;
+            this.lblTeamASet2.Text = "0";
             // 
             // lblTeamASet1
             // 
@@ -517,7 +606,7 @@
             this.txtTeamACoach.Location = new System.Drawing.Point(37, 113);
             this.txtTeamACoach.Name = "txtTeamACoach";
             this.txtTeamACoach.Size = new System.Drawing.Size(321, 29);
-            this.txtTeamACoach.TabIndex = 8;
+            this.txtTeamACoach.TabIndex = 11;
             // 
             // label12
             // 
@@ -537,7 +626,7 @@
             this.txtTeamAName.Location = new System.Drawing.Point(37, 45);
             this.txtTeamAName.Name = "txtTeamAName";
             this.txtTeamAName.Size = new System.Drawing.Size(321, 29);
-            this.txtTeamAName.TabIndex = 6;
+            this.txtTeamAName.TabIndex = 10;
             // 
             // label13
             // 
@@ -546,9 +635,9 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.label13.Location = new System.Drawing.Point(12, 21);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 21);
+            this.label13.Size = new System.Drawing.Size(90, 21);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Team A Name";
+            this.label13.Text = "Team Name";
             // 
             // panel4
             // 
@@ -558,116 +647,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(400, 10);
             this.panel4.TabIndex = 0;
-            // 
-            // lblTeamASet2
-            // 
-            this.lblTeamASet2.AutoSize = true;
-            this.lblTeamASet2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamASet2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamASet2.Location = new System.Drawing.Point(141, 194);
-            this.lblTeamASet2.Name = "lblTeamASet2";
-            this.lblTeamASet2.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamASet2.TabIndex = 21;
-            this.lblTeamASet2.Text = "0";
-            // 
-            // lblTeamASet3
-            // 
-            this.lblTeamASet3.AutoSize = true;
-            this.lblTeamASet3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamASet3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamASet3.Location = new System.Drawing.Point(141, 227);
-            this.lblTeamASet3.Name = "lblTeamASet3";
-            this.lblTeamASet3.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamASet3.TabIndex = 22;
-            this.lblTeamASet3.Text = "0";
-            // 
-            // lblTeamASet4
-            // 
-            this.lblTeamASet4.AutoSize = true;
-            this.lblTeamASet4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamASet4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamASet4.Location = new System.Drawing.Point(141, 260);
-            this.lblTeamASet4.Name = "lblTeamASet4";
-            this.lblTeamASet4.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamASet4.TabIndex = 23;
-            this.lblTeamASet4.Text = "0";
-            // 
-            // lblTeamASet5
-            // 
-            this.lblTeamASet5.AutoSize = true;
-            this.lblTeamASet5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamASet5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamASet5.Location = new System.Drawing.Point(141, 292);
-            this.lblTeamASet5.Name = "lblTeamASet5";
-            this.lblTeamASet5.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamASet5.TabIndex = 24;
-            this.lblTeamASet5.Text = "0";
-            // 
-            // lblTeamATimeOut1
-            // 
-            this.lblTeamATimeOut1.AutoSize = true;
-            this.lblTeamATimeOut1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamATimeOut1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamATimeOut1.Location = new System.Drawing.Point(141, 325);
-            this.lblTeamATimeOut1.Name = "lblTeamATimeOut1";
-            this.lblTeamATimeOut1.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamATimeOut1.TabIndex = 25;
-            this.lblTeamATimeOut1.Text = "0";
-            // 
-            // lblTeamATimeOut2
-            // 
-            this.lblTeamATimeOut2.AutoSize = true;
-            this.lblTeamATimeOut2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamATimeOut2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamATimeOut2.Location = new System.Drawing.Point(141, 357);
-            this.lblTeamATimeOut2.Name = "lblTeamATimeOut2";
-            this.lblTeamATimeOut2.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamATimeOut2.TabIndex = 26;
-            this.lblTeamATimeOut2.Text = "0";
-            // 
-            // lblTeamATimeOut3
-            // 
-            this.lblTeamATimeOut3.AutoSize = true;
-            this.lblTeamATimeOut3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamATimeOut3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamATimeOut3.Location = new System.Drawing.Point(141, 387);
-            this.lblTeamATimeOut3.Name = "lblTeamATimeOut3";
-            this.lblTeamATimeOut3.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamATimeOut3.TabIndex = 27;
-            this.lblTeamATimeOut3.Text = "0";
-            // 
-            // lblTeamATimeOut4
-            // 
-            this.lblTeamATimeOut4.AutoSize = true;
-            this.lblTeamATimeOut4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamATimeOut4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamATimeOut4.Location = new System.Drawing.Point(141, 417);
-            this.lblTeamATimeOut4.Name = "lblTeamATimeOut4";
-            this.lblTeamATimeOut4.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamATimeOut4.TabIndex = 28;
-            this.lblTeamATimeOut4.Text = "0";
-            // 
-            // lblTeamATimeOut5
-            // 
-            this.lblTeamATimeOut5.AutoSize = true;
-            this.lblTeamATimeOut5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamATimeOut5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamATimeOut5.Location = new System.Drawing.Point(141, 451);
-            this.lblTeamATimeOut5.Name = "lblTeamATimeOut5";
-            this.lblTeamATimeOut5.Size = new System.Drawing.Size(23, 25);
-            this.lblTeamATimeOut5.TabIndex = 29;
-            this.lblTeamATimeOut5.Text = "0";
-            // 
-            // lblTeamAResult
-            // 
-            this.lblTeamAResult.AutoSize = true;
-            this.lblTeamAResult.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamAResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblTeamAResult.Location = new System.Drawing.Point(141, 489);
-            this.lblTeamAResult.Name = "lblTeamAResult";
-            this.lblTeamAResult.Size = new System.Drawing.Size(20, 25);
-            this.lblTeamAResult.TabIndex = 30;
-            this.lblTeamAResult.Text = "-";
             // 
             // panel5
             // 
@@ -953,7 +932,7 @@
             this.txtTeamBCoach.Location = new System.Drawing.Point(37, 113);
             this.txtTeamBCoach.Name = "txtTeamBCoach";
             this.txtTeamBCoach.Size = new System.Drawing.Size(321, 29);
-            this.txtTeamBCoach.TabIndex = 8;
+            this.txtTeamBCoach.TabIndex = 13;
             // 
             // label54
             // 
@@ -973,7 +952,7 @@
             this.txtTeamBName.Location = new System.Drawing.Point(37, 45);
             this.txtTeamBName.Name = "txtTeamBName";
             this.txtTeamBName.Size = new System.Drawing.Size(321, 29);
-            this.txtTeamBName.TabIndex = 6;
+            this.txtTeamBName.TabIndex = 12;
             // 
             // label55
             // 
@@ -982,9 +961,9 @@
             this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.label55.Location = new System.Drawing.Point(12, 21);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(103, 21);
+            this.label55.Size = new System.Drawing.Size(90, 21);
             this.label55.TabIndex = 5;
-            this.label55.Text = "Team B Name";
+            this.label55.Text = "Team Name";
             // 
             // panel7
             // 
@@ -994,6 +973,24 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(400, 10);
             this.panel7.TabIndex = 0;
+            // 
+            // txtDate
+            // 
+            this.txtDate.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.txtDate.ForeColor = System.Drawing.Color.Black;
+            this.txtDate.Location = new System.Drawing.Point(37, 484);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(321, 29);
+            this.txtDate.TabIndex = 8;
+            // 
+            // txtTime
+            // 
+            this.txtTime.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.txtTime.ForeColor = System.Drawing.Color.Black;
+            this.txtTime.Location = new System.Drawing.Point(37, 555);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(321, 29);
+            this.txtTime.TabIndex = 9;
             // 
             // frmMatchInformation
             // 
@@ -1015,6 +1012,7 @@
             this.Name = "frmMatchInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Match Information";
+            this.Load += new System.EventHandler(this.frmMatchInformation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1045,8 +1043,6 @@
         private System.Windows.Forms.TextBox txtLineJudges3;
         private System.Windows.Forms.TextBox txtLineJudges2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dtpDate;
-        private System.Windows.Forms.DateTimePicker dtpTime;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
@@ -1104,5 +1100,7 @@
         private System.Windows.Forms.TextBox txtTeamBName;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.TextBox txtDate;
     }
 }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlActiveButton = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlActiveButton = new System.Windows.Forms.Panel();
             this.pbMinimize = new System.Windows.Forms.Button();
             this.pbClose = new System.Windows.Forms.Button();
             this.btnAnnouncement = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(126)))), ((int)(((byte)(159)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
             this.panel1.Controls.Add(this.pnlActiveButton);
             this.panel1.Controls.Add(this.btnAnnouncement);
             this.panel1.Controls.Add(this.btnMatches);
@@ -54,6 +54,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(164, 720);
             this.panel1.TabIndex = 0;
+            // 
+            // pnlActiveButton
+            // 
+            this.pnlActiveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(176)))), ((int)(((byte)(203)))));
+            this.pnlActiveButton.Location = new System.Drawing.Point(0, 103);
+            this.pnlActiveButton.Name = "pnlActiveButton";
+            this.pnlActiveButton.Size = new System.Drawing.Size(7, 96);
+            this.pnlActiveButton.TabIndex = 3;
             // 
             // pnlMain
             // 
@@ -65,7 +73,7 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(130)))), ((int)(((byte)(118)))));
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(92)))), ((int)(((byte)(131)))));
             this.pnlHeader.Controls.Add(this.pbMinimize);
             this.pnlHeader.Controls.Add(this.pbClose);
             this.pnlHeader.Controls.Add(this.label1);
@@ -85,14 +93,6 @@
             this.label1.Size = new System.Drawing.Size(286, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Volleyball Electronic Scoreboard";
-            // 
-            // pnlActiveButton
-            // 
-            this.pnlActiveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(80)))), ((int)(((byte)(134)))));
-            this.pnlActiveButton.Location = new System.Drawing.Point(0, 103);
-            this.pnlActiveButton.Name = "pnlActiveButton";
-            this.pnlActiveButton.Size = new System.Drawing.Size(7, 96);
-            this.pnlActiveButton.TabIndex = 3;
             // 
             // pbMinimize
             // 
@@ -122,7 +122,7 @@
             // 
             // btnAnnouncement
             // 
-            this.btnAnnouncement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(113)))), ((int)(((byte)(143)))));
+            this.btnAnnouncement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
             this.btnAnnouncement.FlatAppearance.BorderSize = 0;
             this.btnAnnouncement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnnouncement.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,7 +140,7 @@
             // 
             // btnMatches
             // 
-            this.btnMatches.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(113)))), ((int)(((byte)(143)))));
+            this.btnMatches.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
             this.btnMatches.FlatAppearance.BorderSize = 0;
             this.btnMatches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatches.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,7 +158,7 @@
             // 
             // btnControlPanel
             // 
-            this.btnControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(113)))), ((int)(((byte)(143)))));
+            this.btnControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
             this.btnControlPanel.FlatAppearance.BorderSize = 0;
             this.btnControlPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnControlPanel.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

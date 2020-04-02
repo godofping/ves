@@ -203,6 +203,16 @@ namespace dashboard.PL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap scoreboard {
+            get {
+                object obj = ResourceManager.GetObject("scoreboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shout {
             get {
                 object obj = ResourceManager.GetObject("shout", resourceCulture);
@@ -236,6 +246,16 @@ namespace dashboard.PL.Properties {
         internal static System.Drawing.Bitmap volleyball__2_ {
             get {
                 object obj = ResourceManager.GetObject("volleyball (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap volleyball__3_ {
+            get {
+                object obj = ResourceManager.GetObject("volleyball (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
