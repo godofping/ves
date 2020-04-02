@@ -116,6 +116,7 @@
             this.btnTeamATimeOutMinus.Size = new System.Drawing.Size(35, 38);
             this.btnTeamATimeOutMinus.TabIndex = 12;
             this.btnTeamATimeOutMinus.UseVisualStyleBackColor = false;
+            this.btnTeamATimeOutMinus.Click += new System.EventHandler(this.btnTeamATimeOutMinus_Click);
             // 
             // btnTeamATimeOutAdd
             // 
@@ -131,6 +132,7 @@
             this.btnTeamATimeOutAdd.Size = new System.Drawing.Size(35, 38);
             this.btnTeamATimeOutAdd.TabIndex = 11;
             this.btnTeamATimeOutAdd.UseVisualStyleBackColor = false;
+            this.btnTeamATimeOutAdd.Click += new System.EventHandler(this.btnTeamATimeOutAdd_Click);
             // 
             // btnTeamAScoreMinus
             // 
@@ -296,6 +298,7 @@
             this.btnTeamBTimeOutMinus.Size = new System.Drawing.Size(35, 38);
             this.btnTeamBTimeOutMinus.TabIndex = 16;
             this.btnTeamBTimeOutMinus.UseVisualStyleBackColor = false;
+            this.btnTeamBTimeOutMinus.Click += new System.EventHandler(this.btnTeamBTimeOutMinus_Click);
             // 
             // btnTeamBTimeOutAdd
             // 
@@ -311,6 +314,7 @@
             this.btnTeamBTimeOutAdd.Size = new System.Drawing.Size(35, 38);
             this.btnTeamBTimeOutAdd.TabIndex = 15;
             this.btnTeamBTimeOutAdd.UseVisualStyleBackColor = false;
+            this.btnTeamBTimeOutAdd.Click += new System.EventHandler(this.btnTeamBTimeOutAdd_Click);
             // 
             // btnTeamBScoreMinus
             // 
@@ -469,6 +473,7 @@
             this.btnSet.TabIndex = 11;
             this.btnSet.Text = "Set";
             this.btnSet.UseVisualStyleBackColor = false;
+            this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
             // btnReset
             // 
