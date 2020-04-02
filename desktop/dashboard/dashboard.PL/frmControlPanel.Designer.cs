@@ -343,7 +343,7 @@
             this.btnSet.Name = "btnSet";
             this.btnSet.Size = new System.Drawing.Size(150, 62);
             this.btnSet.TabIndex = 11;
-            this.btnSet.Text = "Set";
+            this.btnSet.Text = "End Set";
             this.btnSet.UseVisualStyleBackColor = false;
             this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
@@ -354,7 +354,7 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(610, 593);
+            this.btnReset.Location = new System.Drawing.Point(838, 593);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(150, 62);
             this.btnReset.TabIndex = 12;
@@ -369,7 +369,7 @@
             this.btnEndMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEndMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEndMatch.ForeColor = System.Drawing.Color.White;
-            this.btnEndMatch.Location = new System.Drawing.Point(838, 593);
+            this.btnEndMatch.Location = new System.Drawing.Point(610, 593);
             this.btnEndMatch.Name = "btnEndMatch";
             this.btnEndMatch.Size = new System.Drawing.Size(150, 62);
             this.btnEndMatch.TabIndex = 13;

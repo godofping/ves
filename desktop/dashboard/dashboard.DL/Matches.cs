@@ -13,7 +13,7 @@ namespace dashboard.DL
         {
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "SELECT matchid, matchnumber, teamaname, teambname, matchdate, matchtime, matchsaveddatetime FROM matches WHERE matchid <> 1 and (matchnumber like @str or teamaname like @str or teambname like @str, matchdate like @str, matchtime like @str, matchsaveddatetime like @str)";
+                cmd.CommandText = "SELECT matchid, matchnumber, teamaname, teambname, matchdate, matchtime, matchsaveddatetime FROM matches where matchid <> 1 and (matchnumber like @str or teamaname like @str or teambname like @str or matchdate like @str or matchtime like @str or matchsaveddatetime like @str)";
                 cmd.Parameters.AddWithValue("@str", "%" + str + "%");
                 return methods.executeQuery(cmd);
             }

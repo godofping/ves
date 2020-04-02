@@ -51,7 +51,7 @@ namespace dashboard.PL
 
             if (matchEL.Currentset != 5)
             {
-                btnSet.Enabled = true;
+                btnSet.Visible = true;
             }
 
 
@@ -156,7 +156,12 @@ namespace dashboard.PL
             matchEL.Currentset = 1;
             matchEL.Matchsaveddatetime = "";
 
-            UpdateMatch();
+            if (UpdateMatch())
+            {
+                btnEndMatch.Visible = false;
+            }
+
+
         }
 
         private void frmControlPanel_Load(object sender, EventArgs e)
@@ -166,11 +171,11 @@ namespace dashboard.PL
 
             if (matchEL.Currentset == 5)
             {
-                btnSet.Enabled = false;
+                btnSet.Visible = false;
             }
         }
 
-        
+
 
         private void btnMatchInfo_Click(object sender, EventArgs e)
         {
@@ -441,117 +446,136 @@ namespace dashboard.PL
         {
             if (Convert.ToInt32(lblSetNumber.Text) != 5)
             {
-                if (matchEL.Currentset == 1)
+                if (Convert.ToInt32(lblTeamAScore.Text) == 0 & Convert.ToInt32(lblTeamBScore.Text) == 0)
                 {
-                    if (matchEL.Teamaset1 > matchEL.Teambset1)
+                    MessageBox.Show("Failed to end the set. Both team has no score.");
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("Are you sure to end this set?", "Warning", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
                     {
-                        matchEL.Teamawonsets += 1;
-                    }
+                        if (matchEL.Currentset == 1)
+                        {
+                            if (matchEL.Teamaset1 > matchEL.Teambset1)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
 
-                    if (matchEL.Teamaset1 < matchEL.Teambset1)
-                    {
-                        matchEL.Teambwonsets += 1;
-                    }
+                            if (matchEL.Teamaset1 < matchEL.Teambset1)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
 
-                    if (matchEL.Teamaset1 == matchEL.Teambset1)
-                    {
-                        matchEL.Teamawonsets += 1;
-                        matchEL.Teambwonsets += 1;
+                            if (matchEL.Teamaset1 == matchEL.Teambset1)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+                        if (matchEL.Currentset == 2)
+                        {
+                            if (matchEL.Teamaset2 > matchEL.Teambset2)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset2 < matchEL.Teambset2)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset2 == matchEL.Teambset2)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            btnEndMatch.Visible = true;
+                        }
+
+                        if (matchEL.Currentset == 3)
+                        {
+                            if (matchEL.Teamaset3 > matchEL.Teambset3)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset3 < matchEL.Teambset3)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset3 == matchEL.Teambset3)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+                        if (matchEL.Currentset == 4)
+                        {
+                            if (matchEL.Teamaset4 > matchEL.Teambset4)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset4 < matchEL.Teambset4)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset4 == matchEL.Teambset4)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+                        if (matchEL.Currentset == 5)
+                        {
+                            if (matchEL.Teamaset5 > matchEL.Teambset5)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset5 < matchEL.Teambset5)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset5 == matchEL.Teambset5)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+
+                        matchEL.Currentset = matchEL.Currentset + 1;
+
+                        UpdateMatch();
+
+                        if (matchEL.Currentset == 5)
+                        {
+                            btnSet.Visible = false;
+                        }
                     }
                 }
 
-                if (matchEL.Currentset == 2)
-                {
-                    if (matchEL.Teamaset2 > matchEL.Teambset2)
-                    {
-                        matchEL.Teamawonsets += 1;
-                    }
 
-                    if (matchEL.Teamaset2 < matchEL.Teambset2)
-                    {
-                        matchEL.Teambwonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset2 == matchEL.Teambset2)
-                    {
-                        matchEL.Teamawonsets += 1;
-                        matchEL.Teambwonsets += 1;
-                    }
-                }
-
-                if (matchEL.Currentset == 3)
-                {
-                    if (matchEL.Teamaset3 > matchEL.Teambset3)
-                    {
-                        matchEL.Teamawonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset3 < matchEL.Teambset3)
-                    {
-                        matchEL.Teambwonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset3 == matchEL.Teambset3)
-                    {
-                        matchEL.Teamawonsets += 1;
-                        matchEL.Teambwonsets += 1;
-                    }
-                }
-
-                if (matchEL.Currentset == 4)
-                {
-                    if (matchEL.Teamaset4 > matchEL.Teambset4)
-                    {
-                        matchEL.Teamawonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset4 < matchEL.Teambset4)
-                    {
-                        matchEL.Teambwonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset4 == matchEL.Teambset4)
-                    {
-                        matchEL.Teamawonsets += 1;
-                        matchEL.Teambwonsets += 1;
-                    }
-                }
-
-                if (matchEL.Currentset == 5)
-                {
-                    if (matchEL.Teamaset5 > matchEL.Teambset5)
-                    {
-                        matchEL.Teamawonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset5 < matchEL.Teambset5)
-                    {
-                        matchEL.Teambwonsets += 1;
-                    }
-
-                    if (matchEL.Teamaset5 == matchEL.Teambset5)
-                    {
-                        matchEL.Teamawonsets += 1;
-                        matchEL.Teambwonsets += 1;
-                    }
-                }
-
-
-                matchEL.Currentset = matchEL.Currentset + 1;
-
-                UpdateMatch();
-
-                if (matchEL.Currentset == 5)
-                {
-                    btnSet.Enabled = false;
-                }
             }
 
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            ResetMatch();
+            DialogResult dialogResult = MessageBox.Show("Are you sure to reset this match?", "Warning", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                ResetMatch();
+            }
         }
 
         private void btnEndMatch_Click(object sender, EventArgs e)
@@ -582,17 +606,16 @@ namespace dashboard.PL
                 {
                     matchEL.Matchsaveddatetime = DateTime.Now.ToString("yyyy-MM-dd H:i:s");
                     matchBL.Insert(matchEL);
-                    ResetMatch();            
+
+                    btnSet.Visible = false;
+                    btnEndMatch.Visible = false;
                 }
 
             }
-            else if (dialogResult == DialogResult.No)
-            {
-                //do something else
-            }
 
 
-            
+
+
         }
     }
 }
