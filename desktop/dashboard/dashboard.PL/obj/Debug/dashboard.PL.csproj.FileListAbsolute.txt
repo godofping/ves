@@ -27,3 +27,4 @@ C:\xampp\htdocs\ves\desktop\dashboard\dashboard.PL\obj\Debug\dashboard.PL.frmAnn
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.PL\obj\Debug\dashboard.PL.csproj.CopyComplete
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.PL\obj\Debug\dashboard.PL.frmMatchInformation.resources
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.PL\obj\Debug\dashboard.PL.frmMatches.resources
+C:\xampp\htdocs\ves\desktop\dashboard\dashboard.PL\obj\Debug\dashboard.PL.csproj.CoreCompileInputs.cache

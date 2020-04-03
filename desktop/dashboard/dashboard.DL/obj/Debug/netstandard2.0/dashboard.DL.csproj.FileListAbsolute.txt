@@ -9,3 +9,4 @@ C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\bin\Debug\netstandard2.0\dash
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csproj.CopyComplete
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.dll
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.pdb
+C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csproj.CoreCompileInputs.cache

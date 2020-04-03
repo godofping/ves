@@ -452,114 +452,143 @@ namespace dashboard.PL
                 }
                 else
                 {
-                    DialogResult dialogResult = MessageBox.Show("Are you sure to end this set?", "Warning", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
+                    bool bol = false;
+                    if (matchEL.Currentset == 3 | matchEL.Currentset == 5)
                     {
-                        if (matchEL.Currentset == 1)
+                        if (Convert.ToInt32(lblTeamAScore.Text) < 15 & Convert.ToInt32(lblTeamBScore.Text) < 15)
                         {
-                            if (matchEL.Teamaset1 > matchEL.Teambset1)
-                            {
-                                matchEL.Teamawonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset1 < matchEL.Teambset1)
-                            {
-                                matchEL.Teambwonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset1 == matchEL.Teambset1)
-                            {
-                                matchEL.Teamawonsets += 1;
-                                matchEL.Teambwonsets += 1;
-                            }
+                            MessageBox.Show("Atleast one team should score 15 or more.");
                         }
-
-                        if (matchEL.Currentset == 2)
+                        else
                         {
-                            if (matchEL.Teamaset2 > matchEL.Teambset2)
-                            {
-                                matchEL.Teamawonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset2 < matchEL.Teambset2)
-                            {
-                                matchEL.Teambwonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset2 == matchEL.Teambset2)
-                            {
-                                matchEL.Teamawonsets += 1;
-                                matchEL.Teambwonsets += 1;
-                            }
-
-                            btnEndMatch.Visible = true;
+                            bol = true;
                         }
+                    }
 
-                        if (matchEL.Currentset == 3)
+                    if (matchEL.Currentset == 1 | matchEL.Currentset == 2 | matchEL.Currentset == 4)
+                    {
+                        if (Convert.ToInt32(lblTeamAScore.Text) < 25 & Convert.ToInt32(lblTeamBScore.Text) < 25)
                         {
-                            if (matchEL.Teamaset3 > matchEL.Teambset3)
-                            {
-                                matchEL.Teamawonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset3 < matchEL.Teambset3)
-                            {
-                                matchEL.Teambwonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset3 == matchEL.Teambset3)
-                            {
-                                matchEL.Teamawonsets += 1;
-                                matchEL.Teambwonsets += 1;
-                            }
+                            MessageBox.Show("Atleast one team should score 25 or more.");
                         }
-
-                        if (matchEL.Currentset == 4)
+                        else
                         {
-                            if (matchEL.Teamaset4 > matchEL.Teambset4)
-                            {
-                                matchEL.Teamawonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset4 < matchEL.Teambset4)
-                            {
-                                matchEL.Teambwonsets += 1;
-                            }
-
-                            if (matchEL.Teamaset4 == matchEL.Teambset4)
-                            {
-                                matchEL.Teamawonsets += 1;
-                                matchEL.Teambwonsets += 1;
-                            }
+                            bol = true;
                         }
+                    }
 
-                        if (matchEL.Currentset == 5)
+
+                    if (bol)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("Are you sure to end this set?", "Warning", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
                         {
-                            if (matchEL.Teamaset5 > matchEL.Teambset5)
+                            if (matchEL.Currentset == 1)
                             {
-                                matchEL.Teamawonsets += 1;
+                                if (matchEL.Teamaset1 > matchEL.Teambset1)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset1 < matchEL.Teambset1)
+                                {
+                                    matchEL.Teambwonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset1 == matchEL.Teambset1)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                    matchEL.Teambwonsets += 1;
+                                }
                             }
 
-                            if (matchEL.Teamaset5 < matchEL.Teambset5)
+                            if (matchEL.Currentset == 2)
                             {
-                                matchEL.Teambwonsets += 1;
+                                if (matchEL.Teamaset2 > matchEL.Teambset2)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset2 < matchEL.Teambset2)
+                                {
+                                    matchEL.Teambwonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset2 == matchEL.Teambset2)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                    matchEL.Teambwonsets += 1;
+                                }
+
+                                btnEndMatch.Visible = true;
                             }
 
-                            if (matchEL.Teamaset5 == matchEL.Teambset5)
+                            if (matchEL.Currentset == 3)
                             {
-                                matchEL.Teamawonsets += 1;
-                                matchEL.Teambwonsets += 1;
+                                if (matchEL.Teamaset3 > matchEL.Teambset3)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset3 < matchEL.Teambset3)
+                                {
+                                    matchEL.Teambwonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset3 == matchEL.Teambset3)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                    matchEL.Teambwonsets += 1;
+                                }
                             }
-                        }
 
+                            if (matchEL.Currentset == 4)
+                            {
+                                if (matchEL.Teamaset4 > matchEL.Teambset4)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                }
 
-                        matchEL.Currentset = matchEL.Currentset + 1;
+                                if (matchEL.Teamaset4 < matchEL.Teambset4)
+                                {
+                                    matchEL.Teambwonsets += 1;
+                                }
 
-                        UpdateMatch();
+                                if (matchEL.Teamaset4 == matchEL.Teambset4)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                    matchEL.Teambwonsets += 1;
+                                }
+                            }
 
-                        if (matchEL.Currentset == 5)
-                        {
-                            btnSet.Visible = false;
+                            if (matchEL.Currentset == 5)
+                            {
+                                if (matchEL.Teamaset5 > matchEL.Teambset5)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset5 < matchEL.Teambset5)
+                                {
+                                    matchEL.Teambwonsets += 1;
+                                }
+
+                                if (matchEL.Teamaset5 == matchEL.Teambset5)
+                                {
+                                    matchEL.Teamawonsets += 1;
+                                    matchEL.Teambwonsets += 1;
+                                }
+                            }
+
+                            matchEL.Currentset = matchEL.Currentset + 1;
+                            UpdateMatch();
+
+                          
+
+                            if (matchEL.Currentset == 5)
+                            {
+                                btnSet.Visible = false;
+                            }
                         }
                     }
                 }
@@ -604,7 +633,7 @@ namespace dashboard.PL
 
                 if (UpdateMatch())
                 {
-                    matchEL.Matchsaveddatetime = DateTime.Now.ToString("yyyy-MM-dd H:i:s");
+                    matchEL.Matchsaveddatetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     matchBL.Insert(matchEL);
 
                     btnSet.Visible = false;
