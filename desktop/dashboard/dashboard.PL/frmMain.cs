@@ -78,7 +78,7 @@ namespace dashboard.PL
 
             ChangePanelLocation(pnlActiveButton, btnMatches);
             methods.ChangePanelDisplay(frmMatches, pnlMain);
-
+            frmMatches.CalculateAfterStopTypingDGV();
             pleaseWait.Dispose();
         }
 

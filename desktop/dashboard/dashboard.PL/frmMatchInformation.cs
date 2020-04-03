@@ -43,6 +43,7 @@ namespace dashboard.PL
         private void GetInformation()
         {
             cbBestOf.SelectedIndex = cbBestOf.FindStringExact(matchEL.Bestof.ToString());
+            txtMatchNumber.Text = matchEL.Matchnumber;
             txtReferee.Text = matchEL.Refereename;
             txtScorer.Text = matchEL.Scorername;
             txtLineJudges1.Text = matchEL.Linejudges1name;

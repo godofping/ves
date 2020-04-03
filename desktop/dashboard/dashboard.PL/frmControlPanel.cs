@@ -120,7 +120,7 @@ namespace dashboard.PL
             matchEL.Division = "";
             matchEL.Matchdate = "";
             matchEL.Matchtime = "";
-            matchEL.Teamaname = "Team A";
+            matchEL.Teamaname = "-";
             matchEL.Teamacoach = "";
             matchEL.Teamaset1 = 0;
             matchEL.Teamaset2 = 0;
@@ -134,7 +134,7 @@ namespace dashboard.PL
             matchEL.Teamatimeout5 = 0;
             matchEL.Teamawonsets = 0;
             matchEL.Teamaresult = "";
-            matchEL.Teambname = "Team B";
+            matchEL.Teambname = "-";
             matchEL.Teambcoach = "";
             matchEL.Teambset1 = 0;
             matchEL.Teambset2 = 0;
@@ -197,7 +197,6 @@ namespace dashboard.PL
             {
                 if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
                 {
-                    btnSet.Visible = false;
                     btnSaveMatch.Visible = true;
                     ShowAddMinusButtons(false);
                     bol = true;
@@ -205,7 +204,6 @@ namespace dashboard.PL
                 else
                 {
                     btnSaveMatch.Visible = false;
-                    matchEL.Currentset = matchEL.Currentset + 1;
                     ShowAddMinusButtons(true);
                 }
 
@@ -215,7 +213,6 @@ namespace dashboard.PL
             {
                 if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
                 {
-                    btnSet.Visible = false;
                     btnSaveMatch.Visible = true;
                     ShowAddMinusButtons(false);
                     bol = true;
@@ -223,30 +220,33 @@ namespace dashboard.PL
                 else
                 {
                     btnSaveMatch.Visible = false;
-                    matchEL.Currentset = matchEL.Currentset + 1;
                     ShowAddMinusButtons(true);
                 }
 
             }
 
-            if (matchEL.Teamawonsets > matchEL.Teambwonsets)
+            if (bol)
             {
-                matchEL.Teamaresult = "WIN";
-                matchEL.Teambresult = "LOSE";
-            }
+                if (matchEL.Teamawonsets > matchEL.Teambwonsets)
+                {
+                    matchEL.Teamaresult = "WIN";
+                    matchEL.Teambresult = "LOSE";
+                }
 
-            if (matchEL.Teambwonsets > matchEL.Teamawonsets)
-            {
-                matchEL.Teamaresult = "LOSE";
-                matchEL.Teambresult = "WIN";
-            }
+                if (matchEL.Teambwonsets > matchEL.Teamawonsets)
+                {
+                    matchEL.Teamaresult = "LOSE";
+                    matchEL.Teambresult = "WIN";
+                }
 
-            if (matchEL.Teamawonsets == matchEL.Teambwonsets)
-            {
-                matchEL.Teamaresult = "DRAW";
-                matchEL.Teambresult = "DRAW";
-            }
+                if (matchEL.Teamawonsets == matchEL.Teambwonsets)
+                {
+                    matchEL.Teamaresult = "DRAW";
+                    matchEL.Teambresult = "DRAW";
+                }
+             }
 
+            btnSet.Visible = false;
             UpdateMatch();
         }
 
@@ -269,6 +269,7 @@ namespace dashboard.PL
             GetMatchInformation();
             CheckIfCanSet();
             CheckIfCanEndMatch();
+
         }
 
 
@@ -681,8 +682,31 @@ namespace dashboard.PL
                                 }
                             }
 
-                            
-                            UpdateMatch();
+
+                            if (matchEL.Bestof == 3)
+                            {
+                                if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
+                                {
+                                }
+                                else
+                                {
+                                    matchEL.Currentset = matchEL.Currentset + 1;
+                                }
+                            }
+
+                            if (matchEL.Bestof == 5)
+                            {
+                                if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
+                                {
+                                }
+                                else
+                                {
+                                    matchEL.Currentset = matchEL.Currentset + 1;
+                                }
+                            }
+
+
+
                             CheckIfCanSet();
                             CheckIfCanEndMatch();
 
@@ -718,6 +742,7 @@ namespace dashboard.PL
                     matchBL.Insert(matchEL);
                     ShowAddMinusButtons(false);
                     ResetMatch();
+                    MessageBox.Show("Match information is saved to the database.");
                 }
 
             }

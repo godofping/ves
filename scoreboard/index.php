@@ -142,31 +142,31 @@
         <div class="row mt-2">
 
           <div class="col">
-            <div style="background-color: #c3b091;">
+            <div id="box1" style="background-color: #c3b091;">
               <h3 id="teamaset1" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #c3b091;">
+            <div id="box2" style="background-color: #c3b091;">
               <h3 id="teamaset2" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #c3b091;">
+            <div id="box3" style="background-color: #c3b091;">
               <h3 id="teamaset3" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #c3b091;">
+            <div id="box4" style="background-color: #c3b091;">
               <h3 id="teamaset4" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #c3b091;">
+            <div id="box5" style="background-color: #c3b091;">
               <h3 id="teamaset5" style="font-size: 5rem;">0</h3>
             </div>
           </div>
@@ -177,31 +177,31 @@
         <div class="row">
 
           <div class="col">
-            <div style="background-color: #00ff7f;">
+            <div id="box6" style="background-color: #00ff7f;">
               <h3 id="teambset1" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #00ff7f;">
+            <div id="box7" style="background-color: #00ff7f;">
               <h3 id="teambset2" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #00ff7f;">
+            <div id="box8" style="background-color: #00ff7f;">
               <h3 id="teambset3" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #00ff7f;">
+            <div id="box9" style="background-color: #00ff7f;">
               <h3 id="teambset4" style="font-size: 5rem;">0</h3>
             </div>
           </div>
 
           <div class="col">
-            <div style="background-color: #00ff7f;">
+            <div id="box10" style="background-color: #00ff7f;">
               <h3 id="teambset5" style="font-size: 5rem;">0</h3>
             </div>
           </div>

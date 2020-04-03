@@ -43,7 +43,7 @@ namespace dashboard.PL
             }
         }
 
-        private void CalculateAfterStopTypingDGV()
+        public void CalculateAfterStopTypingDGV()
         {
             delay += 150;
             if (delayedCalculationThreadDGV != null && delayedCalculationThreadDGV.IsAlive)
@@ -69,11 +69,11 @@ namespace dashboard.PL
             delayedCalculationThreadDGV.Start();
         }
 
-        private void ManageDGV()
+        public void ManageDGV()
         {
             PopulateDGV();
             methods.DGVTheme(dgv);
-            methods.DGVRenameColumns(dgv, "matchid", "Match Number", "Team A Name", "Team B Name", "Match Date", "Match Time", "Date Saved");
+            methods.DGVRenameColumns(dgv, "matchid", "Match Number", "Team A Name", "Team B Name", "Match Date", "Match Time", "Date modified");
             methods.DGVHiddenColumns(dgv, "matchid");
             methods.DGVBUTTONView(dgv);
         }
@@ -84,9 +84,20 @@ namespace dashboard.PL
             methods.LoadDGV(dgv, dt);
         }
 
+        private void ShowForm(bool bol)
+        {
+            pnl1.Visible = bol;
+            pnl2.Visible = bol;
+            pnl3.Visible = bol;
+            btnBack.Visible = bol;
+            btnDelete.Visible = bol;
+            pnlMain.Visible = !bol;
+        }
+
         private void frmMatches_Load(object sender, EventArgs e)
         {
             ManageDGV();
+            ShowForm(false);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -101,11 +112,59 @@ namespace dashboard.PL
 
             if (e.ColumnIndex == 0)
             {
-                //var frm = new PL.Registrations.frmPlantCRUD("VIEW", plantEL, this, plantcategoryEL);
-                //frm.ShowDialog();
+                matchEL = matchBL.Select(matchEL);
+                lblBeastOf.Text = matchEL.Bestof.ToString();
+                lblMatchNumber.Text = matchEL.Matchnumber;
+                lblReferee.Text = matchEL.Refereename;
+                lblScorer.Text = matchEL.Scorername;
+                lblLineJudges1.Text = matchEL.Linejudges1name;
+                lblLineJudges2.Text = matchEL.Linejudges2name;
+                lblLineJudges3.Text = matchEL.Linejudges3name;
+                lblLineJudges4.Text = matchEL.Linejudges4name;
+                lblDivision.Text = matchEL.Division;
+                lblMatchDate.Text = matchEL.Matchdate;
+                lblMatchTime.Text = matchEL.Matchtime;
+                lblDateSaved.Text = matchEL.Matchsaveddatetime;
+                lblTeamAName.Text = matchEL.Teamaname;
+                lblTeamACoach.Text = matchEL.Teamacoach;
+                lblTeamASet1.Text = matchEL.Teamaset1.ToString();
+                lblTeamASet2.Text = matchEL.Teamaset2.ToString();
+                lblTeamASet3.Text = matchEL.Teamaset3.ToString();
+                lblTeamASet4.Text = matchEL.Teamaset4.ToString();
+                lblTeamASet5.Text = matchEL.Teamaset5.ToString();
+                lblTeamATimeout1.Text = matchEL.Teamatimeout1.ToString();
+                lblTeamATimeout2.Text = matchEL.Teamatimeout2.ToString();
+                lblTeamATimeout3.Text = matchEL.Teamatimeout3.ToString();
+                lblTeamATimeout4.Text = matchEL.Teamatimeout4.ToString();
+                lblTeamATimeout5.Text = matchEL.Teamatimeout5.ToString();
+                lblTeamAResult.Text = matchEL.Teamaresult;
+                lblTeamBName.Text = matchEL.Teambname;
+                lblTeamBCoach.Text = matchEL.Teambcoach;
+                lblTeamBSet1.Text = matchEL.Teambset1.ToString();
+                lblTeamBSet2.Text = matchEL.Teambset2.ToString();
+                lblTeamBSet3.Text = matchEL.Teambset3.ToString();
+                lblTeamBSet4.Text = matchEL.Teambset4.ToString();
+                lblTeamBSet5.Text = matchEL.Teambset5.ToString();
+                lblTeamBTimeout1.Text = matchEL.Teambtimeout1.ToString();
+                lblTeamBTimeout2.Text = matchEL.Teambtimeout2.ToString();
+                lblTeamBTimeout3.Text = matchEL.Teambtimeout3.ToString();
+                lblTeamBTimeout4.Text = matchEL.Teambtimeout4.ToString();
+                lblTeamBTimeout5.Text = matchEL.Teambtimeout5.ToString();
+                lblTeamBResult.Text = matchEL.Teambresult;
+
+
+
+                ShowForm(true);
+                
+
 
             }
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            ShowForm(false);
         }
     }
 }

@@ -41,17 +41,47 @@ function getData()
  			$('#teambwonsets').text(info.teambwonsets);
 
 
- 			$('#teamaset1').text(info.teamaset1);
- 			$('#teamaset2').text(info.teamaset2);
- 			$('#teamaset3').text(info.teamaset3);
- 			$('#teamaset4').text(info.teamaset4);
- 			$('#teamaset5').text(info.teamaset5);
+ 			if(info.bestof == '3')
+ 			{
+ 				$("#box1").hide();
+ 				$("#box5").hide();
+ 				$("#box6").hide();
+ 				$("#box10").hide();
 
- 			$('#teambset1').text(info.teambset1);
- 			$('#teambset2').text(info.teambset2);
- 			$('#teambset3').text(info.teambset3);
- 			$('#teambset4').text(info.teambset4);
- 			$('#teambset5').text(info.teambset5);
+
+	 			$('#teamaset2').text(info.teamaset1);
+	 			$('#teamaset3').text(info.teamaset2);
+	 			$('#teamaset4').text(info.teamaset3);
+	 
+	 			$('#teambset2').text(info.teambset1);
+	 			$('#teambset3').text(info.teambset2);
+	 			$('#teambset4').text(info.teambset3);
+
+ 			}
+
+ 			if(info.bestof == '5')
+ 			{
+ 				$("#box1").show();
+ 				$("#box5").show();
+ 				$("#box6").show();
+ 				$("#box10").show();
+
+
+ 				$('#teamaset1').text(info.teamaset1);
+	 			$('#teamaset2').text(info.teamaset2);
+	 			$('#teamaset3').text(info.teamaset3);
+	 			$('#teamaset4').text(info.teamaset4);
+	 			$('#teamaset5').text(info.teamaset5);
+
+	 			$('#teambset1').text(info.teambset1);
+	 			$('#teambset2').text(info.teambset2);
+	 			$('#teambset3').text(info.teambset3);
+	 			$('#teambset4').text(info.teambset4);
+	 			$('#teambset5').text(info.teambset5);
+ 			}
+
+
+ 			
 
  			
 
