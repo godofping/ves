@@ -166,5 +166,19 @@ namespace dashboard.PL
         {
             ShowForm(false);
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure to delete this match?", "Warning", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                if (matchBL.Delete(matchEL))
+                {
+                    MessageBox.Show("Deleted!");
+                    ShowForm(false);
+                    CalculateAfterStopTypingDGV();
+                }
+            }
+        }
     }
 }

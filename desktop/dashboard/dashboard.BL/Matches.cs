@@ -28,5 +28,10 @@ namespace dashboard.BL
         {
             return matchDL.Select(matchEL);
         }
+
+        public Boolean Delete(EL.Matches matchEL)
+        {
+            return matchDL.Delete(matchEL);
+        }
     }
 }

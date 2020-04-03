@@ -190,5 +190,18 @@ namespace dashboard.DL
             }
         }
 
+
+        public Boolean Delete(EL.Matches matchEL)
+        {
+            using (var cmd = new MySqlCommand())
+            {
+                cmd.CommandText = "delete from matches where matchid = @matchid";
+
+                cmd.Parameters.AddWithValue("@matchid", matchEL.Matchid);
+
+                return methods.executeNonQueryBool(cmd);
+            }
+        }
+
     }
 }
