@@ -23,7 +23,7 @@ namespace dashboard.DL
         {
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "insert into  matches set matchnumber = @matchnumber, refereename = @refereename, scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, matchsaveddatetime = @matchsaveddatetime";
+                cmd.CommandText = "insert into  matches set matchnumber = @matchnumber, refereename = @refereename, scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, matchsaveddatetime = @matchsaveddatetime, bestof = @bestof";
 
                 cmd.Parameters.AddWithValue("@matchid", matchEL.Matchid);
                 cmd.Parameters.AddWithValue("@matchnumber", matchEL.Matchnumber);
@@ -66,7 +66,8 @@ namespace dashboard.DL
                 cmd.Parameters.AddWithValue("@teambresult", matchEL.Teambresult);
                 cmd.Parameters.AddWithValue("@currentset", matchEL.Currentset);
                 cmd.Parameters.AddWithValue("@matchsaveddatetime", matchEL.Matchsaveddatetime);
-                
+                cmd.Parameters.AddWithValue("@bestof", matchEL.Bestof);
+
                 return methods.executeNonQueryLong(cmd);
             }
         }
@@ -75,7 +76,7 @@ namespace dashboard.DL
         {
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "update matches set matchnumber = @matchnumber, refereename = @refereename, scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset where matchid = @matchid";
+                cmd.CommandText = "update matches set matchnumber = @matchnumber, refereename = @refereename, scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, bestof = @bestof where matchid = @matchid";
 
                 cmd.Parameters.AddWithValue("@matchid", matchEL.Matchid);
                 cmd.Parameters.AddWithValue("@matchnumber", matchEL.Matchnumber);
@@ -117,6 +118,7 @@ namespace dashboard.DL
                 cmd.Parameters.AddWithValue("@teambwonsets", matchEL.Teambwonsets);
                 cmd.Parameters.AddWithValue("@teambresult", matchEL.Teambresult);
                 cmd.Parameters.AddWithValue("@currentset", matchEL.Currentset);
+                cmd.Parameters.AddWithValue("@bestof", matchEL.Bestof);
 
                 return methods.executeNonQueryBool(cmd);
             }
@@ -177,6 +179,7 @@ namespace dashboard.DL
                 matchEL.Teambwonsets = Convert.ToInt32(dt.Rows[0]["teambwonsets"]);
                 matchEL.Teambresult = dt.Rows[0]["teambresult"].ToString();
                 matchEL.Currentset = Convert.ToInt32(dt.Rows[0]["currentset"]);
+                matchEL.Bestof = Convert.ToInt32(dt.Rows[0]["bestof"]);
 
 
                 return matchEL;

@@ -47,6 +47,8 @@ namespace dashboard.EL
         string teambresult;
         int currentset;
         string matchsaveddatetime;
+        int bestof;
+
 
         public int Matchid { get => matchid; set => matchid = value; }
         public string Matchnumber { get => matchnumber; set => matchnumber = value; }
@@ -89,5 +91,6 @@ namespace dashboard.EL
         public string Teambresult { get => teambresult; set => teambresult = value; }
         public int Currentset { get => currentset; set => currentset = value; }
         public string Matchsaveddatetime { get => matchsaveddatetime; set => matchsaveddatetime = value; }
+        public int Bestof { get => bestof; set => bestof = value; }
     }
 }

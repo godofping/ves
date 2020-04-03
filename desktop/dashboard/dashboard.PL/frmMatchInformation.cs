@@ -42,6 +42,7 @@ namespace dashboard.PL
 
         private void GetInformation()
         {
+            cbBestOf.SelectedIndex = cbBestOf.FindStringExact(matchEL.Bestof.ToString());
             txtReferee.Text = matchEL.Refereename;
             txtScorer.Text = matchEL.Scorername;
             txtLineJudges1.Text = matchEL.Linejudges1name;
@@ -80,13 +81,43 @@ namespace dashboard.PL
 
         }
 
+        private void ShowBestOf5(bool bol)
+        {
+            lblSet4A.Visible = bol;
+            lblSet4B.Visible = bol;
+            lblSet5A.Visible = bol;
+            lblSet5B.Visible = bol;
+            lblTimeout4A.Visible = bol;
+            lblTimeout4B.Visible = bol;
+            lblTimeout5A.Visible = bol;
+            lblTimeout5B.Visible = bol;
+            lblTeamASet4.Visible = bol;
+            lblTeamBSet4.Visible = bol;
+            lblTeamASet5.Visible = bol;
+            lblTeamBSet5.Visible = bol;
+            lblTeamATimeOut4.Visible = bol;
+            lblTeamBTimeOut4.Visible = bol;
+            lblTeamATimeOut5.Visible = bol;
+            lblTeamBTimeOut5.Visible = bol;
+        }
+
         private void frmMatchInformation_Load(object sender, EventArgs e)
         {
             GetInformation();
+            if (cbBestOf.Text.Equals("3"))
+            {
+                ShowBestOf5(false);
+            }
+
+            if (cbBestOf.Text.Equals("5"))
+            {
+                ShowBestOf5(true);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            matchEL.Bestof = Convert.ToInt32(cbBestOf.Text);
             matchEL.Refereename = txtReferee.Text;
             matchEL.Scorername = txtScorer.Text;
             matchEL.Linejudges1name = txtLineJudges1.Text;
@@ -112,6 +143,17 @@ namespace dashboard.PL
             this.Close();
         }
 
-        
+        private void cbBestOf_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbBestOf.Text.Equals("3"))
+            {
+                ShowBestOf5(false);
+            }
+
+            if (cbBestOf.Text.Equals("5"))
+            {
+                ShowBestOf5(true);
+            }
+        }
     }
 }

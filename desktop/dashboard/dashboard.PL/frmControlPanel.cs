@@ -49,11 +49,6 @@ namespace dashboard.PL
             matchEL.Matchid = 1;
             matchEL = matchBL.Select(matchEL);
 
-            if (matchEL.Currentset != 5)
-            {
-                btnSet.Visible = true;
-            }
-
 
             //control panel
             lblSetNumber.Text = matchEL.Currentset.ToString();
@@ -155,6 +150,7 @@ namespace dashboard.PL
             matchEL.Teambresult = "";
             matchEL.Currentset = 1;
             matchEL.Matchsaveddatetime = "";
+            matchEL.Bestof = 3;
 
             if (UpdateMatch())
             {
@@ -167,12 +163,11 @@ namespace dashboard.PL
         private void frmControlPanel_Load(object sender, EventArgs e)
         {
 
-            GetMatchInformation();
 
-            if (matchEL.Currentset == 5)
-            {
-                btnSet.Visible = false;
-            }
+            btnEndMatch.Visible = false;
+            btnSet.Visible = false;
+
+            GetMatchInformation();
         }
 
 
@@ -520,7 +515,7 @@ namespace dashboard.PL
                                     matchEL.Teambwonsets += 1;
                                 }
 
-                                btnEndMatch.Visible = true;
+
                             }
 
                             if (matchEL.Currentset == 3)
@@ -580,15 +575,56 @@ namespace dashboard.PL
                                 }
                             }
 
-                            matchEL.Currentset = matchEL.Currentset + 1;
+
+
+                            if (matchEL.Bestof == 3)
+                            {
+                                if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
+                                {
+                                    btnSet.Visible = false;
+                                    btnEndMatch.Visible = true;
+                                }
+                                else
+                                {
+                                    if (matchEL.Teamawonsets == 1 & matchEL.Teambwonsets == 1)
+                                    {
+                                        btnSet.Visible = false;
+
+                                    }
+                                    else
+                                    {
+                                        matchEL.Currentset = matchEL.Currentset + 1;
+                                    }
+                                }
+
+                            }
+
+                            if (matchEL.Bestof == 5)
+                            {
+                                if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
+                                {
+                                    btnSet.Visible = false;
+                                    btnEndMatch.Visible = true;
+                                }
+                                else
+                                {
+                                    if (matchEL.Teamawonsets == 1 & matchEL.Teambwonsets == 1)
+                                    {
+                                        btnSet.Visible = false;
+
+                                    }
+                                    else
+                                    {
+                                        matchEL.Currentset = matchEL.Currentset + 1;
+                                    }
+                                }
+
+                            }
+
                             UpdateMatch();
 
-                          
 
-                            if (matchEL.Currentset == 5)
-                            {
-                                btnSet.Visible = false;
-                            }
+
                         }
                     }
                 }

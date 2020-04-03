@@ -30,6 +30,10 @@
         {
             this.lblSet = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTeamATimeOutMinus = new System.Windows.Forms.Button();
+            this.btnTeamATimeOutAdd = new System.Windows.Forms.Button();
+            this.btnTeamAScoreMinus = new System.Windows.Forms.Button();
+            this.btnTeamAScoreAdd = new System.Windows.Forms.Button();
             this.lblTeamATimeOut = new System.Windows.Forms.Label();
             this.lblTeamAScore = new System.Windows.Forms.Label();
             this.lblTeamAWonSet = new System.Windows.Forms.Label();
@@ -40,6 +44,10 @@
             this.lblTeamAName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnTeamBTimeOutMinus = new System.Windows.Forms.Button();
+            this.btnTeamBTimeOutAdd = new System.Windows.Forms.Button();
+            this.btnTeamBScoreMinus = new System.Windows.Forms.Button();
+            this.btnTeamBScoreAdd = new System.Windows.Forms.Button();
             this.lblTeamBTimeOut = new System.Windows.Forms.Label();
             this.lblTeamBScore = new System.Windows.Forms.Label();
             this.lblTeamBWonSet = new System.Windows.Forms.Label();
@@ -57,14 +65,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblSetNumber = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnTeamBTimeOutMinus = new System.Windows.Forms.Button();
-            this.btnTeamBTimeOutAdd = new System.Windows.Forms.Button();
-            this.btnTeamBScoreMinus = new System.Windows.Forms.Button();
-            this.btnTeamBScoreAdd = new System.Windows.Forms.Button();
-            this.btnTeamATimeOutMinus = new System.Windows.Forms.Button();
-            this.btnTeamATimeOutAdd = new System.Windows.Forms.Button();
-            this.btnTeamAScoreMinus = new System.Windows.Forms.Button();
-            this.btnTeamAScoreAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -101,6 +101,70 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(378, 298);
             this.panel1.TabIndex = 1;
+            // 
+            // btnTeamATimeOutMinus
+            // 
+            this.btnTeamATimeOutMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamATimeOutMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
+            this.btnTeamATimeOutMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamATimeOutMinus.FlatAppearance.BorderSize = 0;
+            this.btnTeamATimeOutMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamATimeOutMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamATimeOutMinus.ForeColor = System.Drawing.Color.White;
+            this.btnTeamATimeOutMinus.Location = new System.Drawing.Point(298, 202);
+            this.btnTeamATimeOutMinus.Name = "btnTeamATimeOutMinus";
+            this.btnTeamATimeOutMinus.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamATimeOutMinus.TabIndex = 12;
+            this.btnTeamATimeOutMinus.UseVisualStyleBackColor = false;
+            this.btnTeamATimeOutMinus.Click += new System.EventHandler(this.btnTeamATimeOutMinus_Click);
+            // 
+            // btnTeamATimeOutAdd
+            // 
+            this.btnTeamATimeOutAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamATimeOutAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
+            this.btnTeamATimeOutAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamATimeOutAdd.FlatAppearance.BorderSize = 0;
+            this.btnTeamATimeOutAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamATimeOutAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamATimeOutAdd.ForeColor = System.Drawing.Color.White;
+            this.btnTeamATimeOutAdd.Location = new System.Drawing.Point(248, 202);
+            this.btnTeamATimeOutAdd.Name = "btnTeamATimeOutAdd";
+            this.btnTeamATimeOutAdd.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamATimeOutAdd.TabIndex = 11;
+            this.btnTeamATimeOutAdd.UseVisualStyleBackColor = false;
+            this.btnTeamATimeOutAdd.Click += new System.EventHandler(this.btnTeamATimeOutAdd_Click);
+            // 
+            // btnTeamAScoreMinus
+            // 
+            this.btnTeamAScoreMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamAScoreMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
+            this.btnTeamAScoreMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamAScoreMinus.FlatAppearance.BorderSize = 0;
+            this.btnTeamAScoreMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamAScoreMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamAScoreMinus.ForeColor = System.Drawing.Color.White;
+            this.btnTeamAScoreMinus.Location = new System.Drawing.Point(298, 144);
+            this.btnTeamAScoreMinus.Name = "btnTeamAScoreMinus";
+            this.btnTeamAScoreMinus.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamAScoreMinus.TabIndex = 10;
+            this.btnTeamAScoreMinus.UseVisualStyleBackColor = false;
+            this.btnTeamAScoreMinus.Click += new System.EventHandler(this.btnTeamAScoreMinus_Click);
+            // 
+            // btnTeamAScoreAdd
+            // 
+            this.btnTeamAScoreAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamAScoreAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
+            this.btnTeamAScoreAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamAScoreAdd.FlatAppearance.BorderSize = 0;
+            this.btnTeamAScoreAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamAScoreAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamAScoreAdd.ForeColor = System.Drawing.Color.White;
+            this.btnTeamAScoreAdd.Location = new System.Drawing.Point(248, 144);
+            this.btnTeamAScoreAdd.Name = "btnTeamAScoreAdd";
+            this.btnTeamAScoreAdd.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamAScoreAdd.TabIndex = 9;
+            this.btnTeamAScoreAdd.UseVisualStyleBackColor = false;
+            this.btnTeamAScoreAdd.Click += new System.EventHandler(this.btnTeamAScoreAdd_Click);
             // 
             // lblTeamATimeOut
             // 
@@ -219,6 +283,70 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(378, 298);
             this.panel3.TabIndex = 9;
+            // 
+            // btnTeamBTimeOutMinus
+            // 
+            this.btnTeamBTimeOutMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamBTimeOutMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
+            this.btnTeamBTimeOutMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamBTimeOutMinus.FlatAppearance.BorderSize = 0;
+            this.btnTeamBTimeOutMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamBTimeOutMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamBTimeOutMinus.ForeColor = System.Drawing.Color.White;
+            this.btnTeamBTimeOutMinus.Location = new System.Drawing.Point(298, 202);
+            this.btnTeamBTimeOutMinus.Name = "btnTeamBTimeOutMinus";
+            this.btnTeamBTimeOutMinus.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamBTimeOutMinus.TabIndex = 16;
+            this.btnTeamBTimeOutMinus.UseVisualStyleBackColor = false;
+            this.btnTeamBTimeOutMinus.Click += new System.EventHandler(this.btnTeamBTimeOutMinus_Click);
+            // 
+            // btnTeamBTimeOutAdd
+            // 
+            this.btnTeamBTimeOutAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamBTimeOutAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
+            this.btnTeamBTimeOutAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamBTimeOutAdd.FlatAppearance.BorderSize = 0;
+            this.btnTeamBTimeOutAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamBTimeOutAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamBTimeOutAdd.ForeColor = System.Drawing.Color.White;
+            this.btnTeamBTimeOutAdd.Location = new System.Drawing.Point(248, 202);
+            this.btnTeamBTimeOutAdd.Name = "btnTeamBTimeOutAdd";
+            this.btnTeamBTimeOutAdd.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamBTimeOutAdd.TabIndex = 15;
+            this.btnTeamBTimeOutAdd.UseVisualStyleBackColor = false;
+            this.btnTeamBTimeOutAdd.Click += new System.EventHandler(this.btnTeamBTimeOutAdd_Click);
+            // 
+            // btnTeamBScoreMinus
+            // 
+            this.btnTeamBScoreMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamBScoreMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
+            this.btnTeamBScoreMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamBScoreMinus.FlatAppearance.BorderSize = 0;
+            this.btnTeamBScoreMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamBScoreMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamBScoreMinus.ForeColor = System.Drawing.Color.White;
+            this.btnTeamBScoreMinus.Location = new System.Drawing.Point(298, 144);
+            this.btnTeamBScoreMinus.Name = "btnTeamBScoreMinus";
+            this.btnTeamBScoreMinus.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamBScoreMinus.TabIndex = 14;
+            this.btnTeamBScoreMinus.UseVisualStyleBackColor = false;
+            this.btnTeamBScoreMinus.Click += new System.EventHandler(this.btnTeamBScoreMinus_Click);
+            // 
+            // btnTeamBScoreAdd
+            // 
+            this.btnTeamBScoreAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
+            this.btnTeamBScoreAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
+            this.btnTeamBScoreAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTeamBScoreAdd.FlatAppearance.BorderSize = 0;
+            this.btnTeamBScoreAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeamBScoreAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeamBScoreAdd.ForeColor = System.Drawing.Color.White;
+            this.btnTeamBScoreAdd.Location = new System.Drawing.Point(248, 144);
+            this.btnTeamBScoreAdd.Name = "btnTeamBScoreAdd";
+            this.btnTeamBScoreAdd.Size = new System.Drawing.Size(35, 38);
+            this.btnTeamBScoreAdd.TabIndex = 13;
+            this.btnTeamBScoreAdd.UseVisualStyleBackColor = false;
+            this.btnTeamBScoreAdd.Click += new System.EventHandler(this.btnTeamBScoreAdd_Click);
             // 
             // lblTeamBTimeOut
             // 
@@ -418,134 +546,6 @@
             this.label2.Size = new System.Drawing.Size(153, 32);
             this.label2.TabIndex = 15;
             this.label2.Text = "Control Panel";
-            // 
-            // btnTeamBTimeOutMinus
-            // 
-            this.btnTeamBTimeOutMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamBTimeOutMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
-            this.btnTeamBTimeOutMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamBTimeOutMinus.FlatAppearance.BorderSize = 0;
-            this.btnTeamBTimeOutMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamBTimeOutMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamBTimeOutMinus.ForeColor = System.Drawing.Color.White;
-            this.btnTeamBTimeOutMinus.Location = new System.Drawing.Point(298, 202);
-            this.btnTeamBTimeOutMinus.Name = "btnTeamBTimeOutMinus";
-            this.btnTeamBTimeOutMinus.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamBTimeOutMinus.TabIndex = 16;
-            this.btnTeamBTimeOutMinus.UseVisualStyleBackColor = false;
-            this.btnTeamBTimeOutMinus.Click += new System.EventHandler(this.btnTeamBTimeOutMinus_Click);
-            // 
-            // btnTeamBTimeOutAdd
-            // 
-            this.btnTeamBTimeOutAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamBTimeOutAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
-            this.btnTeamBTimeOutAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamBTimeOutAdd.FlatAppearance.BorderSize = 0;
-            this.btnTeamBTimeOutAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamBTimeOutAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamBTimeOutAdd.ForeColor = System.Drawing.Color.White;
-            this.btnTeamBTimeOutAdd.Location = new System.Drawing.Point(248, 202);
-            this.btnTeamBTimeOutAdd.Name = "btnTeamBTimeOutAdd";
-            this.btnTeamBTimeOutAdd.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamBTimeOutAdd.TabIndex = 15;
-            this.btnTeamBTimeOutAdd.UseVisualStyleBackColor = false;
-            this.btnTeamBTimeOutAdd.Click += new System.EventHandler(this.btnTeamBTimeOutAdd_Click);
-            // 
-            // btnTeamBScoreMinus
-            // 
-            this.btnTeamBScoreMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamBScoreMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
-            this.btnTeamBScoreMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamBScoreMinus.FlatAppearance.BorderSize = 0;
-            this.btnTeamBScoreMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamBScoreMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamBScoreMinus.ForeColor = System.Drawing.Color.White;
-            this.btnTeamBScoreMinus.Location = new System.Drawing.Point(298, 144);
-            this.btnTeamBScoreMinus.Name = "btnTeamBScoreMinus";
-            this.btnTeamBScoreMinus.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamBScoreMinus.TabIndex = 14;
-            this.btnTeamBScoreMinus.UseVisualStyleBackColor = false;
-            this.btnTeamBScoreMinus.Click += new System.EventHandler(this.btnTeamBScoreMinus_Click);
-            // 
-            // btnTeamBScoreAdd
-            // 
-            this.btnTeamBScoreAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamBScoreAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
-            this.btnTeamBScoreAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamBScoreAdd.FlatAppearance.BorderSize = 0;
-            this.btnTeamBScoreAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamBScoreAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamBScoreAdd.ForeColor = System.Drawing.Color.White;
-            this.btnTeamBScoreAdd.Location = new System.Drawing.Point(248, 144);
-            this.btnTeamBScoreAdd.Name = "btnTeamBScoreAdd";
-            this.btnTeamBScoreAdd.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamBScoreAdd.TabIndex = 13;
-            this.btnTeamBScoreAdd.UseVisualStyleBackColor = false;
-            this.btnTeamBScoreAdd.Click += new System.EventHandler(this.btnTeamBScoreAdd_Click);
-            // 
-            // btnTeamATimeOutMinus
-            // 
-            this.btnTeamATimeOutMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamATimeOutMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
-            this.btnTeamATimeOutMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamATimeOutMinus.FlatAppearance.BorderSize = 0;
-            this.btnTeamATimeOutMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamATimeOutMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamATimeOutMinus.ForeColor = System.Drawing.Color.White;
-            this.btnTeamATimeOutMinus.Location = new System.Drawing.Point(298, 202);
-            this.btnTeamATimeOutMinus.Name = "btnTeamATimeOutMinus";
-            this.btnTeamATimeOutMinus.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamATimeOutMinus.TabIndex = 12;
-            this.btnTeamATimeOutMinus.UseVisualStyleBackColor = false;
-            this.btnTeamATimeOutMinus.Click += new System.EventHandler(this.btnTeamATimeOutMinus_Click);
-            // 
-            // btnTeamATimeOutAdd
-            // 
-            this.btnTeamATimeOutAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamATimeOutAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
-            this.btnTeamATimeOutAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamATimeOutAdd.FlatAppearance.BorderSize = 0;
-            this.btnTeamATimeOutAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamATimeOutAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamATimeOutAdd.ForeColor = System.Drawing.Color.White;
-            this.btnTeamATimeOutAdd.Location = new System.Drawing.Point(248, 202);
-            this.btnTeamATimeOutAdd.Name = "btnTeamATimeOutAdd";
-            this.btnTeamATimeOutAdd.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamATimeOutAdd.TabIndex = 11;
-            this.btnTeamATimeOutAdd.UseVisualStyleBackColor = false;
-            this.btnTeamATimeOutAdd.Click += new System.EventHandler(this.btnTeamATimeOutAdd_Click);
-            // 
-            // btnTeamAScoreMinus
-            // 
-            this.btnTeamAScoreMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamAScoreMinus.BackgroundImage = global::dashboard.PL.Properties.Resources.minus;
-            this.btnTeamAScoreMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamAScoreMinus.FlatAppearance.BorderSize = 0;
-            this.btnTeamAScoreMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamAScoreMinus.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamAScoreMinus.ForeColor = System.Drawing.Color.White;
-            this.btnTeamAScoreMinus.Location = new System.Drawing.Point(298, 144);
-            this.btnTeamAScoreMinus.Name = "btnTeamAScoreMinus";
-            this.btnTeamAScoreMinus.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamAScoreMinus.TabIndex = 10;
-            this.btnTeamAScoreMinus.UseVisualStyleBackColor = false;
-            this.btnTeamAScoreMinus.Click += new System.EventHandler(this.btnTeamAScoreMinus_Click);
-            // 
-            // btnTeamAScoreAdd
-            // 
-            this.btnTeamAScoreAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(81)))), ((int)(((byte)(147)))));
-            this.btnTeamAScoreAdd.BackgroundImage = global::dashboard.PL.Properties.Resources.plus__1_;
-            this.btnTeamAScoreAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTeamAScoreAdd.FlatAppearance.BorderSize = 0;
-            this.btnTeamAScoreAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeamAScoreAdd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeamAScoreAdd.ForeColor = System.Drawing.Color.White;
-            this.btnTeamAScoreAdd.Location = new System.Drawing.Point(248, 144);
-            this.btnTeamAScoreAdd.Name = "btnTeamAScoreAdd";
-            this.btnTeamAScoreAdd.Size = new System.Drawing.Size(35, 38);
-            this.btnTeamAScoreAdd.TabIndex = 9;
-            this.btnTeamAScoreAdd.UseVisualStyleBackColor = false;
-            this.btnTeamAScoreAdd.Click += new System.EventHandler(this.btnTeamAScoreAdd_Click);
             // 
             // frmControlPanel
             // 
