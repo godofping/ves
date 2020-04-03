@@ -113,11 +113,21 @@ namespace dashboard.PL
             {
                 ShowBestOf5(true);
             }
+
+            if (matchEL.Currentset == 1 & matchEL.Teamaset1 == 0 & matchEL.Teambset1 == 0 & matchEL.Teamatimeout1 == 0 & matchEL.Teambtimeout1 == 0)
+            {
+                cbBestOf.Enabled = true;
+            }
+            else
+            {
+                cbBestOf.Enabled = false;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             matchEL.Bestof = Convert.ToInt32(cbBestOf.Text);
+            matchEL.Matchnumber = txtMatchNumber.Text;
             matchEL.Refereename = txtReferee.Text;
             matchEL.Scorername = txtScorer.Text;
             matchEL.Linejudges1name = txtLineJudges1.Text;

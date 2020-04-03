@@ -154,20 +154,121 @@ namespace dashboard.PL
 
             if (UpdateMatch())
             {
-                btnEndMatch.Visible = false;
+                btnSaveMatch.Visible = false;
             }
 
+            CheckIfCanSet();
+            ShowAddMinusButtons(true);
+
+
+        }
+
+        private void CheckIfCanSet()
+        {
+            if (matchEL.Currentset != matchEL.Bestof)
+            {
+                if ((Convert.ToInt32(lblTeamAScore.Text) >= 25 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 25 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
+                {
+                    btnSet.Visible = true;
+                }
+                else
+                {
+                    btnSet.Visible = false;
+                }
+            }
+            else
+            {
+                if ((Convert.ToInt32(lblTeamAScore.Text) >= 15 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 15 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
+                {
+                    btnSet.Visible = true;
+                }
+                else
+                {
+                    btnSet.Visible = false;
+                }
+            }
+        }
+
+
+        private void CheckIfCanEndMatch()
+        {
+            bool bol = false;
+            if (matchEL.Bestof == 3)
+            {
+                if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
+                {
+                    btnSet.Visible = false;
+                    btnSaveMatch.Visible = true;
+                    ShowAddMinusButtons(false);
+                    bol = true;
+                }
+                else
+                {
+                    btnSaveMatch.Visible = false;
+                    matchEL.Currentset = matchEL.Currentset + 1;
+                    ShowAddMinusButtons(true);
+                }
+
+            }
+
+            if (matchEL.Bestof == 5)
+            {
+                if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
+                {
+                    btnSet.Visible = false;
+                    btnSaveMatch.Visible = true;
+                    ShowAddMinusButtons(false);
+                    bol = true;
+                }
+                else
+                {
+                    btnSaveMatch.Visible = false;
+                    matchEL.Currentset = matchEL.Currentset + 1;
+                    ShowAddMinusButtons(true);
+                }
+
+            }
+
+            if (matchEL.Teamawonsets > matchEL.Teambwonsets)
+            {
+                matchEL.Teamaresult = "WIN";
+                matchEL.Teambresult = "LOSE";
+            }
+
+            if (matchEL.Teambwonsets > matchEL.Teamawonsets)
+            {
+                matchEL.Teamaresult = "LOSE";
+                matchEL.Teambresult = "WIN";
+            }
+
+            if (matchEL.Teamawonsets == matchEL.Teambwonsets)
+            {
+                matchEL.Teamaresult = "DRAW";
+                matchEL.Teambresult = "DRAW";
+            }
+
+            UpdateMatch();
+        }
+
+        private void ShowAddMinusButtons(bool bol)
+        {
+            btnTeamAScoreAdd.Visible = bol;
+            btnTeamBScoreAdd.Visible = bol;
+            btnTeamAScoreMinus.Visible = bol;
+            btnTeamBScoreMinus.Visible = bol;
+            btnTeamATimeOutAdd.Visible = bol;
+            btnTeamBTimeOutAdd.Visible = bol;
+            btnTeamATimeOutMinus.Visible = bol;
+            btnTeamBTimeOutMinus.Visible = bol;
 
         }
 
         private void frmControlPanel_Load(object sender, EventArgs e)
         {
-
-
-            btnEndMatch.Visible = false;
-            btnSet.Visible = false;
-
+            
             GetMatchInformation();
+            CheckIfCanSet();
+            CheckIfCanEndMatch();
         }
 
 
@@ -206,6 +307,7 @@ namespace dashboard.PL
             }
 
             UpdateMatch();
+            CheckIfCanSet();
 
         }
 
@@ -239,6 +341,8 @@ namespace dashboard.PL
                 }
 
                 UpdateMatch();
+
+                CheckIfCanSet();
             }
         }
 
@@ -270,6 +374,7 @@ namespace dashboard.PL
             }
 
             UpdateMatch();
+            CheckIfCanSet();
         }
 
         private void btnTeamBScoreMinus_Click(object sender, EventArgs e)
@@ -302,6 +407,7 @@ namespace dashboard.PL
                 }
 
                 UpdateMatch();
+                CheckIfCanSet();
             }
         }
 
@@ -575,55 +681,10 @@ namespace dashboard.PL
                                 }
                             }
 
-
-
-                            if (matchEL.Bestof == 3)
-                            {
-                                if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
-                                {
-                                    btnSet.Visible = false;
-                                    btnEndMatch.Visible = true;
-                                }
-                                else
-                                {
-                                    if (matchEL.Teamawonsets == 1 & matchEL.Teambwonsets == 1)
-                                    {
-                                        btnSet.Visible = false;
-
-                                    }
-                                    else
-                                    {
-                                        matchEL.Currentset = matchEL.Currentset + 1;
-                                    }
-                                }
-
-                            }
-
-                            if (matchEL.Bestof == 5)
-                            {
-                                if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
-                                {
-                                    btnSet.Visible = false;
-                                    btnEndMatch.Visible = true;
-                                }
-                                else
-                                {
-                                    if (matchEL.Teamawonsets == 1 & matchEL.Teambwonsets == 1)
-                                    {
-                                        btnSet.Visible = false;
-
-                                    }
-                                    else
-                                    {
-                                        matchEL.Currentset = matchEL.Currentset + 1;
-                                    }
-                                }
-
-                            }
-
+                            
                             UpdateMatch();
-
-
+                            CheckIfCanSet();
+                            CheckIfCanEndMatch();
 
                         }
                     }
@@ -646,34 +707,17 @@ namespace dashboard.PL
         private void btnEndMatch_Click(object sender, EventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show("Are you sure to end this match?", "Warning", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure to save this match?", "Warning", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                if (matchEL.Teamawonsets > matchEL.Teambwonsets)
-                {
-                    matchEL.Teamaresult = "WIN";
-                    matchEL.Teambresult = "LOSE";
-                }
-
-                if (matchEL.Teambwonsets > matchEL.Teamawonsets)
-                {
-                    matchEL.Teamaresult = "LOSE";
-                    matchEL.Teambresult = "WIN";
-                }
-
-                if (matchEL.Teamawonsets == matchEL.Teambwonsets)
-                {
-                    matchEL.Teamaresult = "DRAW";
-                    matchEL.Teambresult = "DRAW";
-                }
+                
 
                 if (UpdateMatch())
                 {
                     matchEL.Matchsaveddatetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     matchBL.Insert(matchEL);
-
-                    btnSet.Visible = false;
-                    btnEndMatch.Visible = false;
+                    ShowAddMinusButtons(false);
+                    ResetMatch();
                 }
 
             }

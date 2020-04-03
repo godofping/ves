@@ -60,7 +60,7 @@
             this.btnMatchInfo = new System.Windows.Forms.Button();
             this.btnSet = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.btnEndMatch = new System.Windows.Forms.Button();
+            this.btnSaveMatch = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblSetNumber = new System.Windows.Forms.Label();
@@ -490,20 +490,20 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // btnEndMatch
+            // btnSaveMatch
             // 
-            this.btnEndMatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(188)))), ((int)(((byte)(255)))));
-            this.btnEndMatch.FlatAppearance.BorderSize = 0;
-            this.btnEndMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEndMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEndMatch.ForeColor = System.Drawing.Color.White;
-            this.btnEndMatch.Location = new System.Drawing.Point(610, 593);
-            this.btnEndMatch.Name = "btnEndMatch";
-            this.btnEndMatch.Size = new System.Drawing.Size(150, 62);
-            this.btnEndMatch.TabIndex = 13;
-            this.btnEndMatch.Text = "End Match";
-            this.btnEndMatch.UseVisualStyleBackColor = false;
-            this.btnEndMatch.Click += new System.EventHandler(this.btnEndMatch_Click);
+            this.btnSaveMatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(188)))), ((int)(((byte)(255)))));
+            this.btnSaveMatch.FlatAppearance.BorderSize = 0;
+            this.btnSaveMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveMatch.ForeColor = System.Drawing.Color.White;
+            this.btnSaveMatch.Location = new System.Drawing.Point(610, 593);
+            this.btnSaveMatch.Name = "btnSaveMatch";
+            this.btnSaveMatch.Size = new System.Drawing.Size(150, 62);
+            this.btnSaveMatch.TabIndex = 13;
+            this.btnSaveMatch.Text = "Save Match";
+            this.btnSaveMatch.UseVisualStyleBackColor = false;
+            this.btnSaveMatch.Click += new System.EventHandler(this.btnEndMatch_Click);
             // 
             // panel5
             // 
@@ -555,7 +555,7 @@
             this.ClientSize = new System.Drawing.Size(1116, 677);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.btnEndMatch);
+            this.Controls.Add(this.btnSaveMatch);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSet);
             this.Controls.Add(this.btnMatchInfo);
@@ -612,7 +612,7 @@
         private System.Windows.Forms.Button btnMatchInfo;
         private System.Windows.Forms.Button btnSet;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnEndMatch;
+        private System.Windows.Forms.Button btnSaveMatch;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lblSetNumber;
