@@ -41,12 +41,12 @@ namespace ves
         }
         private void btnMatches_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+           
         }
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+           
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

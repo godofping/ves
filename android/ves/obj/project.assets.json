@@ -5728,7 +5728,8 @@
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.3",
       "Xamarin.Android.Support.Design >= 28.0.0.3",
       "Xamarin.Essentials >= 1.3.1",
-      "ves.BL >= 1.0.0"
+      "ves.BL >= 1.0.0",
+      "ves.EL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5765,6 +5766,9 @@
           "projectReferences": {
             "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj": {
               "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj"
+            },
+            "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj": {
+              "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj"
             }
           }
         }

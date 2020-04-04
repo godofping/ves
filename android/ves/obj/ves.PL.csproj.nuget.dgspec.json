@@ -237,6 +237,9 @@
             "projectReferences": {
               "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj": {
                 "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj"
+              },
+              "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj": {
+                "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj"
               }
             }
           }

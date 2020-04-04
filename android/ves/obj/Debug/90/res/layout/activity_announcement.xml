@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    >
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+
+
+            <TextView
+                android:text="Control Panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:textSize="20sp"/>
+
+
+            <android.support.v7.widget.CardView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView1"
+                android:layout_marginTop="15dp"
+                
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="500px"
+                    android:minHeight="200px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout2" 
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:text="Set"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:text="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3" 
+                        android:textAlignment="center"
+                        />
+
+
+
+
+                </LinearLayout>
+                
+
+               
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView1"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#c3b091"
+               
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="500px"
+                    android:minHeight="200px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout2" 
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:text="Team Name: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:textAlignment="center"
+                        />
+
+          
+
+
+
+
+                </LinearLayout>
+                
+
+               
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
