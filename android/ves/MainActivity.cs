@@ -12,6 +12,7 @@ namespace ves
     {
 
 
+        EL.Announcements AnnouncementEL = new EL.Announcements();
         BL.Announcements announcementBL = new BL.Announcements();
 
         protected override void OnCreate(Bundle savedInstanceState)
