@@ -1,0 +1,8 @@
+C:\xampp\htdocs\ves\android\ves.BL\bin\Debug\netstandard2.0\ves.BL.deps.json
+C:\xampp\htdocs\ves\android\ves.BL\bin\Debug\netstandard2.0\ves.BL.dll
+C:\xampp\htdocs\ves\android\ves.BL\bin\Debug\netstandard2.0\ves.BL.pdb
+C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.AssemblyInfoInputs.cache
+C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.AssemblyInfo.cs
+C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.dll
+C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.pdb
+C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.csprojAssemblyReference.cache
