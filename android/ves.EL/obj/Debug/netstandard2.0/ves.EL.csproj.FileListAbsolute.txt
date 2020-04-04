@@ -5,5 +5,3 @@ C:\xampp\htdocs\ves\android\ves.EL\obj\Debug\netstandard2.0\ves.EL.AssemblyInfoI
 C:\xampp\htdocs\ves\android\ves.EL\obj\Debug\netstandard2.0\ves.EL.AssemblyInfo.cs
 C:\xampp\htdocs\ves\android\ves.EL\obj\Debug\netstandard2.0\ves.EL.dll
 C:\xampp\htdocs\ves\android\ves.EL\obj\Debug\netstandard2.0\ves.EL.pdb
-C:\xampp\htdocs\ves\android\ves.EL\obj\Debug\netstandard2.0\ves.EL.csprojAssemblyReference.cache
-C:\xampp\htdocs\ves\android\ves.EL\obj\Debug\netstandard2.0\ves.EL.csproj.CoreCompileInputs.cache

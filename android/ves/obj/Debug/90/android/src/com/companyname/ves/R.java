@@ -502,14 +502,12 @@ public final class R {
      */
     public static final int backgroundStacked=0x7f030033;
     /**
-     * Tint to apply to the background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int backgroundTint=0x7f030034;
     /**
-     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1034,7 +1032,6 @@ public final class R {
      */
     public static final int chipStyle=0x7f030076;
     /**
-     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1138,15 +1135,12 @@ public final class R {
      */
     public static final int color=0x7f030083;
     /**
-     * Bright complement to the primary branding color. By default, this is the color applied
-     * to framework controls (via colorControlActivated).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorAccent=0x7f030084;
     /**
-     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1193,16 +1187,12 @@ public final class R {
      */
     public static final int colorError=0x7f03008a;
     /**
-     * The primary branding color for the app. By default, this is the color applied to the
-     * action bar background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorPrimary=0x7f03008b;
     /**
-     * Dark variant of the primary branding color. By default, this is the color applied to
-     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1537,7 +1527,6 @@ public final class R {
      */
     public static final int editTextColor=0x7f0300b3;
     /**
-     * Default EditText style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1545,7 +1534,6 @@ public final class R {
      */
     public static final int editTextStyle=0x7f0300b4;
     /**
-     * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2019,7 +2007,6 @@ public final class R {
      */
     public static final int hoveredFocusedTranslationZ=0x7f0300eb;
     /**
-     * Specifies the drawable used for the application icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2071,14 +2058,12 @@ public final class R {
      */
     public static final int iconStartPadding=0x7f0300f1;
     /**
-     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int iconTint=0x7f0300f2;
     /**
-     * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4625,143 +4610,151 @@ public final class R {
     public static final int coordinator=0x7f080036;
     public static final int custom=0x7f080037;
     public static final int customPanel=0x7f080038;
-    public static final int decor_content_parent=0x7f080039;
-    public static final int default_activity_button=0x7f08003a;
-    public static final int design_bottom_sheet=0x7f08003b;
-    public static final int design_menu_item_action_area=0x7f08003c;
-    public static final int design_menu_item_action_area_stub=0x7f08003d;
-    public static final int design_menu_item_text=0x7f08003e;
-    public static final int design_navigation_view=0x7f08003f;
-    public static final int disableHome=0x7f080040;
-    public static final int edit_query=0x7f080041;
-    public static final int end=0x7f080042;
-    public static final int enterAlways=0x7f080043;
-    public static final int enterAlwaysCollapsed=0x7f080044;
-    public static final int exitUntilCollapsed=0x7f080045;
-    public static final int expand_activities_button=0x7f080046;
-    public static final int expanded_menu=0x7f080047;
-    public static final int fill=0x7f080048;
-    public static final int fill_horizontal=0x7f080049;
-    public static final int fill_vertical=0x7f08004a;
-    public static final int filled=0x7f08004b;
-    public static final int fixed=0x7f08004c;
-    public static final int forever=0x7f08004d;
-    public static final int ghost_view=0x7f08004e;
-    public static final int group_divider=0x7f08004f;
-    public static final int home=0x7f080050;
-    public static final int homeAsUp=0x7f080051;
-    public static final int icon=0x7f080052;
-    public static final int icon_group=0x7f080053;
-    public static final int ifRoom=0x7f080054;
-    public static final int image=0x7f080055;
-    public static final int info=0x7f080056;
-    public static final int italic=0x7f080057;
-    public static final int item_touch_helper_previous_elevation=0x7f080058;
-    public static final int labeled=0x7f080059;
-    public static final int largeLabel=0x7f08005a;
-    public static final int left=0x7f08005b;
-    public static final int line1=0x7f08005c;
-    public static final int line3=0x7f08005d;
-    public static final int listMode=0x7f08005e;
-    public static final int list_item=0x7f08005f;
-    public static final int masked=0x7f080060;
-    public static final int message=0x7f080061;
-    public static final int middle=0x7f080062;
-    public static final int mini=0x7f080063;
-    public static final int mtrl_child_content_container=0x7f080064;
-    public static final int mtrl_internal_children_alpha_tag=0x7f080065;
-    public static final int multiply=0x7f080066;
-    public static final int navigation_header_container=0x7f080067;
-    public static final int never=0x7f080068;
-    public static final int none=0x7f080069;
-    public static final int normal=0x7f08006a;
-    public static final int notification_background=0x7f08006b;
-    public static final int notification_main_column=0x7f08006c;
-    public static final int notification_main_column_container=0x7f08006d;
-    public static final int outline=0x7f08006e;
-    public static final int parallax=0x7f08006f;
-    public static final int parentPanel=0x7f080070;
-    public static final int parent_matrix=0x7f080071;
-    public static final int pin=0x7f080072;
-    public static final int progress_circular=0x7f080073;
-    public static final int progress_horizontal=0x7f080074;
-    public static final int radio=0x7f080075;
-    public static final int right=0x7f080076;
-    public static final int right_icon=0x7f080077;
-    public static final int right_side=0x7f080078;
-    public static final int save_image_matrix=0x7f080079;
-    public static final int save_non_transition_alpha=0x7f08007a;
-    public static final int save_scale_type=0x7f08007b;
-    public static final int screen=0x7f08007c;
-    public static final int scroll=0x7f08007d;
-    public static final int scrollIndicatorDown=0x7f08007e;
-    public static final int scrollIndicatorUp=0x7f08007f;
-    public static final int scrollView=0x7f080080;
-    public static final int scrollable=0x7f080081;
-    public static final int search_badge=0x7f080082;
-    public static final int search_bar=0x7f080083;
-    public static final int search_button=0x7f080084;
-    public static final int search_close_btn=0x7f080085;
-    public static final int search_edit_frame=0x7f080086;
-    public static final int search_go_btn=0x7f080087;
-    public static final int search_mag_icon=0x7f080088;
-    public static final int search_plate=0x7f080089;
-    public static final int search_src_text=0x7f08008a;
-    public static final int search_voice_btn=0x7f08008b;
-    public static final int select_dialog_listview=0x7f08008c;
-    public static final int selected=0x7f08008d;
-    public static final int shortcut=0x7f08008e;
-    public static final int showCustom=0x7f08008f;
-    public static final int showHome=0x7f080090;
-    public static final int showTitle=0x7f080091;
-    public static final int smallLabel=0x7f080092;
-    public static final int snackbar_action=0x7f080093;
-    public static final int snackbar_text=0x7f080094;
-    public static final int snap=0x7f080095;
-    public static final int snapMargins=0x7f080096;
-    public static final int spacer=0x7f080097;
-    public static final int split_action_bar=0x7f080098;
-    public static final int src_atop=0x7f080099;
-    public static final int src_in=0x7f08009a;
-    public static final int src_over=0x7f08009b;
-    public static final int start=0x7f08009c;
-    public static final int stretch=0x7f08009d;
-    public static final int submenuarrow=0x7f08009e;
-    public static final int submit_area=0x7f08009f;
-    public static final int tabMode=0x7f0800a0;
-    public static final int tag_transition_group=0x7f0800a1;
-    public static final int tag_unhandled_key_event_manager=0x7f0800a2;
-    public static final int tag_unhandled_key_listeners=0x7f0800a3;
-    public static final int text=0x7f0800a4;
-    public static final int text2=0x7f0800a5;
-    public static final int textSpacerNoButtons=0x7f0800a6;
-    public static final int textSpacerNoTitle=0x7f0800a7;
-    public static final int textStart=0x7f0800a8;
-    public static final int text_input_password_toggle=0x7f0800a9;
-    public static final int textinput_counter=0x7f0800aa;
-    public static final int textinput_error=0x7f0800ab;
-    public static final int textinput_helper_text=0x7f0800ac;
-    public static final int time=0x7f0800ad;
-    public static final int title=0x7f0800ae;
-    public static final int titleDividerNoCustom=0x7f0800af;
-    public static final int title_template=0x7f0800b0;
-    public static final int top=0x7f0800b1;
-    public static final int topPanel=0x7f0800b2;
-    public static final int touch_outside=0x7f0800b3;
-    public static final int transition_current_scene=0x7f0800b4;
-    public static final int transition_layout_save=0x7f0800b5;
-    public static final int transition_position=0x7f0800b6;
-    public static final int transition_scene_layoutid_cache=0x7f0800b7;
-    public static final int transition_transform=0x7f0800b8;
-    public static final int tvTitle=0x7f0800b9;
-    public static final int uniform=0x7f0800ba;
-    public static final int unlabeled=0x7f0800bb;
-    public static final int up=0x7f0800bc;
-    public static final int useLogo=0x7f0800bd;
-    public static final int view_offset_helper=0x7f0800be;
-    public static final int visible=0x7f0800bf;
-    public static final int withText=0x7f0800c0;
-    public static final int wrap_content=0x7f0800c1;
+    public static final int cvColorTeamA=0x7f080039;
+    public static final int cvSet=0x7f08003a;
+    public static final int decor_content_parent=0x7f08003b;
+    public static final int default_activity_button=0x7f08003c;
+    public static final int design_bottom_sheet=0x7f08003d;
+    public static final int design_menu_item_action_area=0x7f08003e;
+    public static final int design_menu_item_action_area_stub=0x7f08003f;
+    public static final int design_menu_item_text=0x7f080040;
+    public static final int design_navigation_view=0x7f080041;
+    public static final int disableHome=0x7f080042;
+    public static final int edit_query=0x7f080043;
+    public static final int end=0x7f080044;
+    public static final int enterAlways=0x7f080045;
+    public static final int enterAlwaysCollapsed=0x7f080046;
+    public static final int exitUntilCollapsed=0x7f080047;
+    public static final int expand_activities_button=0x7f080048;
+    public static final int expanded_menu=0x7f080049;
+    public static final int fill=0x7f08004a;
+    public static final int fill_horizontal=0x7f08004b;
+    public static final int fill_vertical=0x7f08004c;
+    public static final int filled=0x7f08004d;
+    public static final int fixed=0x7f08004e;
+    public static final int forever=0x7f08004f;
+    public static final int ghost_view=0x7f080050;
+    public static final int group_divider=0x7f080051;
+    public static final int home=0x7f080052;
+    public static final int homeAsUp=0x7f080053;
+    public static final int icon=0x7f080054;
+    public static final int icon_group=0x7f080055;
+    public static final int ifRoom=0x7f080056;
+    public static final int image=0x7f080057;
+    public static final int info=0x7f080058;
+    public static final int italic=0x7f080059;
+    public static final int item_touch_helper_previous_elevation=0x7f08005a;
+    public static final int labeled=0x7f08005b;
+    public static final int largeLabel=0x7f08005c;
+    public static final int left=0x7f08005d;
+    public static final int line1=0x7f08005e;
+    public static final int line3=0x7f08005f;
+    public static final int linearLayout1=0x7f080060;
+    public static final int listMode=0x7f080061;
+    public static final int list_item=0x7f080062;
+    public static final int llSet=0x7f080063;
+    public static final int masked=0x7f080064;
+    public static final int message=0x7f080065;
+    public static final int middle=0x7f080066;
+    public static final int mini=0x7f080067;
+    public static final int mtrl_child_content_container=0x7f080068;
+    public static final int mtrl_internal_children_alpha_tag=0x7f080069;
+    public static final int multiply=0x7f08006a;
+    public static final int navigation_header_container=0x7f08006b;
+    public static final int never=0x7f08006c;
+    public static final int none=0x7f08006d;
+    public static final int normal=0x7f08006e;
+    public static final int notification_background=0x7f08006f;
+    public static final int notification_main_column=0x7f080070;
+    public static final int notification_main_column_container=0x7f080071;
+    public static final int outline=0x7f080072;
+    public static final int parallax=0x7f080073;
+    public static final int parentPanel=0x7f080074;
+    public static final int parent_matrix=0x7f080075;
+    public static final int pin=0x7f080076;
+    public static final int progress_circular=0x7f080077;
+    public static final int progress_horizontal=0x7f080078;
+    public static final int radio=0x7f080079;
+    public static final int right=0x7f08007a;
+    public static final int right_icon=0x7f08007b;
+    public static final int right_side=0x7f08007c;
+    public static final int save_image_matrix=0x7f08007d;
+    public static final int save_non_transition_alpha=0x7f08007e;
+    public static final int save_scale_type=0x7f08007f;
+    public static final int screen=0x7f080080;
+    public static final int scroll=0x7f080081;
+    public static final int scrollIndicatorDown=0x7f080082;
+    public static final int scrollIndicatorUp=0x7f080083;
+    public static final int scrollView=0x7f080084;
+    public static final int scrollView1=0x7f080085;
+    public static final int scrollable=0x7f080086;
+    public static final int search_badge=0x7f080087;
+    public static final int search_bar=0x7f080088;
+    public static final int search_button=0x7f080089;
+    public static final int search_close_btn=0x7f08008a;
+    public static final int search_edit_frame=0x7f08008b;
+    public static final int search_go_btn=0x7f08008c;
+    public static final int search_mag_icon=0x7f08008d;
+    public static final int search_plate=0x7f08008e;
+    public static final int search_src_text=0x7f08008f;
+    public static final int search_voice_btn=0x7f080090;
+    public static final int select_dialog_listview=0x7f080091;
+    public static final int selected=0x7f080092;
+    public static final int shortcut=0x7f080093;
+    public static final int showCustom=0x7f080094;
+    public static final int showHome=0x7f080095;
+    public static final int showTitle=0x7f080096;
+    public static final int smallLabel=0x7f080097;
+    public static final int snackbar_action=0x7f080098;
+    public static final int snackbar_text=0x7f080099;
+    public static final int snap=0x7f08009a;
+    public static final int snapMargins=0x7f08009b;
+    public static final int spacer=0x7f08009c;
+    public static final int split_action_bar=0x7f08009d;
+    public static final int src_atop=0x7f08009e;
+    public static final int src_in=0x7f08009f;
+    public static final int src_over=0x7f0800a0;
+    public static final int start=0x7f0800a1;
+    public static final int stretch=0x7f0800a2;
+    public static final int submenuarrow=0x7f0800a3;
+    public static final int submit_area=0x7f0800a4;
+    public static final int tabMode=0x7f0800a5;
+    public static final int tag_transition_group=0x7f0800a6;
+    public static final int tag_unhandled_key_event_manager=0x7f0800a7;
+    public static final int tag_unhandled_key_listeners=0x7f0800a8;
+    public static final int text=0x7f0800a9;
+    public static final int text2=0x7f0800aa;
+    public static final int textSpacerNoButtons=0x7f0800ab;
+    public static final int textSpacerNoTitle=0x7f0800ac;
+    public static final int textStart=0x7f0800ad;
+    public static final int text_input_password_toggle=0x7f0800ae;
+    public static final int textinput_counter=0x7f0800af;
+    public static final int textinput_error=0x7f0800b0;
+    public static final int textinput_helper_text=0x7f0800b1;
+    public static final int time=0x7f0800b2;
+    public static final int title=0x7f0800b3;
+    public static final int titleDividerNoCustom=0x7f0800b4;
+    public static final int title_template=0x7f0800b5;
+    public static final int top=0x7f0800b6;
+    public static final int topPanel=0x7f0800b7;
+    public static final int touch_outside=0x7f0800b8;
+    public static final int transition_current_scene=0x7f0800b9;
+    public static final int transition_layout_save=0x7f0800ba;
+    public static final int transition_position=0x7f0800bb;
+    public static final int transition_scene_layoutid_cache=0x7f0800bc;
+    public static final int transition_transform=0x7f0800bd;
+    public static final int tvControlPanel=0x7f0800be;
+    public static final int tvSetTeamA=0x7f0800bf;
+    public static final int tvSetTeamAValue=0x7f0800c0;
+    public static final int tvTitle=0x7f0800c1;
+    public static final int uniform=0x7f0800c2;
+    public static final int unlabeled=0x7f0800c3;
+    public static final int up=0x7f0800c4;
+    public static final int useLogo=0x7f0800c5;
+    public static final int view_offset_helper=0x7f0800c6;
+    public static final int visible=0x7f0800c7;
+    public static final int withText=0x7f0800c8;
+    public static final int wrap_content=0x7f0800c9;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -4815,35 +4808,36 @@ public final class R {
     public static final int abc_search_view=0x7f0b0019;
     public static final int abc_select_dialog_material=0x7f0b001a;
     public static final int abc_tooltip=0x7f0b001b;
-    public static final int activity_main=0x7f0b001c;
-    public static final int browser_actions_context_menu_page=0x7f0b001d;
-    public static final int browser_actions_context_menu_row=0x7f0b001e;
-    public static final int design_bottom_navigation_item=0x7f0b001f;
-    public static final int design_bottom_sheet_dialog=0x7f0b0020;
-    public static final int design_layout_snackbar=0x7f0b0021;
-    public static final int design_layout_snackbar_include=0x7f0b0022;
-    public static final int design_layout_tab_icon=0x7f0b0023;
-    public static final int design_layout_tab_text=0x7f0b0024;
-    public static final int design_menu_item_action_area=0x7f0b0025;
-    public static final int design_navigation_item=0x7f0b0026;
-    public static final int design_navigation_item_header=0x7f0b0027;
-    public static final int design_navigation_item_separator=0x7f0b0028;
-    public static final int design_navigation_item_subheader=0x7f0b0029;
-    public static final int design_navigation_menu=0x7f0b002a;
-    public static final int design_navigation_menu_item=0x7f0b002b;
-    public static final int design_text_input_password_icon=0x7f0b002c;
-    public static final int mtrl_layout_snackbar=0x7f0b002d;
-    public static final int mtrl_layout_snackbar_include=0x7f0b002e;
-    public static final int notification_action=0x7f0b002f;
-    public static final int notification_action_tombstone=0x7f0b0030;
-    public static final int notification_template_custom_big=0x7f0b0031;
-    public static final int notification_template_icon_group=0x7f0b0032;
-    public static final int notification_template_part_chronometer=0x7f0b0033;
-    public static final int notification_template_part_time=0x7f0b0034;
-    public static final int select_dialog_item_material=0x7f0b0035;
-    public static final int select_dialog_multichoice_material=0x7f0b0036;
-    public static final int select_dialog_singlechoice_material=0x7f0b0037;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b0038;
+    public static final int activity_announcement=0x7f0b001c;
+    public static final int activity_main=0x7f0b001d;
+    public static final int browser_actions_context_menu_page=0x7f0b001e;
+    public static final int browser_actions_context_menu_row=0x7f0b001f;
+    public static final int design_bottom_navigation_item=0x7f0b0020;
+    public static final int design_bottom_sheet_dialog=0x7f0b0021;
+    public static final int design_layout_snackbar=0x7f0b0022;
+    public static final int design_layout_snackbar_include=0x7f0b0023;
+    public static final int design_layout_tab_icon=0x7f0b0024;
+    public static final int design_layout_tab_text=0x7f0b0025;
+    public static final int design_menu_item_action_area=0x7f0b0026;
+    public static final int design_navigation_item=0x7f0b0027;
+    public static final int design_navigation_item_header=0x7f0b0028;
+    public static final int design_navigation_item_separator=0x7f0b0029;
+    public static final int design_navigation_item_subheader=0x7f0b002a;
+    public static final int design_navigation_menu=0x7f0b002b;
+    public static final int design_navigation_menu_item=0x7f0b002c;
+    public static final int design_text_input_password_icon=0x7f0b002d;
+    public static final int mtrl_layout_snackbar=0x7f0b002e;
+    public static final int mtrl_layout_snackbar_include=0x7f0b002f;
+    public static final int notification_action=0x7f0b0030;
+    public static final int notification_action_tombstone=0x7f0b0031;
+    public static final int notification_template_custom_big=0x7f0b0032;
+    public static final int notification_template_icon_group=0x7f0b0033;
+    public static final int notification_template_part_chronometer=0x7f0b0034;
+    public static final int notification_template_part_time=0x7f0b0035;
+    public static final int select_dialog_item_material=0x7f0b0036;
+    public static final int select_dialog_multichoice_material=0x7f0b0037;
+    public static final int select_dialog_singlechoice_material=0x7f0b0038;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b0039;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f0c0000;
@@ -5431,12 +5425,12 @@ public final class R {
      * <tr><td><code>{@link #ActionBar_customNavigationLayout com.companyname.ves:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
      * <tr><td><code>{@link #ActionBar_displayOptions com.companyname.ves:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
      * <tr><td><code>{@link #ActionBar_divider com.companyname.ves:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.companyname.ves:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.companyname.ves:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_height com.companyname.ves:height}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.companyname.ves:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.companyname.ves:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeLayout com.companyname.ves:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.companyname.ves:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.companyname.ves:icon}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.companyname.ves:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
      * <tr><td><code>{@link #ActionBar_itemPadding com.companyname.ves:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
@@ -6472,7 +6466,7 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.companyname.ves:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.companyname.ves:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_expanded com.companyname.ves:expanded}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.companyname.ves:liftOnScroll}</code></td><td></td></tr>
      * </table>
@@ -6523,9 +6517,8 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#elevation}
+     * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7226,16 +7219,16 @@ public final class R {
      * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.companyname.ves:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.companyname.ves:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.companyname.ves:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.companyname.ves:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.companyname.ves:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.companyname.ves:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.companyname.ves:colorBackgroundFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.companyname.ves:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.companyname.ves:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.companyname.ves:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.companyname.ves:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorError com.companyname.ves:colorError}</code></td><td>Color used for error states and things that need to be drawn to
      * the user's attention.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.companyname.ves:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.companyname.ves:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.companyname.ves:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.companyname.ves:colorPrimaryDark}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.companyname.ves:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_controlBackground com.companyname.ves:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.companyname.ves:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
@@ -7247,7 +7240,7 @@ public final class R {
      * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.companyname.ves:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.companyname.ves:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_editTextColor com.companyname.ves:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.companyname.ves:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.companyname.ves:editTextStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.companyname.ves:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.companyname.ves:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.companyname.ves:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
@@ -9115,7 +9108,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.companyname.ves:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.companyname.ves:backgroundTint}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.companyname.ves:fabAlignmentMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.companyname.ves:fabCradleMargin}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.companyname.ves:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
@@ -9134,9 +9127,8 @@ public final class R {
       0x7f0300c6, 0x7f0300e5
     };
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9218,7 +9210,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.companyname.ves:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.companyname.ves:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemBackground com.companyname.ves:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.companyname.ves:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.companyname.ves:itemIconSize}</code></td><td></td></tr>
@@ -9246,9 +9238,8 @@ public final class R {
       0x7f030107, 0x7f03012b
     };
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#elevation}
+     * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9711,7 +9702,7 @@ public final class R {
      * <tr><td><code>{@link #Chip_chipStartPadding com.companyname.ves:chipStartPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeColor com.companyname.ves:chipStrokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeWidth com.companyname.ves:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.companyname.ves:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.companyname.ves:closeIcon}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEnabled com.companyname.ves:closeIconEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEndPadding com.companyname.ves:closeIconEndPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconSize com.companyname.ves:closeIconSize}</code></td><td></td></tr>
@@ -10013,9 +10004,8 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>
-     * @attr description
-     * Close button icon
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#closeIcon}
+     * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11115,10 +11105,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.companyname.ves:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.companyname.ves:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.companyname.ves:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.companyname.ves:backgroundTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_borderWidth com.companyname.ves:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.companyname.ves:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.companyname.ves:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.companyname.ves:fabCustomSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabSize com.companyname.ves:fabSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.companyname.ves:hideMotionSpec}</code></td><td></td></tr>
@@ -11150,9 +11140,8 @@ public final class R {
       0x7f0301d0
     };
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11162,9 +11151,8 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the background tint.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#backgroundTintMode}
+     * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11202,9 +11190,8 @@ public final class R {
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#elevation}
+     * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12342,15 +12329,15 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.companyname.ves:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.companyname.ves:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.companyname.ves:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.companyname.ves:backgroundTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_cornerRadius com.companyname.ves:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.companyname.ves:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.companyname.ves:icon}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconGravity com.companyname.ves:iconGravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconPadding com.companyname.ves:iconPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconSize com.companyname.ves:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.companyname.ves:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.companyname.ves:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.companyname.ves:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.companyname.ves:iconTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_rippleColor com.companyname.ves:rippleColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeColor com.companyname.ves:strokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeWidth com.companyname.ves:strokeWidth}</code></td><td></td></tr>
@@ -12447,9 +12434,8 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the background.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#backgroundTint}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12459,9 +12445,8 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the background tint.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#backgroundTintMode}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -12499,9 +12484,8 @@ public final class R {
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>
-     * @attr description
-     * Specifies the drawable used for the application icon.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#icon}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12555,9 +12539,8 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>
-     * @attr description
-     * Tint to apply to the icon.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#iconTint}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12567,9 +12550,8 @@ public final class R {
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>
-     * @attr description
-     * Blending mode used to apply the icon tint.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#iconTintMode}
+     * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -12680,12 +12662,12 @@ public final class R {
      * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.companyname.ves:chipGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.companyname.ves:chipStandaloneStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.companyname.ves:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.companyname.ves:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.companyname.ves:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.companyname.ves:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.companyname.ves:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.companyname.ves:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.companyname.ves:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.companyname.ves:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.companyname.ves:colorPrimaryDark}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.companyname.ves:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.companyname.ves:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.companyname.ves:editTextStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.companyname.ves:floatingActionButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.companyname.ves:materialButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.companyname.ves:materialCardViewStyle}</code></td><td></td></tr>
@@ -12812,10 +12794,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>
-     * @attr description
-     * Bright complement to the primary branding color. By default, this is the color applied
-     * to framework controls (via colorControlActivated).
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#colorAccent}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12825,9 +12805,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>
-     * @attr description
-     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#colorBackgroundFloating}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12837,10 +12816,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>
-     * @attr description
-     * The primary branding color for the app. By default, this is the color applied to the
-     * action bar background.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#colorPrimary}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12850,10 +12827,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>
-     * @attr description
-     * Dark variant of the primary branding color. By default, this is the color applied to
-     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#colorPrimaryDark}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12874,9 +12849,8 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>
-     * @attr description
-     * Default EditText style.
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#editTextStyle}
+     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13297,8 +13271,8 @@ public final class R {
      * action view.</td></tr>
      * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.companyname.ves:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
      * <tr><td><code>{@link #MenuItem_contentDescription com.companyname.ves:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.companyname.ves:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.companyname.ves:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.companyname.ves:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.companyname.ves:iconTintMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_numericModifiers com.companyname.ves:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
      * <tr><td><code>{@link #MenuItem_showAsAction com.companyname.ves:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
      * <tr><td><code>{@link #MenuItem_tooltipText com.companyname.ves:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
@@ -13837,7 +13811,7 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.companyname.ves:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.companyname.ves:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_headerLayout com.companyname.ves:headerLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemBackground com.companyname.ves:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.companyname.ves:itemHorizontalPadding}</code></td><td></td></tr>
@@ -13904,9 +13878,8 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#elevation}
+     * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -14382,7 +14355,7 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.companyname.ves:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.companyname.ves:closeIcon}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_commitIcon com.companyname.ves:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
      * <tr><td><code>{@link #SearchView_defaultQueryHint com.companyname.ves:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
@@ -14748,7 +14721,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.companyname.ves:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.companyname.ves:elevation}</code></td><td></td></tr>
      * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.companyname.ves:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
@@ -14772,9 +14745,8 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>
-     * @attr description
-     * Elevation for the action bar itself
+     * <p>This symbol is the offset where the {@link com.companyname.ves.R.attr#elevation}
+     * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16995,8 +16967,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.companyname.ves:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.companyname.ves:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.companyname.ves:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.companyname.ves:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint

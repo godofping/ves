@@ -46,7 +46,17 @@ namespace ves
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
         {
-           
+            AnnouncementEL.Announcement = "testing rex";
+            if (announcementBL.Update(AnnouncementEL))
+            {
+                Toast.MakeText(this, "updated", ToastLength.Short).Show();
+            }
+            else
+            {
+                Toast.MakeText(this, "failed", ToastLength.Short).Show();
+            }
+
+
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
