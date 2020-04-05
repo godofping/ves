@@ -12,8 +12,8 @@ namespace ves
     {
 
 
-        EL.Announcements AnnouncementEL = new EL.Announcements();
-        BL.Announcements announcementBL = new BL.Announcements();
+        EL.Announcements announcementEL = new EL.Announcements();
+        DL.Announcements announcementDL = new DL.Announcements();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -46,17 +46,8 @@ namespace ves
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
         {
-            AnnouncementEL.Announcement = "testing rex";
-            if (announcementBL.Update(AnnouncementEL))
-            {
-                Toast.MakeText(this, "updated", ToastLength.Short).Show();
-            }
-            else
-            {
-                Toast.MakeText(this, "failed", ToastLength.Short).Show();
-            }
-
-
+            var dt = announcementDL.List();
+            Toast.MakeText(this, dt.Rows[0]["announcement"].ToString(), ToastLength.Short).Show();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

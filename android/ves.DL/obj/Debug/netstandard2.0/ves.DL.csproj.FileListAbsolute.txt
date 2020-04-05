@@ -9,3 +9,4 @@ C:\xampp\htdocs\ves\android\ves.DL\bin\Debug\netstandard2.0\ves.EL.pdb
 C:\xampp\htdocs\ves\android\ves.DL\obj\Debug\netstandard2.0\ves.DL.csproj.CopyComplete
 C:\xampp\htdocs\ves\android\ves.DL\obj\Debug\netstandard2.0\ves.DL.dll
 C:\xampp\htdocs\ves\android\ves.DL\obj\Debug\netstandard2.0\ves.DL.pdb
+C:\xampp\htdocs\ves\android\ves.DL\obj\Debug\netstandard2.0\ves.DL.csproj.CoreCompileInputs.cache

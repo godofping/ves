@@ -143,6 +143,7 @@ namespace dashboard.DL
                 matchEL.Matchid = Convert.ToInt32(dt.Rows[0]["matchid"]);
                 matchEL.Matchnumber = dt.Rows[0]["matchnumber"].ToString();
                 matchEL.Refereename = dt.Rows[0]["refereename"].ToString();
+                matchEL.Scorername = dt.Rows[0]["scorername"].ToString();
                 matchEL.Linejudges1name = dt.Rows[0]["linejudges1name"].ToString();
                 matchEL.Linejudges2name = dt.Rows[0]["linejudges2name"].ToString();
                 matchEL.Linejudges3name = dt.Rows[0]["linejudges3name"].ToString();
@@ -180,6 +181,8 @@ namespace dashboard.DL
                 matchEL.Teambresult = dt.Rows[0]["teambresult"].ToString();
                 matchEL.Currentset = Convert.ToInt32(dt.Rows[0]["currentset"]);
                 matchEL.Bestof = Convert.ToInt32(dt.Rows[0]["bestof"]);
+                matchEL.Matchsaveddatetime = dt.Rows[0]["matchsaveddatetime"].ToString();
+
 
 
                 return matchEL;

@@ -3,18 +3,12 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "ves.dll" comes first in this list. */
 		"ves.dll",
-		"BouncyCastle.Crypto.dll",
-		"Google.Protobuf.dll",
-		"MySql.Data.dll",
-		"Renci.SshNet.dll",
-		"SshNet.Security.Cryptography.dll",
-		"System.Configuration.ConfigurationManager.dll",
-		"System.Security.AccessControl.dll",
-		"System.Security.Permissions.dll",
-		"System.Security.Principal.Windows.dll",
-		"Ubiety.Dns.Core.dll",
-		"ves.BL.dll",
-		"ves.EL.dll",
+		"MySql.Data.CF.dll",
+		"Syncfusion.GridCommon.Portable.dll",
+		"Syncfusion.Licensing.dll",
+		"Syncfusion.Linq.Android.dll",
+		"Syncfusion.SfDataGrid.Android.dll",
+		"Syncfusion.SfNumericTextBox.Android.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
@@ -51,7 +45,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.VersionedParcelable.dll",
 		"Xamarin.Android.Support.ViewPager.dll",
 		"Xamarin.Essentials.dll",
-		"ves.DL.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

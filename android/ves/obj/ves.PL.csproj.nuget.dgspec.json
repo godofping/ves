@@ -4,213 +4,13 @@
     "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj",
-        "projectName": "ves.BL",
-        "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj",
-        "packagesPath": "C:\\Users\\mrian\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\mrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.0": {
-            "projectReferences": {
-              "C:\\xampp\\htdocs\\ves\\android\\ves.DL\\ves.DL.csproj": {
-                "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.DL\\ves.DL.csproj"
-              },
-              "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj": {
-                "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.0": {
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.19, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\xampp\\htdocs\\ves\\android\\ves.DL\\ves.DL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\ves\\android\\ves.DL\\ves.DL.csproj",
-        "projectName": "ves.DL",
-        "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.DL\\ves.DL.csproj",
-        "packagesPath": "C:\\Users\\mrian\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\ves\\android\\ves.DL\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\mrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.0": {
-            "projectReferences": {
-              "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj": {
-                "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.0": {
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.19, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj",
-        "projectName": "ves.EL",
-        "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj",
-        "packagesPath": "C:\\Users\\mrian\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\mrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.0": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.0": {
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.19, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj": {
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj",
         "projectName": "ves.PL",
         "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj",
-        "packagesPath": "C:\\Users\\mrian\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Dade Murphy\\.nuget\\packages\\",
         "outputPath": "C:\\xampp\\htdocs\\ves\\android\\ves\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
@@ -218,7 +18,7 @@
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\mrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dade Murphy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -231,23 +31,20 @@
         },
         "frameworks": {
           "monoandroid90": {
-            "projectReferences": {
-              "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj": {
-                "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.BL\\ves.BL.csproj"
-              },
-              "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj": {
-                "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves.EL\\ves.EL.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         }
       },
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
-            "MySql.Data": {
+            "Syncfusion.Xamarin.GridCommon": {
               "target": "Package",
-              "version": "[8.0.19, )"
+              "version": "[18.1.0.42, )"
+            },
+            "Syncfusion.Xamarin.SfDataGrid.Android": {
+              "target": "Package",
+              "version": "[18.1.0.42, )"
             },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
@@ -264,6 +61,10 @@
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
+            },
+            "Xamarin.MySql.Data": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           }
         }

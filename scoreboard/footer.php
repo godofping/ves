@@ -142,7 +142,7 @@ function getData()
 
 setInterval(function(){
 	getData(); 
-},1000);
+},300);
 
 
 

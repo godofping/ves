@@ -14,12 +14,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvTitle" 
+        android:id="@+id/tvTitle"
         android:textAlignment="center"
         android:paddingBottom="20dp"
         />
 
-    
+
 
     <Button
         android:text="Control Panel"

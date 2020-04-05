@@ -11,3 +11,4 @@ C:\xampp\htdocs\ves\android\ves.BL\bin\Debug\netstandard2.0\ves.EL.dll
 C:\xampp\htdocs\ves\android\ves.BL\bin\Debug\netstandard2.0\ves.DL.pdb
 C:\xampp\htdocs\ves\android\ves.BL\bin\Debug\netstandard2.0\ves.EL.pdb
 C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.csproj.CopyComplete
+C:\xampp\htdocs\ves\android\ves.BL\obj\Debug\netstandard2.0\ves.BL.csproj.CoreCompileInputs.cache

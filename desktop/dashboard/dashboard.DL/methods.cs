@@ -8,7 +8,7 @@ namespace dashboard.DL
 {
     public class methods
     {
-        public static string ConnectionString { get { return "Server=localhost;port=3306;UID=root;PWD=;database=ves_db;Convert Zero Datetime=True"; } }
+        public static string ConnectionString { get { return "Server=localhost;UID=root;PWD=;database=ves_db;Convert Zero Datetime=True"; } }
 
         public static string EscapeString(String str)
         {
