@@ -45,7 +45,7 @@ namespace ves
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
         {
-            Intent cp = new Intent(this, typeof(ControlPanelActivity));
+            Intent cp = new Intent(this, typeof(AnnouncementActivity));
             StartActivity(cp);
         }
 
