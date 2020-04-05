@@ -124,7 +124,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_announcement.xml">
+    <AndroidResource Include="Resources\layout\activity_controlpanel.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

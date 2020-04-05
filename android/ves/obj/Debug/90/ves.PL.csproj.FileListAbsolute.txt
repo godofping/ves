@@ -5,7 +5,6 @@ C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.apk
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\build.props
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\adb.props
-C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res.flag
@@ -190,7 +189,6 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\System.Collections.d
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\System.ObjectModel.dll
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\System.Runtime.Extensions.dll
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\System.Threading.dll
-C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_announcement.xml
 C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves.aab
 C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.aab
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\2BD3F4DE7BBF02DE.stamp
@@ -332,3 +330,4 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64681ebd32904849f9\V
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64eb9325e57656aec9\GridPicker.java
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64eb9325e57656aec9\PickerTextView.java
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64eb9325e57656aec9\SfDatePicker.java
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_controlpanel.xml

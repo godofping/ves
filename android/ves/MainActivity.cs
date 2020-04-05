@@ -4,6 +4,7 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using System;
+using Android.Content;
 
 namespace ves
 {
@@ -37,7 +38,8 @@ namespace ves
 
         private void btnControlPanel_Click(object sender, EventArgs e)
         {
-
+            Intent cp = new Intent(this, typeof(ControlPanelActivity));
+            StartActivity(cp);
         }
         private void btnMatches_Click(object sender, EventArgs e)
         {
@@ -46,8 +48,7 @@ namespace ves
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
         {
-            var dt = announcementDL.List();
-            Toast.MakeText(this, dt.Rows[0]["announcement"].ToString(), ToastLength.Short).Show();
+          
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
