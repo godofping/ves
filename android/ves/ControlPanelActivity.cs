@@ -15,6 +15,8 @@ namespace ves
     [Activity(Label = "ControlPanelActivity")]
     public class ControlPanelActivity : Activity
     {
+        
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

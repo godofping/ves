@@ -13,9 +13,6 @@ namespace ves
     {
 
 
-        EL.Announcements announcementEL = new EL.Announcements();
-        DL.Announcements announcementDL = new DL.Announcements();
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -48,7 +45,8 @@ namespace ves
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
         {
-          
+            Intent cp = new Intent(this, typeof(ControlPanelActivity));
+            StartActivity(cp);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
