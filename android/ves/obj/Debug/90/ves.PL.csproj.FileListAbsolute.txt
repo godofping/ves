@@ -1,3 +1,9 @@
+C:\xampp\htdocs\ves\android\ves\bin\Debug\ves.dll
+C:\xampp\htdocs\ves\android\ves\bin\Debug\ves.pdb
+C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves.apk
+C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves.aab
+C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.aab
+C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.apk
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\build.props
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\adb.props
@@ -28,13 +34,8 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\E71F458545BF2596.flata
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\A35B2A4C50BF38AE.flata
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\7F86263239BF6B06.flata
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\242676049399AE0D.flata
-C:\xampp\htdocs\ves\android\ves\bin\Debug\ves.dll
-C:\xampp\htdocs\ves\android\ves\bin\Debug\ves.pdb
-C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves.apk
-C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves.aab
-C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.aab
-C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.apk
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\compiled.flata
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\R.txt
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\R.cs.flag
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csproj.CoreCompileInputs.cache
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.dll
@@ -67,7 +68,6 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\mipmap-xxxhdpi\ic_launcher_fore
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\mipmap-xxxhdpi\ic_launcher_round.png
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_announcement.xml
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_controlpanel.xml
-C:\xampp\htdocs\ves\android\ves\obj\Debug\90\R.txt
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\uploadflags.txt
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\resolvedassemblies.hash
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\Java.Interop.dll

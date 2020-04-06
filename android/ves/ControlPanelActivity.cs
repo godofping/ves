@@ -22,6 +22,8 @@ namespace ves
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.activity_controlpanel);
+
+            var tvSetNumber = FindViewById<TextView>(Resource.Id.tvSetNumber);
         }
     }
 }
