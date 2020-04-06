@@ -417,9 +417,14 @@
 
         </android.support.v7.widget.CardView>
 
+        <Button
+        android:layout_marginTop="20dp"
+        android:text="Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReset" />
 
         <Button
-         android:layout_marginTop="20dp"
         android:text="Match Information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -437,11 +442,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnSaveMatch" />
 
-        <Button
-        android:text="Reset"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnReset" />
 
 
     </LinearLayout>

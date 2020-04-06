@@ -734,8 +734,6 @@ namespace dashboard.PL
             DialogResult dialogResult = MessageBox.Show("Are you sure to save this match?", "Warning", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                
-
                 if (UpdateMatch())
                 {
                     matchEL.Matchsaveddatetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
@@ -746,10 +744,6 @@ namespace dashboard.PL
                 }
 
             }
-
-
-
-
         }
     }
 }

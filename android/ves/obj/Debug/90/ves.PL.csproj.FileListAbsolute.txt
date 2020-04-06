@@ -332,3 +332,4 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_ConvertResourcesCases.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache
