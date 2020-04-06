@@ -200,9 +200,10 @@ namespace ves
                     matchEL.Teamaresult = "DRAW";
                     matchEL.Teambresult = "DRAW";
                 }
+                btnEndSet.Visibility = ViewStates.Invisible;
             }
 
-            btnEndSet.Visibility = ViewStates.Invisible;
+           
             UpdateMatch();
         }
 
@@ -524,6 +525,7 @@ namespace ves
                                 }
                             }
 
+                            UpdateMatch();
                             CheckIfCanSet();
                             CheckIfCanEndMatch();
                         });

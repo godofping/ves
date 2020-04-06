@@ -334,3 +334,4 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_GeneratePackageManagerJava.s
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_matchinformation.xml
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64f26513313ce43dee\MatchInformationActivity.java
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache

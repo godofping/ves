@@ -252,6 +252,8 @@ namespace ves
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            Intent cp = new Intent(this, typeof(ControlPanelActivity));
+            StartActivity(cp);
             this.Finish();
         }
 

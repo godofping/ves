@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp_old\\htdocs\\ves\\android\\ves\\ves.PL.csproj": {}
+    "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj": {}
   },
   "projects": {
-    "C:\\xampp_old\\htdocs\\ves\\android\\ves\\ves.PL.csproj": {
+    "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp_old\\htdocs\\ves\\android\\ves\\ves.PL.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj",
         "projectName": "ves.PL",
-        "projectPath": "C:\\xampp_old\\htdocs\\ves\\android\\ves\\ves.PL.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\ves\\android\\ves\\ves.PL.csproj",
         "packagesPath": "C:\\Users\\Dade Murphy\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp_old\\htdocs\\ves\\android\\ves\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\ves\\android\\ves\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

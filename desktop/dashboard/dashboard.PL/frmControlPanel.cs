@@ -170,14 +170,18 @@ namespace dashboard.PL
                 if ((Convert.ToInt32(lblTeamAScore.Text) >= 25 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 25 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
                 {
                     btnSet.Visible = true;
+        
                 }
                 else
                 {
                     btnSet.Visible = false;
                 }
+                
             }
             else
             {
+
+                
                 if ((Convert.ToInt32(lblTeamAScore.Text) >= 15 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 15 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
                 {
                     btnSet.Visible = true;
@@ -244,10 +248,13 @@ namespace dashboard.PL
                     matchEL.Teamaresult = "DRAW";
                     matchEL.Teambresult = "DRAW";
                 }
-             }
 
-            btnSet.Visible = false;
+                btnSet.Visible = false;
+            }
+
+            
             UpdateMatch();
+            
         }
 
         private void ShowAddMinusButtons(bool bol)
@@ -706,7 +713,7 @@ namespace dashboard.PL
                             }
 
 
-
+                            UpdateMatch();
                             CheckIfCanSet();
                             CheckIfCanEndMatch();
 
