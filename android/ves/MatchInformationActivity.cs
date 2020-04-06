@@ -18,6 +18,7 @@ namespace ves
         EL.Matches matchEL = new EL.Matches();
         DL.Matches matchDL = new DL.Matches();
 
+        string val;
         Spinner sBestof;
         EditText etMatchNumber, etReferee, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDivision, etDate, etTime, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
         TextView tvTeamBSet1, tvTeamBSet2, tvTeamBSet3, tvTeamBSet4, tvTeamBSet5, tvTeamBTimeou1, tvTeamBTimeou2, tvTeamBTimeou3, tvTeamBTimeou4, tvTeamBTimeou5, tvTeamBResult;
@@ -205,6 +206,7 @@ namespace ves
 
             btnSave.Click += btnSave_Click;
             btnCancel.Click += btnCancel_Click;
+            sBestof.ItemSelected += sBestof_ItemSelected;
 
 
             GetInformation();
@@ -231,6 +233,23 @@ namespace ves
 
         }
 
+        private void sBestof_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner spinner = (Spinner)sender;
+            val = spinner.GetItemAtPosition(e.Position).ToString();
+
+            if (val.Equals("3"))
+            {
+                ShowBestOf5(false);
+            }
+
+            if (val.Equals("5"))
+            {
+                ShowBestOf5(true);
+            }
+
+        }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Finish();
@@ -238,7 +257,7 @@ namespace ves
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            matchEL.Bestof = 3;
+            matchEL.Bestof = Convert.ToInt32(val);
             matchEL.Matchnumber = etMatchNumber.Text;
             matchEL.Refereename = etReferee.Text;
             matchEL.Scorername = etScorer.Text;
