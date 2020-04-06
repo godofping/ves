@@ -32,6 +32,10 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtMatchNumber = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cbBestOf = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.txtDate = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -105,10 +109,6 @@
             this.txtTeamBName = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.cbBestOf = new System.Windows.Forms.ComboBox();
-            this.txtMatchNumber = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -180,6 +180,51 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 618);
             this.panel1.TabIndex = 2;
+            // 
+            // txtMatchNumber
+            // 
+            this.txtMatchNumber.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.txtMatchNumber.ForeColor = System.Drawing.Color.Black;
+            this.txtMatchNumber.Location = new System.Drawing.Point(36, 107);
+            this.txtMatchNumber.Name = "txtMatchNumber";
+            this.txtMatchNumber.Size = new System.Drawing.Size(321, 29);
+            this.txtMatchNumber.TabIndex = 2;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label10.Location = new System.Drawing.Point(11, 83);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 21);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Match Number";
+            // 
+            // cbBestOf
+            // 
+            this.cbBestOf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBestOf.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.cbBestOf.FormattingEnabled = true;
+            this.cbBestOf.Items.AddRange(new object[] {
+            "3",
+            "5"});
+            this.cbBestOf.Location = new System.Drawing.Point(36, 45);
+            this.cbBestOf.Name = "cbBestOf";
+            this.cbBestOf.Size = new System.Drawing.Size(321, 29);
+            this.cbBestOf.TabIndex = 1;
+            this.cbBestOf.SelectedIndexChanged += new System.EventHandler(this.cbBestOf_SelectedIndexChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label21.Location = new System.Drawing.Point(11, 21);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 21);
+            this.label21.TabIndex = 20;
+            this.label21.Text = "Best of";
             // 
             // txtTime
             // 
@@ -1001,52 +1046,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(400, 10);
             this.panel7.TabIndex = 0;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label21.Location = new System.Drawing.Point(11, 21);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 21);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "Best of";
-            // 
-            // cbBestOf
-            // 
-            this.cbBestOf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBestOf.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.cbBestOf.FormattingEnabled = true;
-            this.cbBestOf.Items.AddRange(new object[] {
-            "3",
-            "5"});
-            this.cbBestOf.Location = new System.Drawing.Point(36, 45);
-            this.cbBestOf.Name = "cbBestOf";
-            this.cbBestOf.Size = new System.Drawing.Size(321, 29);
-            this.cbBestOf.TabIndex = 1;
-            this.cbBestOf.SelectedIndexChanged += new System.EventHandler(this.cbBestOf_SelectedIndexChanged);
-            // 
-            // txtMatchNumber
-            // 
-            this.txtMatchNumber.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.txtMatchNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtMatchNumber.Location = new System.Drawing.Point(36, 107);
-            this.txtMatchNumber.Name = "txtMatchNumber";
-            this.txtMatchNumber.Size = new System.Drawing.Size(321, 29);
-            this.txtMatchNumber.TabIndex = 22;
-            this.txtMatchNumber.Text = "2";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label10.Location = new System.Drawing.Point(11, 83);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 21);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Match Number";
             // 
             // frmMatchInformation
             // 

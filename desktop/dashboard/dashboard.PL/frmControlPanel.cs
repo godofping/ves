@@ -730,7 +730,6 @@ namespace dashboard.PL
 
         private void btnEndMatch_Click(object sender, EventArgs e)
         {
-
             DialogResult dialogResult = MessageBox.Show("Are you sure to save this match?", "Warning", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -742,7 +741,6 @@ namespace dashboard.PL
                     ResetMatch();
                     MessageBox.Show("Match information is saved to the database.");
                 }
-
             }
         }
     }

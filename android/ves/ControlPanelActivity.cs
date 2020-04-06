@@ -239,7 +239,7 @@ namespace ves
 
         }
 
-        private void GetMatchInformation()
+        public  void GetMatchInformation()
         {
             matchEL.Matchid = 1;
             matchEL = matchDL.Select(matchEL);
@@ -326,8 +326,16 @@ namespace ves
             btnReset.Click += btnReset_Click;
             btnEndSet.Click += btnEndSet_Click;
             btnSaveMatch.Click += btnSaveMatch_Click;
+            btnMatchInformation.Click += btnMatchInformation_Click;
 
 
+        }
+
+        private void btnMatchInformation_Click(object sender, EventArgs e)
+        {
+           Intent cp = new Intent(this, typeof(MatchInformationActivity));
+            StartActivity(cp);
+            this.Finish();
         }
 
         private void btnSaveMatch_Click(object sender, EventArgs e)
