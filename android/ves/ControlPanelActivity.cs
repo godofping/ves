@@ -127,14 +127,18 @@ namespace ves
                 if ((Convert.ToInt32(tvTeamAScore.Text) >= 25 & Convert.ToInt32(tvTeamAScore.Text) > (Convert.ToInt32(tvTeamBScore.Text) + 1)) | (Convert.ToInt32(tvTeamBScore.Text) >= 25 & Convert.ToInt32(tvTeamBScore.Text) > (Convert.ToInt32(tvTeamAScore.Text) + 1)))
                 {
                     btnEndSet.Visibility = ViewStates.Visible;
+
                 }
                 else
                 {
                     btnEndSet.Visibility = ViewStates.Invisible;
                 }
+
             }
             else
             {
+
+
                 if ((Convert.ToInt32(tvTeamAScore.Text) >= 15 & Convert.ToInt32(tvTeamAScore.Text) > (Convert.ToInt32(tvTeamBScore.Text) + 1)) | (Convert.ToInt32(tvTeamBScore.Text) >= 15 & Convert.ToInt32(tvTeamBScore.Text) > (Convert.ToInt32(tvTeamAScore.Text) + 1)))
                 {
                     btnEndSet.Visibility = ViewStates.Visible;
@@ -175,7 +179,7 @@ namespace ves
                 }
                 else
                 {
-                    btnSaveMatch.Visibility = ViewStates.Visible;
+                    btnSaveMatch.Visibility = ViewStates.Invisible;
                     ShowAddMinusButtons(true);
                 }
 
@@ -203,7 +207,7 @@ namespace ves
                 btnEndSet.Visibility = ViewStates.Invisible;
             }
 
-           
+
             UpdateMatch();
         }
 
