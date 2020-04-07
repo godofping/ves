@@ -529,6 +529,8 @@ namespace ves
                             CheckIfCanSet();
                             CheckIfCanEndMatch();
                         });
+
+
                         alertDiag.SetNegativeButton("No", (senderAlert, args) => {
                             alertDiag.Dispose();
                         });
