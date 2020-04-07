@@ -2,7 +2,7 @@ package crc64f26513313ce43dee;
 
 
 public class MatchesActivity
-	extends android.app.Activity
+	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {

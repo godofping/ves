@@ -62,6 +62,8 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\IItemClickListenener.cs" />
+    <Compile Include="Adapter\RecyclerAdapter.cs" />
     <Compile Include="AnnouncementActivity.cs" />
     <Compile Include="ControlPanelActivity.cs" />
     <Compile Include="DL\Announcements.cs" />
@@ -139,6 +141,16 @@
     <AndroidResource Include="Resources\layout\activity_matchinformation.xml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_matches.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\rvListItems.xml">
+      <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

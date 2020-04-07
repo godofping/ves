@@ -40,7 +40,8 @@ namespace ves
         }
         private void btnMatches_Click(object sender, EventArgs e)
         {
-           
+            Intent cp = new Intent(this, typeof(MatchesActivity));
+            StartActivity(cp);
         }
 
         private void btnAnnouncement_Click(object sender, EventArgs e)
