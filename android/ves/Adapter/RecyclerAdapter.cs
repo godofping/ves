@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -17,12 +18,18 @@ namespace ves.Adapter
     public class RecyclerViewHolder : RecyclerView.ViewHolder, View.IOnClickListener, View.IOnLongClickListener
     {
 
-        public TextView txt_description;
+        public TextView textMatchNumber, textTeamAName, textTeamBName, textDate, textTime, textDateModified;
         public IItemClickListenener itemClickListener;
 
         public RecyclerViewHolder(View itemView) : base(itemView)
         {
-            txt_description = itemView.FindViewById<TextView>(Resource.Id.textDescription);
+            textMatchNumber = itemView.FindViewById<TextView>(Resource.Id.textMatchNumber);
+            textTeamAName = itemView.FindViewById<TextView>(Resource.Id.textTeamAName);
+            textTeamBName = itemView.FindViewById<TextView>(Resource.Id.textTeamBName);
+            textDate = itemView.FindViewById<TextView>(Resource.Id.textDate);
+            textTime = itemView.FindViewById<TextView>(Resource.Id.textTime);
+            textDateModified = itemView.FindViewById<TextView>(Resource.Id.textDateModified);
+
             itemView.SetOnClickListener(this);
             itemView.SetOnLongClickListener(this);
         }
@@ -46,10 +53,10 @@ namespace ves.Adapter
 
     public class RecyclerAdapter : RecyclerView.Adapter, IItemClickListenener
     {
-        private List<string> listData = new List<string>();
+        private List<int> listData = new List<int>();
         private Context context;
 
-        public RecyclerAdapter(List<string> listData, Context context)
+        public RecyclerAdapter(List<int> listData, Context context)
         {
             this.listData = listData;
             this.context = context;
@@ -65,22 +72,34 @@ namespace ves.Adapter
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
+            EL.Matches matchEL = new EL.Matches();
+            DL.Matches matchDL = new DL.Matches();
+
+            matchEL.Matchid = listData[position];
+
+            matchEL = matchDL.Select(matchEL);
+
             RecyclerViewHolder vh = holder as RecyclerViewHolder;
-            vh.txt_description.Text = listData[position];
+            vh.textMatchNumber.Text = "Match Number: " + matchEL.Matchnumber;
+            vh.textTeamAName.Text = "Team A Name: " + matchEL.Teamaname;
+            vh.textTeamBName.Text = "Team B Name: " + matchEL.Teambname;
+            vh.textDate.Text = "Match Date: " + matchEL.Matchdate;
+            vh.textTime.Text = "Match Time: " + matchEL.Matchtime;
+            vh.textDateModified.Text = "Date modified: " + matchEL.Matchsaveddatetime;
             vh.SetItemClickListener(this);
         }
 
         public void OnClick(View itemView, int position, bool isLongClick)
         {
-            if (isLongClick)
-            {
-                Toast.MakeText(context, "Long Click:" + listData[position], ToastLength.Long).Show();
-            }
-            else
-            {
-                Toast.MakeText(context, " " + listData[position], ToastLength.Long).Show();
-            }
+
+            Intent cp = new Intent(context, typeof(ViewMatchInformationActivity));
+            cp.PutExtra("matchid", listData[position].ToString());
+            context.StartActivity(cp);
+            
+
+
         }
+
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {

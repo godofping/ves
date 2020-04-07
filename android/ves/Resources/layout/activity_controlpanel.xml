@@ -98,7 +98,6 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
 
-           
 
                             <TextView
                             android:text="Team Name: "
@@ -128,7 +127,6 @@
                         android:layout_height="wrap_content"
                         >
 
-    
                             <TextView
                             android:text="Won Set: "
                             android:layout_width="wrap_content"
@@ -158,8 +156,7 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content"
                         >
-                        
-         
+
                             <TextView
                             android:text="Score: "
                             android:layout_width="wrap_content"
@@ -277,7 +274,6 @@
                         android:layout_height="wrap_content"
                         >
 
-         
                             <TextView
                             android:text="Team Name: "
                             android:layout_width="wrap_content"
@@ -305,7 +301,6 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content"
                         >
-           
 
     
                             <TextView
@@ -338,7 +333,7 @@
                         android:layout_height="wrap_content"
                         >
 
-      
+
                             <TextView
                             android:text="Score: "
                             android:layout_width="wrap_content"
@@ -384,7 +379,6 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content"
                         >
-
 
                             <TextView
                             android:text="Timeout: "

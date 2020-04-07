@@ -9,7 +9,7 @@
 
 
     <TextView
-            android:text="Match Information"
+            android:text="Matches"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -23,6 +23,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerView"
+        android:background="#fff"
         />
 
 

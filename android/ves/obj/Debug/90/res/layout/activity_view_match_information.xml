@@ -1,0 +1,1231 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:p4="http://xamarin.com/mono/android/designer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    
+>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+        <TextView
+            android:text="View Match Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+        />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    app:cardBackgroundColor="#2c364c" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+            >
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Best of "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvBestOf"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Match Number "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvMatchNumber"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Referee "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvReferee"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Scorer "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvScorer"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+  
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                        android:text="Line Judges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp">
+
+                        <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/tvLineJudges1"
+                        />
+
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp">
+
+                        <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/tvLineJudges2"
+                        />
+
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp">
+
+                        <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/tvLineJudges3"
+                        />
+
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp">
+
+                        <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/tvLineJudges4"
+                        />
+
+                    </TableRow>
+
+                </TableLayout>
+   
+
+                
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Division "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvDivision"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+
+                
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Match Date "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvDate"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Match Time "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvTime"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Match modified "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvMatchModified"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:cardBackgroundColor="#c3b091" 
+            />
+
+            <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Team Name "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvTeamAName"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Coach "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvTeamACoach"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+                
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="set 1: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamASet1"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+
+                            <TextView
+                            android:text="set 2: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamASet2"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+                            <TextView
+                            android:text="set 3: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamASet3"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamASet4"
+                            android:text="set 4: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamASet4"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamASet5"
+                            android:text="set 5: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamASet5"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+
+                            <TextView
+                            android:text="Timeout 1: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamATimeout1"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="Timeout 2: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamATimeout2"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="Timeout 3: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamATimeout3"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamATimeout4"
+                            android:text="Timeout 4: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamATimeout4"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamATimeout5"
+                            android:text="Timeout 5: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamATimeout5"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+    
+
+
+                            <TextView
+                            android:text="Result "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamAResult"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:cardBackgroundColor="#00ff7f" 
+            />
+
+            <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Team Name "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvTeamBName"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        
+                    >
+
+                    <TableRow
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:text="Coach "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                        <TextView
+                        android:text="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" 
+                        android:id="@+id/tvTeamBCoach"
+                        android:textSize="20sp"
+                        />
+
+                    </TableRow>
+                </TableLayout>
+                
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="set 1: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBSet1"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="set 2: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBSet2"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="set 3: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBSet3"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamBSet4"
+                            android:text="set 4: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBSet4"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamBSet5"
+                            android:text="set 5: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBSet5"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+                            <TextView
+                            android:text="Timeout 1: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBTimeout1"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+                            <TextView
+                            android:text="Timeout 2: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBTimeout2"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+                    
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="Timeout 3: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBTimeout3"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:id="@+id/tvlTeamBTimeout4"
+                            android:text="Timeout 4: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBTimeout4"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+                            <TextView
+                            android:id="@+id/tvlTeamBTimeout5"
+                            android:text="Timeout 5: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBTimeout5"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                        <TableRow
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:text="Result "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                            <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2" 
+                            android:id="@+id/tvTeamBResult"
+                            android:textSize="20sp"
+                            />
+
+                        </TableRow>
+                    </TableLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+      
+
+        <Button
+        android:layout_marginTop="20dp"
+        android:text="Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnViewDelete" />
+
+
+
+        <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnViewBack" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

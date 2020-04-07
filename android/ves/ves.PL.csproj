@@ -76,6 +76,7 @@
     <Compile Include="MatchInformationActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewMatchInformationActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -135,12 +136,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_controlpanel.xml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_matchinformation.xml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +151,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\rvListItems.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_view_match_information.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

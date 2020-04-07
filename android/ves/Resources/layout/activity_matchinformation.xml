@@ -214,12 +214,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView1" />
-    
 
 
                             <TextView
@@ -250,11 +244,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView2" />
 
 
 
@@ -285,13 +274,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView3" />
-
-
 
                             <TextView
                             android:text="set 3: "
@@ -320,12 +302,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView4" />
-
 
 
                             <TextView
@@ -356,12 +332,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView5" />
-
 
 
                             <TextView
@@ -393,11 +363,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView6" />
 
 
 
@@ -428,12 +393,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView7" />
-
 
 
                             <TextView
@@ -463,12 +422,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView8" />
-
 
 
                             <TextView
@@ -498,12 +451,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView9" />
-
 
 
                             <TextView
@@ -534,12 +481,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView10" />
-
 
 
                             <TextView
@@ -570,12 +511,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView11" />
-     
+    
 
 
                             <TextView
@@ -654,12 +590,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView12" />
-
 
 
                             <TextView
@@ -690,12 +620,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView13" />
-
 
 
                             <TextView
@@ -725,12 +649,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView14" />
-
 
 
                             <TextView
@@ -760,11 +678,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView15" />
 
 
                             <TextView
@@ -795,12 +708,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView16" />
-
 
 
                             <TextView
@@ -832,13 +739,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView17" />
-
-
 
                             <TextView
                             android:text="Timeout 1: "
@@ -867,13 +767,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView18" />
-
-
 
                             <TextView
                             android:text="Timeout 2: "
@@ -902,12 +795,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView19" />
-
 
 
                             <TextView
@@ -937,12 +824,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView20" />
-
 
 
                             <TextView
@@ -973,12 +854,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView21" />
-    
 
                             <TextView
                             android:id="@+id/tvlTeamBTimeout5"
@@ -1008,11 +883,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:minWidth="30px"
-                            android:minHeight="30px"
-                            xmlns="http://schemas.android.com/apk/res/android"
-                            android:id="@+id/textView22" />
 
 
                             <TextView

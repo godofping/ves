@@ -334,8 +334,10 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_GeneratePackageManagerJava.s
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_matchinformation.xml
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64f26513313ce43dee\MatchInformationActivity.java
-C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_matches.xml
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\rvlistitems.xml
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc6444049a2aacd90054\RecyclerAdapter.java
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc6444049a2aacd90054\RecyclerViewHolder.java
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res\layout\activity_view_match_information.xml
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64f26513313ce43dee\ViewMatchInformationActivity.java
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache

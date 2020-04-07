@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -18,7 +19,7 @@ namespace ves
     [Activity(Label = "MatchesActivity")]
     public class MatchesActivity : AppCompatActivity
     {
-        List<string> listData = new List<string>();
+        List<int> listData = new List<int>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,12 +38,28 @@ namespace ves
             recyclerView.SetAdapter(adapter);
         }
 
+
+
         private void SetupList()
         {
-            for (int i = 1; i <= 10; i += 1)
+
+            DL.Matches matchDL = new DL.Matches();
+
+            var dt = matchDL.List("");
+
+
+            foreach (DataRow row in dt.Rows)
             {
-                listData.Add("Click me" + i);
+                listData.Add(Convert.ToInt32(row["matchid"]));
             }
+
+
+       
+          
+
+
+      
+           
         }
     }
 }
