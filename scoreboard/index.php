@@ -14,10 +14,10 @@
         <div class="row mb-2">
      
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
-    <!-- Main content -->
+
     <section class="content" id="rb1">
 
       <div class="container-fluid text-center">
@@ -210,10 +210,8 @@
         </div>
 
         <div class="row">
-          
-            <marquee>
-              <h1 id = "announcement" style="font-size: 5rem; padding: 10px; color: #fff;"></h1>
-            </marquee>
+         
+            <marquee id="announcement" style="font-size: 5.9rem; padding: 10px; color: #fff;"></marquee>
 
         </div>
 

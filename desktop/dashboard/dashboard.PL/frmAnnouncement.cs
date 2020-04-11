@@ -72,6 +72,7 @@ namespace dashboard.PL
 
 
 
+
                 txtMessage.Enabled = false;
 
                 txtFullscreenMessage.Enabled = false;
@@ -87,7 +88,7 @@ namespace dashboard.PL
         {
             var dt = announcementBL.List();
             txtMessage.Text = dt.Rows[0]["announcement"].ToString();
-            txtFullscreenMessage.Text  = dt.Rows[0]["announcementtextfullscreen"].ToString();
+            txtFullscreenMessage.Text = dt.Rows[0]["announcementtextfullscreen"].ToString();
 
             announcementtype = Convert.ToInt32(dt.Rows[0]["announcementtype"]);
 
@@ -105,7 +106,7 @@ namespace dashboard.PL
             }
 
 
-            
+
             if (announcementtype == 1)
             {
                 rb1.Checked = true;
@@ -135,25 +136,11 @@ namespace dashboard.PL
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            var str = "";
-            using (Image image = pbImage.Image)
-            {
-                using (MemoryStream m = new MemoryStream())
-                {
-                    image.Save(m, image.RawFormat);
-                    byte[] imageBytes = m.ToArray();
-
-                    // Convert byte[] to Base64 String
-                    string base64String = Convert.ToBase64String(imageBytes);
-                    str =  base64String;
-                }
-            }
-
-
+            
             announcementEL.Announcement = txtMessage.Text;
             announcementEL.Announcementtextfullscreen = txtFullscreenMessage.Text;
             announcementEL.Announcementtype = announcementtype;
-            announcementEL.Announcementimage = str;
+            
 
             if (announcementBL.Update(announcementEL))
             {
@@ -191,6 +178,24 @@ namespace dashboard.PL
             {
                 announcementEL.Announcementimage = open.FileName;
                 pbImage.Image = new Bitmap(announcementEL.Announcementimage);
+
+
+
+                using (Image image = Image.FromFile(open.FileName))
+                {
+                    using (MemoryStream m = new MemoryStream())
+                    {
+                        image.Save(m, image.RawFormat);
+                        byte[] imageBytes = m.ToArray();
+
+                        // Convert byte[] to Base64 String
+                        string base64String = Convert.ToBase64String(imageBytes);
+                        announcementEL.Announcementimage = base64String;
+                    }
+                }
+
+
+
             }
         }
     }

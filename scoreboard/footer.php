@@ -34,7 +34,7 @@ function getData()
     			$("#rb3").hide();
 
     			$('#announcement').text(info.announcement);
-    			$('.announcement').stop(false);
+    			$('#announcement').start();
     		}
 
     		if(info.announcementtype == 2)
