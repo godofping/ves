@@ -135,11 +135,25 @@ namespace dashboard.PL
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            var str = "";
+            using (Image image = pbImage.Image)
+            {
+                using (MemoryStream m = new MemoryStream())
+                {
+                    image.Save(m, image.RawFormat);
+                    byte[] imageBytes = m.ToArray();
+
+                    // Convert byte[] to Base64 String
+                    string base64String = Convert.ToBase64String(imageBytes);
+                    str =  base64String;
+                }
+            }
+
 
             announcementEL.Announcement = txtMessage.Text;
             announcementEL.Announcementtextfullscreen = txtFullscreenMessage.Text;
             announcementEL.Announcementtype = announcementtype;
-            announcementEL.Announcementimage = Convert.ToBase64String(methods.ConvertImageToByteArray(pbImage.Image));
+            announcementEL.Announcementimage = str;
 
             if (announcementBL.Update(announcementEL))
             {
