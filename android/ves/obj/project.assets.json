@@ -2,50 +2,33 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
-      "Syncfusion.Licensing/18.1.0.42": {
+      "Plugin.CurrentActivity/2.1.0.2": {
         "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
         "compile": {
-          "lib/MonoAndroid10/Syncfusion.Licensing.dll": {}
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
         },
         "runtime": {
-          "lib/MonoAndroid10/Syncfusion.Licensing.dll": {}
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.1.0.42": {
-        "type": "package",
-        "compile": {
-          "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll": {}
-        }
-      },
-      "Syncfusion.Xamarin.SfDataGrid.Android/18.1.0.42": {
+      "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.1.0.42",
-          "Syncfusion.Xamarin.GridCommon": "18.1.0.42",
-          "Syncfusion.Xamarin.SfNumericTextBox.Android": "18.1.0.42"
+          "Plugin.CurrentActivity": "2.1.0.2",
+          "Xamarin.Android.Support.Compat": "25.4.0.2",
+          "Xamarin.Android.Support.Core.Utils": "25.4.0.2"
         },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
         "compile": {
-          "lib/MonoAndroid10/Syncfusion.Linq.Android.dll": {},
-          "lib/MonoAndroid10/Syncfusion.SfDataGrid.Android.dll": {}
+          "lib/monoandroid71/Plugin.Permissions.dll": {}
         },
         "runtime": {
-          "lib/MonoAndroid10/Syncfusion.Linq.Android.dll": {},
-          "lib/MonoAndroid10/Syncfusion.SfDataGrid.Android.dll": {}
-        }
-      },
-      "Syncfusion.Xamarin.SfNumericTextBox.Android/18.1.0.42": {
-        "type": "package",
-        "dependencies": {
-          "Syncfusion.Licensing": "18.1.0.42"
-        },
-        "compile": {
-          "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.Android.dll": {}
-        },
-        "runtime": {
-          "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.Android.dll": {}
+          "lib/monoandroid71/Plugin.Permissions.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -55,6 +38,22 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12",
+          "Xamarin.Android.Support.Core.Utils": "25.4.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/Plugin.Media.dll": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -788,82 +787,41 @@
     }
   },
   "libraries": {
-    "Syncfusion.Licensing/18.1.0.42": {
-      "sha512": "9gKWFeJaL+0lt0Yvf3Nj+xCZd0DKNdLLJFviWL4LBwtDvRzHKXNs5TkDx4TYFXtlzCjGHmmj3Y3GTGLLB3Y6BQ==",
+    "Plugin.CurrentActivity/2.1.0.2": {
+      "sha512": "uiMbA0G1ulSEj7MtGUQDDhzw80+QgvH5ts+Yt9cyft1dF4Eb0tYxiXAgNPuohJXpxhZmRs+6ZjL6QBaL/wUKDQ==",
       "type": "package",
-      "path": "syncfusion.licensing/18.1.0.42",
+      "path": "plugin.currentactivity/2.1.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
-        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
-        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
-        "lib/net20/Syncfusion.Licensing.dll",
-        "lib/net35/Syncfusion.Licensing.dll",
-        "lib/net40/Syncfusion.Licensing.dll",
-        "lib/net45/Syncfusion.Licensing.dll",
-        "lib/net451/Syncfusion.Licensing.dll",
-        "lib/net46/Syncfusion.Licensing.dll",
-        "lib/netcoreapp3.0/Syncfusion.Licensing.dll",
-        "lib/netstandard1.0/Syncfusion.Licensing.dll",
-        "lib/netstandard1.2/Syncfusion.Licensing.dll",
-        "lib/netstandard1.4/Syncfusion.Licensing.dll",
-        "lib/netstandard2.0/Syncfusion.Licensing.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
-        "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.1.0.42.nupkg.sha512",
-        "syncfusion.licensing.nuspec"
+        "lib/monoandroid44/Plugin.CurrentActivity.dll",
+        "lib/monoandroid44/Plugin.CurrentActivity.xml",
+        "plugin.currentactivity.2.1.0.2.nupkg.sha512",
+        "plugin.currentactivity.nuspec",
+        "readme.txt"
       ]
     },
-    "Syncfusion.Xamarin.GridCommon/18.1.0.42": {
-      "sha512": "FUNddXrEcbw8+4ABLMI087tqLPCILadPVv0a9Lsx1t1+ttH0K0wO/g24cvm5XJ4HBxlNSlxrCWm7tNf3lnJegQ==",
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
       "type": "package",
-      "path": "syncfusion.xamarin.gridcommon/18.1.0.42",
+      "path": "plugin.permissions/3.0.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.XML",
-        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll",
-        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.XML",
-        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.dll",
-        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.XML",
-        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll",
-        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.XML",
-        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.XML",
-        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
-        "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
-        "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
-        "syncfusion.xamarin.gridcommon.18.1.0.42.nupkg.sha512",
-        "syncfusion.xamarin.gridcommon.nuspec"
-      ]
-    },
-    "Syncfusion.Xamarin.SfDataGrid.Android/18.1.0.42": {
-      "sha512": "ws7Sxgeaq48D03pYoe4B+RZD0prdybmBoH/AQ7n2fvOjL3qW8f9UlZbY7bqceBzqFJaCaph3hytfpQb3Ndkj2w==",
-      "type": "package",
-      "path": "syncfusion.xamarin.sfdatagrid.android/18.1.0.42",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid10/Syncfusion.Linq.Android.XML",
-        "lib/MonoAndroid10/Syncfusion.Linq.Android.dll",
-        "lib/MonoAndroid10/Syncfusion.SfDataGrid.Android.XML",
-        "lib/MonoAndroid10/Syncfusion.SfDataGrid.Android.dll",
-        "syncfusion.xamarin.sfdatagrid.android.18.1.0.42.nupkg.sha512",
-        "syncfusion.xamarin.sfdatagrid.android.nuspec"
-      ]
-    },
-    "Syncfusion.Xamarin.SfNumericTextBox.Android/18.1.0.42": {
-      "sha512": "ffHaIr4p+M/XJ4aLyzil1Dv2xskUx6x38Awuqe+QjMcUc6+rdx/vKxpB00a1GIUKFVvOust6a1Ahe0OPNpuDpg==",
-      "type": "package",
-      "path": "syncfusion.xamarin.sfnumerictextbox.android/18.1.0.42",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.Android.dll",
-        "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.Android.xml",
-        "syncfusion.xamarin.sfnumerictextbox.android.18.1.0.42.nupkg.sha512",
-        "syncfusion.xamarin.sfnumerictextbox.android.nuspec"
+        "lib/monoandroid71/Plugin.Permissions.dll",
+        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -911,6 +869,31 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
+      "type": "package",
+      "path": "xam.plugin.media/4.0.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Plugin.Media.dll",
+        "lib/monoandroid71/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.10240/Plugin.Media.dll",
+        "lib/uap10.0.10240/Plugin.Media.pri",
+        "lib/uap10.0.10240/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.4.0.1.5.nupkg.sha512",
+        "xam.plugin.media.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -1691,9 +1674,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
-      "Syncfusion.Xamarin.GridCommon >= 18.1.0.42",
-      "Syncfusion.Xamarin.SfDataGrid.Android >= 18.1.0.42",
-      "Xamarin.Android.Support.Core.Utils >= 28.0.0.3",
+      "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.3",
       "Xamarin.Android.Support.Design >= 28.0.0.3",
       "Xamarin.Essentials >= 1.3.1",
@@ -1738,17 +1719,9 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
-          "Syncfusion.Xamarin.GridCommon": {
+          "Xam.Plugin.Media": {
             "target": "Package",
-            "version": "[18.1.0.42, )"
-          },
-          "Syncfusion.Xamarin.SfDataGrid.Android": {
-            "target": "Package",
-            "version": "[18.1.0.42, )"
-          },
-          "Xamarin.Android.Support.Core.Utils": {
-            "target": "Package",
-            "version": "[28.0.0.3, )"
+            "version": "[4.0.1.5, )"
           },
           "Xamarin.Android.Support.CustomTabs": {
             "target": "Package",

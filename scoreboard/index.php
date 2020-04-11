@@ -238,7 +238,7 @@
     <section class="content" id="rb3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12" style="height: 95vh; width: 100vw;">
+          <div class="col-12" style="height: 93vh; width: 100vw;">
 
             <h1 class="text-center" style="color: white; font-size: 8.5vh; text-decoration: underline;">Announcement</h1>
             <img id="fullscreenimage"  style="display: block;

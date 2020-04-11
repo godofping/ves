@@ -38,17 +38,9 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
-            "Syncfusion.Xamarin.GridCommon": {
+            "Xam.Plugin.Media": {
               "target": "Package",
-              "version": "[18.1.0.42, )"
-            },
-            "Syncfusion.Xamarin.SfDataGrid.Android": {
-              "target": "Package",
-              "version": "[18.1.0.42, )"
-            },
-            "Xamarin.Android.Support.Core.Utils": {
-              "target": "Package",
-              "version": "[28.0.0.3, )"
+              "version": "[4.0.1.5, )"
             },
             "Xamarin.Android.Support.CustomTabs": {
               "target": "Package",

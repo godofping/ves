@@ -1,8 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
 namespace dashboard.DL
 {
@@ -50,13 +48,13 @@ namespace dashboard.DL
 
                     cmd.Parameters.AddWithValue("@announcementtype", announcementEL.Announcementtype);
                     cmd.Parameters.AddWithValue("@announcementimage", announcementEL.Announcementimage);
-                    bol =  methods.executeNonQueryBool(cmd);
+                    bol = methods.executeNonQueryBool(cmd);
                 }
 
             }
 
             return bol;
- 
+
         }
     }
 }
