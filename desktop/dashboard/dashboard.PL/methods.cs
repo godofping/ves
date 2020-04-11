@@ -110,7 +110,6 @@ namespace dashboard.PL
         public static byte[] ConvertImageToByteArray(Image x)
         {
             Bitmap bitmapp = new Bitmap(x);
-            bitmapp.SetResolution(300, 300);
             ImageConverter _imageConverter = new ImageConverter();
             byte[] xByte = (byte[])_imageConverter.ConvertTo(bitmapp, typeof(byte[]));
             return xByte;

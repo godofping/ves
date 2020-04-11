@@ -18,7 +18,7 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" id="rb1">
 
       <div class="container-fluid text-center">
         
@@ -220,6 +220,35 @@
 
       </div>
 
+    </section>
+
+    <section class="content" id="rb2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" style="height: 95vh;">
+
+            <h1 class="text-center" style="color: white; font-size: 8.5vh; text-decoration: underline;">Announcement</h1>
+            <h1 id="fullscreenh1" class="text-center" style="color: white; font-size: 7.5vh"></h1>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="rb3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" style="height: 95vh; width: 100vw;">
+
+            <h1 class="text-center" style="color: white; font-size: 8.5vh; text-decoration: underline;">Announcement</h1>
+            <img id="fullscreenimage"  style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:90%;">
+
+          </div>
+        </div>
+      </div>
     </section>
 
 

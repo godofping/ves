@@ -170,18 +170,18 @@ namespace dashboard.PL
                 if ((Convert.ToInt32(lblTeamAScore.Text) >= 25 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 25 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
                 {
                     btnSet.Visible = true;
-        
+
                 }
                 else
                 {
                     btnSet.Visible = false;
                 }
-                
+
             }
             else
             {
 
-                
+
                 if ((Convert.ToInt32(lblTeamAScore.Text) >= 15 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 15 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
                 {
                     btnSet.Visible = true;
@@ -252,9 +252,9 @@ namespace dashboard.PL
                 btnSet.Visible = false;
             }
 
-            
+
             UpdateMatch();
-            
+
         }
 
         private void ShowAddMinusButtons(bool bol)
@@ -272,7 +272,7 @@ namespace dashboard.PL
 
         private void frmControlPanel_Load(object sender, EventArgs e)
         {
-            
+
             GetMatchInformation();
             CheckIfCanSet();
             CheckIfCanEndMatch();
@@ -553,176 +553,173 @@ namespace dashboard.PL
 
         private void btnSet_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(lblSetNumber.Text) != 5)
+
+            if (Convert.ToInt32(lblTeamAScore.Text) == 0 & Convert.ToInt32(lblTeamBScore.Text) == 0)
             {
-                if (Convert.ToInt32(lblTeamAScore.Text) == 0 & Convert.ToInt32(lblTeamBScore.Text) == 0)
-                {
-                    MessageBox.Show("Failed to end the set. Both team has no score.");
-                }
-                else
-                {
-                    bool bol = false;
-                    if (matchEL.Currentset == 3 | matchEL.Currentset == 5)
-                    {
-                        if (Convert.ToInt32(lblTeamAScore.Text) < 15 & Convert.ToInt32(lblTeamBScore.Text) < 15)
-                        {
-                            MessageBox.Show("Atleast one team should score 15 or more.");
-                        }
-                        else
-                        {
-                            bol = true;
-                        }
-                    }
-
-                    if (matchEL.Currentset == 1 | matchEL.Currentset == 2 | matchEL.Currentset == 4)
-                    {
-                        if (Convert.ToInt32(lblTeamAScore.Text) < 25 & Convert.ToInt32(lblTeamBScore.Text) < 25)
-                        {
-                            MessageBox.Show("Atleast one team should score 25 or more.");
-                        }
-                        else
-                        {
-                            bol = true;
-                        }
-                    }
-
-
-                    if (bol)
-                    {
-                        DialogResult dialogResult = MessageBox.Show("Are you sure to end this set?", "Warning", MessageBoxButtons.YesNo);
-                        if (dialogResult == DialogResult.Yes)
-                        {
-                            if (matchEL.Currentset == 1)
-                            {
-                                if (matchEL.Teamaset1 > matchEL.Teambset1)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset1 < matchEL.Teambset1)
-                                {
-                                    matchEL.Teambwonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset1 == matchEL.Teambset1)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                    matchEL.Teambwonsets += 1;
-                                }
-                            }
-
-                            if (matchEL.Currentset == 2)
-                            {
-                                if (matchEL.Teamaset2 > matchEL.Teambset2)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset2 < matchEL.Teambset2)
-                                {
-                                    matchEL.Teambwonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset2 == matchEL.Teambset2)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                    matchEL.Teambwonsets += 1;
-                                }
-
-
-                            }
-
-                            if (matchEL.Currentset == 3)
-                            {
-                                if (matchEL.Teamaset3 > matchEL.Teambset3)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset3 < matchEL.Teambset3)
-                                {
-                                    matchEL.Teambwonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset3 == matchEL.Teambset3)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                    matchEL.Teambwonsets += 1;
-                                }
-                            }
-
-                            if (matchEL.Currentset == 4)
-                            {
-                                if (matchEL.Teamaset4 > matchEL.Teambset4)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset4 < matchEL.Teambset4)
-                                {
-                                    matchEL.Teambwonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset4 == matchEL.Teambset4)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                    matchEL.Teambwonsets += 1;
-                                }
-                            }
-
-                            if (matchEL.Currentset == 5)
-                            {
-                                if (matchEL.Teamaset5 > matchEL.Teambset5)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset5 < matchEL.Teambset5)
-                                {
-                                    matchEL.Teambwonsets += 1;
-                                }
-
-                                if (matchEL.Teamaset5 == matchEL.Teambset5)
-                                {
-                                    matchEL.Teamawonsets += 1;
-                                    matchEL.Teambwonsets += 1;
-                                }
-                            }
-
-
-                            if (matchEL.Bestof == 3)
-                            {
-                                if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
-                                {
-                                }
-                                else
-                                {
-                                    matchEL.Currentset = matchEL.Currentset + 1;
-                                }
-                            }
-
-                            if (matchEL.Bestof == 5)
-                            {
-                                if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
-                                {
-                                }
-                                else
-                                {
-                                    matchEL.Currentset = matchEL.Currentset + 1;
-                                }
-                            }
-
-
-                            UpdateMatch();
-                            CheckIfCanSet();
-                            CheckIfCanEndMatch();
-
-                        }
-                    }
-                }
-
-
+                MessageBox.Show("Failed to end the set. Both team has no score.");
             }
+            else
+            {
+                bool bol = false;
+                if (matchEL.Currentset == 3 | matchEL.Currentset == 5)
+                {
+                    if (Convert.ToInt32(lblTeamAScore.Text) < 15 & Convert.ToInt32(lblTeamBScore.Text) < 15)
+                    {
+                        MessageBox.Show("Atleast one team should score 15 or more.");
+                    }
+                    else
+                    {
+                        bol = true;
+                    }
+                }
+
+                if (matchEL.Currentset == 1 | matchEL.Currentset == 2 | matchEL.Currentset == 4)
+                {
+                    if (Convert.ToInt32(lblTeamAScore.Text) < 25 & Convert.ToInt32(lblTeamBScore.Text) < 25)
+                    {
+                        MessageBox.Show("Atleast one team should score 25 or more.");
+                    }
+                    else
+                    {
+                        bol = true;
+                    }
+                }
+
+
+                if (bol)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Are you sure to end this set?", "Warning", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        if (matchEL.Currentset == 1)
+                        {
+                            if (matchEL.Teamaset1 > matchEL.Teambset1)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset1 < matchEL.Teambset1)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset1 == matchEL.Teambset1)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+                        if (matchEL.Currentset == 2)
+                        {
+                            if (matchEL.Teamaset2 > matchEL.Teambset2)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset2 < matchEL.Teambset2)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset2 == matchEL.Teambset2)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+
+
+                        }
+
+                        if (matchEL.Currentset == 3)
+                        {
+                            if (matchEL.Teamaset3 > matchEL.Teambset3)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset3 < matchEL.Teambset3)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset3 == matchEL.Teambset3)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+                        if (matchEL.Currentset == 4)
+                        {
+                            if (matchEL.Teamaset4 > matchEL.Teambset4)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset4 < matchEL.Teambset4)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset4 == matchEL.Teambset4)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+                        if (matchEL.Currentset == 5)
+                        {
+                            if (matchEL.Teamaset5 > matchEL.Teambset5)
+                            {
+                                matchEL.Teamawonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset5 < matchEL.Teambset5)
+                            {
+                                matchEL.Teambwonsets += 1;
+                            }
+
+                            if (matchEL.Teamaset5 == matchEL.Teambset5)
+                            {
+                                matchEL.Teamawonsets += 1;
+                                matchEL.Teambwonsets += 1;
+                            }
+                        }
+
+
+                        if (matchEL.Bestof == 3)
+                        {
+                            if (matchEL.Teamawonsets == 2 | matchEL.Teambwonsets == 2)
+                            {
+                            }
+                            else
+                            {
+                                matchEL.Currentset = matchEL.Currentset + 1;
+                            }
+                        }
+
+                        if (matchEL.Bestof == 5)
+                        {
+                            if (matchEL.Teamawonsets == 3 | matchEL.Teambwonsets == 3)
+                            {
+                            }
+                            else
+                            {
+                                matchEL.Currentset = matchEL.Currentset + 1;
+                            }
+                        }
+
+
+                        UpdateMatch();
+                        CheckIfCanSet();
+                        CheckIfCanEndMatch();
+
+                    }
+                }
+            }
+
 
         }
 

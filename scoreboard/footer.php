@@ -23,7 +23,39 @@ function getData()
 	$.get("announcement.php", function(data, status){
     	if(status == 'success')
     	{
-    		$('#announcement').text(data);
+    		var info = JSON.parse(data);
+
+    		
+
+    		if(info.announcementtype == 1)
+    		{
+    			$("#rb1").show();
+    			$("#rb2").hide();
+    			$("#rb3").hide();
+
+    			$('#announcement').text(info.announcement);
+    		}
+
+    		if(info.announcementtype == 2)
+    		{
+    			$("#rb1").hide();
+    			$("#rb2").show();
+    			$("#rb3").hide();
+    			$('#fullscreenh1').text(info.announcementtextfullscreen);
+    		}
+
+    		if(info.announcementtype == 3)
+    		{
+    			$("#rb1").hide();
+    			$("#rb2").hide();
+    			$("#rb3").show();
+
+    			$("#fullscreenimage").attr("src","data:image/jpg;base64," + info.announcementimage);
+
+    			
+    		}
+
+
     	}
  	});
 

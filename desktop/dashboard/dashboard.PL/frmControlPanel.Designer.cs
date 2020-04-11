@@ -467,7 +467,7 @@
             this.btnSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSet.ForeColor = System.Drawing.Color.White;
-            this.btnSet.Location = new System.Drawing.Point(363, 593);
+            this.btnSet.Location = new System.Drawing.Point(610, 593);
             this.btnSet.Name = "btnSet";
             this.btnSet.Size = new System.Drawing.Size(150, 62);
             this.btnSet.TabIndex = 11;
@@ -482,7 +482,7 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(838, 593);
+            this.btnReset.Location = new System.Drawing.Point(363, 593);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(150, 62);
             this.btnReset.TabIndex = 12;
@@ -497,7 +497,7 @@
             this.btnSaveMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveMatch.ForeColor = System.Drawing.Color.White;
-            this.btnSaveMatch.Location = new System.Drawing.Point(610, 593);
+            this.btnSaveMatch.Location = new System.Drawing.Point(838, 593);
             this.btnSaveMatch.Name = "btnSaveMatch";
             this.btnSaveMatch.Size = new System.Drawing.Size(150, 62);
             this.btnSaveMatch.TabIndex = 13;
