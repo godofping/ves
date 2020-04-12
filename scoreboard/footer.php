@@ -18,12 +18,20 @@
 
 getData();
 
+
+var luma = 0;
+var bago = 99;
+
 function getData()
 {
+
 	$.get("announcement.php", function(data, status){
     	if(status == 'success')
     	{
     		var info = JSON.parse(data);
+
+
+    		bago = info.announcementtype;
 
     		
 
@@ -34,7 +42,14 @@ function getData()
     			$("#rb3").hide();
 
     			$('#announcement').text(info.announcement);
-    			$('#announcement').start();
+
+    			if(bago != luma)
+    			{
+    				document.getElementById('announcement').start();
+    				
+    			}
+
+
     		}
 
     		if(info.announcementtype == 2)
@@ -55,7 +70,7 @@ function getData()
 
     			
     		}
-
+    		luma = bago;
 
     	}
  	});
@@ -176,6 +191,8 @@ function getData()
 setInterval(function(){
 	getData(); 
 },300);
+
+
 
 
 

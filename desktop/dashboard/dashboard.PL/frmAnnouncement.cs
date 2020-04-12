@@ -89,8 +89,8 @@ namespace dashboard.PL
             var dt = announcementBL.List();
             txtMessage.Text = dt.Rows[0]["announcement"].ToString();
             txtFullscreenMessage.Text = dt.Rows[0]["announcementtextfullscreen"].ToString();
-
             announcementtype = Convert.ToInt32(dt.Rows[0]["announcementtype"]);
+            announcementEL.Announcementimage = dt.Rows[0]["announcementimage"].ToString();
 
             if (dt.Rows[0]["announcementimage"].ToString().Length > 0)
             {
