@@ -226,7 +226,7 @@
           <div class="col-12" style="height: 95vh;">
 
             <h1 class="text-center" style="color: white; font-size: 8.5vh; text-decoration: underline;">Announcement</h1>
-            <h1 id="fullscreenh1" class="text-center" style="color: white; font-size: 7.5vh"></h1>
+            <h1 id="fullscreenh1" class="text-center" style="color: white; font-size: 8.85vh; max-width: 100vw"></h1>
 
           </div>
         </div>

@@ -125,6 +125,7 @@
             // 
             this.txtFullscreenMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFullscreenMessage.Location = new System.Drawing.Point(91, 192);
+            this.txtFullscreenMessage.MaxLength = 300;
             this.txtFullscreenMessage.Multiline = true;
             this.txtFullscreenMessage.Name = "txtFullscreenMessage";
             this.txtFullscreenMessage.Size = new System.Drawing.Size(957, 81);
@@ -147,6 +148,7 @@
             // 
             this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMessage.Location = new System.Drawing.Point(91, 60);
+            this.txtMessage.MaxLength = 300;
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(957, 81);

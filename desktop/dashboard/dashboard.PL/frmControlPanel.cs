@@ -165,31 +165,14 @@ namespace dashboard.PL
 
         private void CheckIfCanSet()
         {
-            if (matchEL.Currentset != matchEL.Bestof)
+            if ((Convert.ToInt32(lblTeamAScore.Text) >= 25 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 25 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
             {
-                if ((Convert.ToInt32(lblTeamAScore.Text) >= 25 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 25 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
-                {
-                    btnSet.Visible = true;
-
-                }
-                else
-                {
-                    btnSet.Visible = false;
-                }
+                btnSet.Visible = true;
 
             }
             else
             {
-
-
-                if ((Convert.ToInt32(lblTeamAScore.Text) >= 15 & Convert.ToInt32(lblTeamAScore.Text) > (Convert.ToInt32(lblTeamBScore.Text) + 1)) | (Convert.ToInt32(lblTeamBScore.Text) >= 15 & Convert.ToInt32(lblTeamBScore.Text) > (Convert.ToInt32(lblTeamAScore.Text) + 1)))
-                {
-                    btnSet.Visible = true;
-                }
-                else
-                {
-                    btnSet.Visible = false;
-                }
+                btnSet.Visible = false;
             }
         }
 
@@ -421,7 +404,7 @@ namespace dashboard.PL
 
         private void btnTeamATimeOutAdd_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(lblTeamATimeOut.Text) != 3)
+            if (Convert.ToInt32(lblTeamATimeOut.Text) != 2)
             {
                 if (matchEL.Currentset == 1)
                 {
@@ -487,7 +470,7 @@ namespace dashboard.PL
 
         private void btnTeamBTimeOutAdd_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(lblTeamBTimeOut.Text) != 3)
+            if (Convert.ToInt32(lblTeamBTimeOut.Text) != 2)
             {
                 if (matchEL.Currentset == 1)
                 {

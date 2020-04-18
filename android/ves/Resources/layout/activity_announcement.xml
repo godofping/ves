@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f4f4f4"
-    android:padding="15dp"
+    
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="15dp">
         
      
                 <TextView
@@ -69,11 +70,11 @@
                     android:id="@+id/etMessageAnnouncement" />
 
                     <RadioButton
-                    android:text="Text announcement under the scoreboard"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rb2" 
-                    android:layout_marginTop="50dp"
+                        android:text="Fullscreen text announcement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb2"
+                        android:layout_marginTop="50dp"
                     />
 
                     <EditText
@@ -81,14 +82,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/etFullscreenMessageAnnouncement" />
-                    
+
 
                     <RadioButton
-                    android:text="Text announcement under the scoreboard"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rb3" 
-                    android:layout_marginTop="50dp"
+                        android:text="Fullscreen image announcement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb3"
+                        android:layout_marginTop="50dp"
                     />
 
                     <ImageView

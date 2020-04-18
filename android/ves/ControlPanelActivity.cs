@@ -117,31 +117,14 @@ namespace ves
 
         private void CheckIfCanSet()
         {
-            if (matchEL.Currentset != matchEL.Bestof)
+            if ((Convert.ToInt32(tvTeamAScore.Text) >= 25 & Convert.ToInt32(tvTeamAScore.Text) > (Convert.ToInt32(tvTeamBScore.Text) + 1)) | (Convert.ToInt32(tvTeamBScore.Text) >= 25 & Convert.ToInt32(tvTeamBScore.Text) > (Convert.ToInt32(tvTeamAScore.Text) + 1)))
             {
-                if ((Convert.ToInt32(tvTeamAScore.Text) >= 25 & Convert.ToInt32(tvTeamAScore.Text) > (Convert.ToInt32(tvTeamBScore.Text) + 1)) | (Convert.ToInt32(tvTeamBScore.Text) >= 25 & Convert.ToInt32(tvTeamBScore.Text) > (Convert.ToInt32(tvTeamAScore.Text) + 1)))
-                {
-                    btnEndSet.Visibility = ViewStates.Visible;
-
-                }
-                else
-                {
-                    btnEndSet.Visibility = ViewStates.Invisible;
-                }
+                btnEndSet.Visibility = ViewStates.Visible;
 
             }
             else
             {
-
-
-                if ((Convert.ToInt32(tvTeamAScore.Text) >= 15 & Convert.ToInt32(tvTeamAScore.Text) > (Convert.ToInt32(tvTeamBScore.Text) + 1)) | (Convert.ToInt32(tvTeamBScore.Text) >= 15 & Convert.ToInt32(tvTeamBScore.Text) > (Convert.ToInt32(tvTeamAScore.Text) + 1)))
-                {
-                    btnEndSet.Visibility = ViewStates.Visible;
-                }
-                else
-                {
-                    btnEndSet.Visibility = ViewStates.Invisible;
-                }
+                btnEndSet.Visibility = ViewStates.Invisible;
             }
         }
 
@@ -565,7 +548,7 @@ namespace ves
 
         private void btnTeamBAddTimeout_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(tvTeamBTimeout.Text) != 3)
+            if (Convert.ToInt32(tvTeamBTimeout.Text) != 2)
             {
                 if (matchEL.Currentset == 1)
                 {
@@ -665,7 +648,7 @@ namespace ves
 
         private void btnTeamAAddTimeout_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(tvTeamATimeout.Text) != 3)
+            if (Convert.ToInt32(tvTeamATimeout.Text) != 2)
             {
                 if (matchEL.Currentset == 1)
                 {
