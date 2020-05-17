@@ -69,9 +69,9 @@ namespace ves
             matchEL.Linejudges2name = "";
             matchEL.Linejudges3name = "";
             matchEL.Linejudges4name = "";
-            matchEL.Division = "";
-            matchEL.Matchdate = "";
-            matchEL.Matchtime = "";
+            matchEL.Division = "MALE";
+            matchEL.Matchdate = DateTime.Now.ToString("MM.dd.yyyy");
+            matchEL.Matchtime = "12:00nn";
             matchEL.Teamaname = "-";
             matchEL.Teamacoach = "";
             matchEL.Teamaset1 = 0;
