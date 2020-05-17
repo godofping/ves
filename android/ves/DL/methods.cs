@@ -16,7 +16,7 @@ namespace ves.DL
 {
     public class methods
     {
-        public static string ConnectionString { get { return "Server=192.168.86.21;UID=root;PWD=;database=ves_db;Convert Zero Datetime=True"; } }
+        public static string ConnectionString { get { return "Server=192.168.86.24;UID=root;PWD=;database=ves_db;Convert Zero Datetime=True"; } }
 
         public static string EscapeString(String str)
         {

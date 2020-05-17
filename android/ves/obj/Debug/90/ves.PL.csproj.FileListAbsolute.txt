@@ -266,7 +266,6 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_ConvertResourcesCases.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\376FEBDDA4FA9F38.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\732B8414B1FA8200.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\8F271229B59D78C1.stamp
@@ -282,3 +281,4 @@ C:\xampp\htdocs\ves\android\ves\obj\Debug\90\flata\242676049399AE0D.flata
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\assets\Plugin.Permissions.dll
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\android\src\crc64435a5ac349fa9fda\ActivityLifecycleContextListener.java
+C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache

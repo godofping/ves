@@ -131,7 +131,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_controlpanel.xml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
