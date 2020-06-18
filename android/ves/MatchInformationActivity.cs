@@ -22,7 +22,7 @@ namespace ves
         string val1; //time
         string val2; //division
         Spinner sBestof, sTime, sDivision;
-        EditText etMatchNumber, etReferee, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDate, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
+        EditText etMatchNumber, etRefereeA,etRefereeB, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDate, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
         TextView tvTeamBSet1, tvTeamBSet2, tvTeamBSet3, tvTeamBSet4, tvTeamBSet5, tvTeamBTimeou1, tvTeamBTimeou2, tvTeamBTimeou3, tvTeamBTimeou4, tvTeamBTimeou5, tvTeamBResult;
         TextView tvTeamASet1, tvTeamASet2, tvTeamASet3, tvTeamASet4, tvTeamASet5, tvTeamATimeou1, tvTeamATimeou2, tvTeamATimeou3, tvTeamATimeou4, tvTeamATimeou5, tvTeamAResult;
         TextView tvlTeamASet4, tvlTeamASet5, tvlTeamBSet4, tvlTeamBSet5, tvlTeamATimeout4, tvlTeamATimeout5, tvlTeamBTimeout4, tvlTeamBTimeout5;
@@ -39,7 +39,8 @@ namespace ves
             sDivision = FindViewById<Spinner>(Resource.Id.sDivision);
 
             etMatchNumber = FindViewById<EditText>(Resource.Id.etMatchNumber);
-            etReferee = FindViewById<EditText>(Resource.Id.etReferee);
+            etRefereeA = FindViewById<EditText>(Resource.Id.etRefereeA);
+            etRefereeB = FindViewById<EditText>(Resource.Id.etRefereeB);
             etScorer = FindViewById<EditText>(Resource.Id.etScorer);
             etLineJudge1 = FindViewById<EditText>(Resource.Id.etLineJudge1);
             etLineJudge2 = FindViewById<EditText>(Resource.Id.etLineJudge2);
@@ -118,7 +119,7 @@ namespace ves
 
 
             etMatchNumber.Text = matchEL.Matchnumber;
-            etReferee.Text = matchEL.Refereename;
+            etReferee.Text = matchEL.Refereeaname;
             etScorer.Text = matchEL.Scorername;
             etLineJudge1.Text = matchEL.Linejudges1name;
             etLineJudge2.Text = matchEL.Linejudges2name;
@@ -293,7 +294,8 @@ namespace ves
         {
             matchEL.Bestof = Convert.ToInt32(val);
             matchEL.Matchnumber = etMatchNumber.Text;
-            matchEL.Refereename = etReferee.Text;
+            matchEL.Refereeaname = etRefereeA.Text;
+            matchEL.Refereebname = etRefereeB.Text;
             matchEL.Scorername = etScorer.Text;
             matchEL.Linejudges1name = etLineJudge1.Text;
             matchEL.Linejudges2name = etLineJudge2.Text;

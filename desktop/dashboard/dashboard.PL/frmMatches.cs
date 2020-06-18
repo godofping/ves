@@ -91,6 +91,7 @@ namespace dashboard.PL
             pnl3.Visible = bol;
             btnBack.Visible = bol;
             btnDelete.Visible = bol;
+            btnPrint.Visible = bol;
             pnlMain.Visible = !bol;
         }
 
@@ -115,7 +116,8 @@ namespace dashboard.PL
                 matchEL = matchBL.Select(matchEL);
                 lblBeastOf.Text = matchEL.Bestof.ToString();
                 lblMatchNumber.Text = matchEL.Matchnumber;
-                lblReferee.Text = matchEL.Refereename;
+                lblRefereeA.Text = matchEL.Refereeaname;
+                lblRefereeB.Text = matchEL.Refereenbame;
                 lblScorer.Text = matchEL.Scorername;
                 lblLineJudges1.Text = matchEL.Linejudges1name;
                 lblLineJudges2.Text = matchEL.Linejudges2name;
@@ -179,6 +181,12 @@ namespace dashboard.PL
                     CalculateAfterStopTypingDGV();
                 }
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            Reports.frmReport frmReport = new Reports.frmReport(matchEL);
+            frmReport.ShowDialog();
         }
     }
 }

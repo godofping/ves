@@ -111,16 +111,17 @@ namespace dashboard.PL
         private void ResetMatch()
         {
             matchEL.Matchnumber = "";
-            matchEL.Refereename = "";
+            matchEL.Refereeaname = "";
+            matchEL.Refereenbame = "";
             matchEL.Scorername = "";
             matchEL.Linejudges1name = "";
             matchEL.Linejudges2name = "";
             matchEL.Linejudges3name = "";
             matchEL.Linejudges4name = "";
-            matchEL.Division = "";
+            matchEL.Division = "Men";
             matchEL.Matchdate = "";
             matchEL.Matchtime = "";
-            matchEL.Teamaname = "-";
+            matchEL.Teamaname = "Team A";
             matchEL.Teamacoach = "";
             matchEL.Teamaset1 = 0;
             matchEL.Teamaset2 = 0;
@@ -134,7 +135,7 @@ namespace dashboard.PL
             matchEL.Teamatimeout5 = 0;
             matchEL.Teamawonsets = 0;
             matchEL.Teamaresult = "";
-            matchEL.Teambname = "-";
+            matchEL.Teambname = "Team B";
             matchEL.Teambcoach = "";
             matchEL.Teambset1 = 0;
             matchEL.Teambset2 = 0;

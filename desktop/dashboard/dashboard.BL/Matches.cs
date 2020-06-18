@@ -14,6 +14,12 @@ namespace dashboard.BL
             return matchDL.List(str);
         }
 
+        public DataTable ListAll(int id)
+        {
+            return matchDL.ListAll(id);
+        }
+   
+
         public long Insert(EL.Matches matchEL)
         {
             return matchDL.Insert(matchEL);

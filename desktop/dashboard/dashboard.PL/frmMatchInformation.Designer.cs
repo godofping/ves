@@ -32,15 +32,16 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpTime = new System.Windows.Forms.DateTimePicker();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.txtRefereeB = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.txtMatchNumber = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cbBestOf = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.txtTime = new System.Windows.Forms.TextBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtDivision = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtLineJudges4 = new System.Windows.Forms.TextBox();
             this.txtLineJudges3 = new System.Windows.Forms.TextBox();
@@ -49,7 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtScorer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtReferee = new System.Windows.Forms.TextBox();
+            this.txtRefereeA = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -109,6 +110,7 @@
             this.txtTeamBName = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.cbDivision = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -156,15 +158,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.cbDivision);
+            this.panel1.Controls.Add(this.dtpTime);
+            this.panel1.Controls.Add(this.dtpDate);
+            this.panel1.Controls.Add(this.txtRefereeB);
+            this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.txtMatchNumber);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.cbBestOf);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.txtTime);
-            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtDivision);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtLineJudges4);
             this.panel1.Controls.Add(this.txtLineJudges3);
@@ -173,7 +177,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtScorer);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtReferee);
+            this.panel1.Controls.Add(this.txtRefereeA);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(24, 72);
@@ -181,13 +185,54 @@
             this.panel1.Size = new System.Drawing.Size(400, 618);
             this.panel1.TabIndex = 2;
             // 
+            // dtpTime
+            // 
+            this.dtpTime.CustomFormat = "hh:mm tt";
+            this.dtpTime.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTime.Location = new System.Drawing.Point(221, 570);
+            this.dtpTime.Name = "dtpTime";
+            this.dtpTime.ShowUpDown = true;
+            this.dtpTime.Size = new System.Drawing.Size(135, 29);
+            this.dtpTime.TabIndex = 27;
+            // 
+            // dtpDate
+            // 
+            this.dtpDate.CustomFormat = "yyyy-MM-dd";
+            this.dtpDate.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDate.Location = new System.Drawing.Point(36, 570);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(165, 29);
+            this.dtpDate.TabIndex = 26;
+            // 
+            // txtRefereeB
+            // 
+            this.txtRefereeB.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.txtRefereeB.ForeColor = System.Drawing.Color.Black;
+            this.txtRefereeB.Location = new System.Drawing.Point(36, 166);
+            this.txtRefereeB.Name = "txtRefereeB";
+            this.txtRefereeB.Size = new System.Drawing.Size(320, 29);
+            this.txtRefereeB.TabIndex = 24;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label14.Location = new System.Drawing.Point(11, 142);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 21);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Referee B";
+            // 
             // txtMatchNumber
             // 
             this.txtMatchNumber.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
             this.txtMatchNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtMatchNumber.Location = new System.Drawing.Point(36, 107);
+            this.txtMatchNumber.Location = new System.Drawing.Point(211, 45);
             this.txtMatchNumber.Name = "txtMatchNumber";
-            this.txtMatchNumber.Size = new System.Drawing.Size(321, 29);
+            this.txtMatchNumber.Size = new System.Drawing.Size(147, 29);
             this.txtMatchNumber.TabIndex = 2;
             // 
             // label10
@@ -195,7 +240,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label10.Location = new System.Drawing.Point(11, 83);
+            this.label10.Location = new System.Drawing.Point(182, 21);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 21);
             this.label10.TabIndex = 23;
@@ -211,7 +256,7 @@
             "5"});
             this.cbBestOf.Location = new System.Drawing.Point(36, 45);
             this.cbBestOf.Name = "cbBestOf";
-            this.cbBestOf.Size = new System.Drawing.Size(321, 29);
+            this.cbBestOf.Size = new System.Drawing.Size(134, 29);
             this.cbBestOf.TabIndex = 1;
             this.cbBestOf.SelectedIndexChanged += new System.EventHandler(this.cbBestOf_SelectedIndexChanged);
             // 
@@ -225,24 +270,6 @@
             this.label21.Size = new System.Drawing.Size(57, 21);
             this.label21.TabIndex = 20;
             this.label21.Text = "Best of";
-            // 
-            // txtTime
-            // 
-            this.txtTime.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.txtTime.ForeColor = System.Drawing.Color.Black;
-            this.txtTime.Location = new System.Drawing.Point(232, 570);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(125, 29);
-            this.txtTime.TabIndex = 11;
-            // 
-            // txtDate
-            // 
-            this.txtDate.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.txtDate.ForeColor = System.Drawing.Color.Black;
-            this.txtDate.Location = new System.Drawing.Point(36, 570);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(165, 29);
-            this.txtDate.TabIndex = 10;
             // 
             // label7
             // 
@@ -265,15 +292,6 @@
             this.label5.Size = new System.Drawing.Size(42, 21);
             this.label5.TabIndex = 16;
             this.label5.Text = "Date";
-            // 
-            // txtDivision
-            // 
-            this.txtDivision.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.txtDivision.ForeColor = System.Drawing.Color.Black;
-            this.txtDivision.Location = new System.Drawing.Point(37, 502);
-            this.txtDivision.Name = "txtDivision";
-            this.txtDivision.Size = new System.Drawing.Size(321, 29);
-            this.txtDivision.TabIndex = 9;
             // 
             // label4
             // 
@@ -353,25 +371,25 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Scorer";
             // 
-            // txtReferee
+            // txtRefereeA
             // 
-            this.txtReferee.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
-            this.txtReferee.ForeColor = System.Drawing.Color.Black;
-            this.txtReferee.Location = new System.Drawing.Point(37, 172);
-            this.txtReferee.Name = "txtReferee";
-            this.txtReferee.Size = new System.Drawing.Size(321, 29);
-            this.txtReferee.TabIndex = 3;
+            this.txtRefereeA.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.txtRefereeA.ForeColor = System.Drawing.Color.Black;
+            this.txtRefereeA.Location = new System.Drawing.Point(36, 107);
+            this.txtRefereeA.Name = "txtRefereeA";
+            this.txtRefereeA.Size = new System.Drawing.Size(320, 29);
+            this.txtRefereeA.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label6.Location = new System.Drawing.Point(12, 148);
+            this.label6.Location = new System.Drawing.Point(11, 83);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 21);
+            this.label6.Size = new System.Drawing.Size(75, 21);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Referee";
+            this.label6.Text = "Referee A";
             // 
             // panel2
             // 
@@ -1047,6 +1065,20 @@
             this.panel7.Size = new System.Drawing.Size(400, 10);
             this.panel7.TabIndex = 0;
             // 
+            // cbDivision
+            // 
+            this.cbDivision.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDivision.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+            this.cbDivision.FormattingEnabled = true;
+            this.cbDivision.Items.AddRange(new object[] {
+            "Men",
+            "Women",
+            "Mixed"});
+            this.cbDivision.Location = new System.Drawing.Point(37, 509);
+            this.cbDivision.Name = "cbDivision";
+            this.cbDivision.Size = new System.Drawing.Size(321, 29);
+            this.cbDivision.TabIndex = 28;
+            // 
             // frmMatchInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1087,12 +1119,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtReferee;
+        private System.Windows.Forms.TextBox txtRefereeA;
         private System.Windows.Forms.TextBox txtScorer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtLineJudges1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDivision;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtLineJudges4;
         private System.Windows.Forms.TextBox txtLineJudges3;
@@ -1155,11 +1186,14 @@
         private System.Windows.Forms.TextBox txtTeamBName;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox txtTime;
-        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cbBestOf;
         private System.Windows.Forms.TextBox txtMatchNumber;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtRefereeB;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.DateTimePicker dtpTime;
+        private System.Windows.Forms.ComboBox cbDivision;
     }
 }

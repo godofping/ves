@@ -1,12 +1,12 @@
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\bin\Debug\netstandard2.0\dashboard.DL.deps.json
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\bin\Debug\netstandard2.0\dashboard.DL.dll
-C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csprojAssemblyReference.cache
-C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.AssemblyInfoInputs.cache
-C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.AssemblyInfo.cs
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\bin\Debug\netstandard2.0\dashboard.DL.pdb
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\bin\Debug\netstandard2.0\dashboard.EL.dll
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\bin\Debug\netstandard2.0\dashboard.EL.pdb
+C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csprojAssemblyReference.cache
+C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.AssemblyInfoInputs.cache
+C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.AssemblyInfo.cs
+C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csproj.CoreCompileInputs.cache
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csproj.CopyComplete
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.dll
 C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.pdb
-C:\xampp\htdocs\ves\desktop\dashboard\dashboard.DL\obj\Debug\netstandard2.0\dashboard.DL.csproj.CoreCompileInputs.cache

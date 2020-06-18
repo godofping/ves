@@ -30,8 +30,9 @@
 
 
 	<string-array name="division_array">
-		<item>MALE</item>
-		<item>FEMALE</item>
+		<item>Men</item>
+		<item>Women</item>
+		<item>Mixed</item>
 	</string-array>
 	
 </resources>

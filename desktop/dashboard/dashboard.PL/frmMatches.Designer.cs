@@ -30,33 +30,35 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.dgv = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnl1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lblBeastOf = new System.Windows.Forms.Label();
-            this.lblMatchNumber = new System.Windows.Forms.Label();
-            this.lblReferee = new System.Windows.Forms.Label();
-            this.lblScorer = new System.Windows.Forms.Label();
-            this.lblLineJudges1 = new System.Windows.Forms.Label();
-            this.lblDivision = new System.Windows.Forms.Label();
-            this.lblMatchDate = new System.Windows.Forms.Label();
-            this.lblMatchTime = new System.Windows.Forms.Label();
-            this.lblLineJudges2 = new System.Windows.Forms.Label();
-            this.lblLineJudges3 = new System.Windows.Forms.Label();
-            this.lblLineJudges4 = new System.Windows.Forms.Label();
+            this.lblRefereeB = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.lblDateSaved = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
+            this.lblLineJudges4 = new System.Windows.Forms.Label();
+            this.lblLineJudges3 = new System.Windows.Forms.Label();
+            this.lblLineJudges2 = new System.Windows.Forms.Label();
+            this.lblMatchTime = new System.Windows.Forms.Label();
+            this.lblMatchDate = new System.Windows.Forms.Label();
+            this.lblDivision = new System.Windows.Forms.Label();
+            this.lblLineJudges1 = new System.Windows.Forms.Label();
+            this.lblScorer = new System.Windows.Forms.Label();
+            this.lblRefereeA = new System.Windows.Forms.Label();
+            this.lblMatchNumber = new System.Windows.Forms.Label();
+            this.lblBeastOf = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pnl3 = new System.Windows.Forms.Panel();
             this.lblTeamBResult = new System.Windows.Forms.Label();
             this.lblTeamBTimeout5 = new System.Windows.Forms.Label();
@@ -115,6 +117,7 @@
             this.label49 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.pnl1.SuspendLayout();
@@ -145,6 +148,15 @@
             this.pnlMain.Size = new System.Drawing.Size(1070, 580);
             this.pnlMain.TabIndex = 18;
             // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(11, 71);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(1048, 482);
+            this.dgv.TabIndex = 18;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -165,15 +177,6 @@
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // dgv
-            // 
-            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(11, 71);
-            this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(1048, 482);
-            this.dgv.TabIndex = 18;
-            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
@@ -186,6 +189,8 @@
             // pnl1
             // 
             this.pnl1.BackColor = System.Drawing.Color.White;
+            this.pnl1.Controls.Add(this.lblRefereeB);
+            this.pnl1.Controls.Add(this.label11);
             this.pnl1.Controls.Add(this.lblDateSaved);
             this.pnl1.Controls.Add(this.label48);
             this.pnl1.Controls.Add(this.lblLineJudges4);
@@ -196,7 +201,7 @@
             this.pnl1.Controls.Add(this.lblDivision);
             this.pnl1.Controls.Add(this.lblLineJudges1);
             this.pnl1.Controls.Add(this.lblScorer);
-            this.pnl1.Controls.Add(this.lblReferee);
+            this.pnl1.Controls.Add(this.lblRefereeA);
             this.pnl1.Controls.Add(this.lblMatchNumber);
             this.pnl1.Controls.Add(this.lblBeastOf);
             this.pnl1.Controls.Add(this.label13);
@@ -212,6 +217,248 @@
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(349, 580);
             this.pnl1.TabIndex = 19;
+            // 
+            // lblRefereeB
+            // 
+            this.lblRefereeB.AutoSize = true;
+            this.lblRefereeB.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRefereeB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblRefereeB.Location = new System.Drawing.Point(134, 137);
+            this.lblRefereeB.Name = "lblRefereeB";
+            this.lblRefereeB.Size = new System.Drawing.Size(19, 21);
+            this.lblRefereeB.TabIndex = 45;
+            this.lblRefereeB.Text = "3";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label11.Location = new System.Drawing.Point(11, 137);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 21);
+            this.label11.TabIndex = 44;
+            this.label11.Text = "Referee B";
+            // 
+            // lblDateSaved
+            // 
+            this.lblDateSaved.AutoSize = true;
+            this.lblDateSaved.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateSaved.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblDateSaved.Location = new System.Drawing.Point(164, 545);
+            this.lblDateSaved.Name = "lblDateSaved";
+            this.lblDateSaved.Size = new System.Drawing.Size(19, 21);
+            this.lblDateSaved.TabIndex = 43;
+            this.lblDateSaved.Text = "3";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label48.Location = new System.Drawing.Point(11, 545);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(145, 21);
+            this.label48.TabIndex = 42;
+            this.label48.Text = "Date Time Modified";
+            // 
+            // lblLineJudges4
+            // 
+            this.lblLineJudges4.AutoSize = true;
+            this.lblLineJudges4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineJudges4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblLineJudges4.Location = new System.Drawing.Point(134, 311);
+            this.lblLineJudges4.Name = "lblLineJudges4";
+            this.lblLineJudges4.Size = new System.Drawing.Size(19, 21);
+            this.lblLineJudges4.TabIndex = 41;
+            this.lblLineJudges4.Text = "3";
+            // 
+            // lblLineJudges3
+            // 
+            this.lblLineJudges3.AutoSize = true;
+            this.lblLineJudges3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineJudges3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblLineJudges3.Location = new System.Drawing.Point(134, 277);
+            this.lblLineJudges3.Name = "lblLineJudges3";
+            this.lblLineJudges3.Size = new System.Drawing.Size(19, 21);
+            this.lblLineJudges3.TabIndex = 40;
+            this.lblLineJudges3.Text = "3";
+            // 
+            // lblLineJudges2
+            // 
+            this.lblLineJudges2.AutoSize = true;
+            this.lblLineJudges2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineJudges2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblLineJudges2.Location = new System.Drawing.Point(134, 246);
+            this.lblLineJudges2.Name = "lblLineJudges2";
+            this.lblLineJudges2.Size = new System.Drawing.Size(19, 21);
+            this.lblLineJudges2.TabIndex = 39;
+            this.lblLineJudges2.Text = "3";
+            // 
+            // lblMatchTime
+            // 
+            this.lblMatchTime.AutoSize = true;
+            this.lblMatchTime.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatchTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblMatchTime.Location = new System.Drawing.Point(134, 477);
+            this.lblMatchTime.Name = "lblMatchTime";
+            this.lblMatchTime.Size = new System.Drawing.Size(19, 21);
+            this.lblMatchTime.TabIndex = 38;
+            this.lblMatchTime.Text = "3";
+            // 
+            // lblMatchDate
+            // 
+            this.lblMatchDate.AutoSize = true;
+            this.lblMatchDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatchDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblMatchDate.Location = new System.Drawing.Point(134, 434);
+            this.lblMatchDate.Name = "lblMatchDate";
+            this.lblMatchDate.Size = new System.Drawing.Size(19, 21);
+            this.lblMatchDate.TabIndex = 37;
+            this.lblMatchDate.Text = "3";
+            // 
+            // lblDivision
+            // 
+            this.lblDivision.AutoSize = true;
+            this.lblDivision.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblDivision.Location = new System.Drawing.Point(134, 389);
+            this.lblDivision.Name = "lblDivision";
+            this.lblDivision.Size = new System.Drawing.Size(19, 21);
+            this.lblDivision.TabIndex = 36;
+            this.lblDivision.Text = "3";
+            // 
+            // lblLineJudges1
+            // 
+            this.lblLineJudges1.AutoSize = true;
+            this.lblLineJudges1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineJudges1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblLineJudges1.Location = new System.Drawing.Point(134, 210);
+            this.lblLineJudges1.Name = "lblLineJudges1";
+            this.lblLineJudges1.Size = new System.Drawing.Size(19, 21);
+            this.lblLineJudges1.TabIndex = 35;
+            this.lblLineJudges1.Text = "3";
+            // 
+            // lblScorer
+            // 
+            this.lblScorer.AutoSize = true;
+            this.lblScorer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScorer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblScorer.Location = new System.Drawing.Point(134, 174);
+            this.lblScorer.Name = "lblScorer";
+            this.lblScorer.Size = new System.Drawing.Size(19, 21);
+            this.lblScorer.TabIndex = 34;
+            this.lblScorer.Text = "3";
+            // 
+            // lblRefereeA
+            // 
+            this.lblRefereeA.AutoSize = true;
+            this.lblRefereeA.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRefereeA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblRefereeA.Location = new System.Drawing.Point(134, 106);
+            this.lblRefereeA.Name = "lblRefereeA";
+            this.lblRefereeA.Size = new System.Drawing.Size(19, 21);
+            this.lblRefereeA.TabIndex = 33;
+            this.lblRefereeA.Text = "3";
+            // 
+            // lblMatchNumber
+            // 
+            this.lblMatchNumber.AutoSize = true;
+            this.lblMatchNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatchNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblMatchNumber.Location = new System.Drawing.Point(134, 66);
+            this.lblMatchNumber.Name = "lblMatchNumber";
+            this.lblMatchNumber.Size = new System.Drawing.Size(19, 21);
+            this.lblMatchNumber.TabIndex = 32;
+            this.lblMatchNumber.Text = "3";
+            // 
+            // lblBeastOf
+            // 
+            this.lblBeastOf.AutoSize = true;
+            this.lblBeastOf.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBeastOf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.lblBeastOf.Location = new System.Drawing.Point(134, 34);
+            this.lblBeastOf.Name = "lblBeastOf";
+            this.lblBeastOf.Size = new System.Drawing.Size(19, 21);
+            this.lblBeastOf.TabIndex = 31;
+            this.lblBeastOf.Text = "3";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label13.Location = new System.Drawing.Point(11, 477);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 21);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "Match Time";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label9.Location = new System.Drawing.Point(11, 434);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 21);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Match Date";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label8.Location = new System.Drawing.Point(11, 389);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 21);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Division";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label7.Location = new System.Drawing.Point(11, 210);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 21);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Line Judges";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label5.Location = new System.Drawing.Point(11, 174);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Scorer";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label4.Location = new System.Drawing.Point(11, 106);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 21);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Referee A";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label3.Location = new System.Drawing.Point(11, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 21);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Match Number";
             // 
             // label1
             // 
@@ -232,226 +479,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(349, 10);
             this.panel2.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label3.Location = new System.Drawing.Point(11, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 21);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Match Number";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label4.Location = new System.Drawing.Point(11, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 21);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Referee";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label5.Location = new System.Drawing.Point(11, 145);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 21);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Scorer";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label7.Location = new System.Drawing.Point(11, 181);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 21);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Line Judges";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label8.Location = new System.Drawing.Point(11, 360);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 21);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Division";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label9.Location = new System.Drawing.Point(11, 405);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 21);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Match Date";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label13.Location = new System.Drawing.Point(11, 448);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(90, 21);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "Match Time";
-            // 
-            // lblBeastOf
-            // 
-            this.lblBeastOf.AutoSize = true;
-            this.lblBeastOf.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeastOf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblBeastOf.Location = new System.Drawing.Point(134, 34);
-            this.lblBeastOf.Name = "lblBeastOf";
-            this.lblBeastOf.Size = new System.Drawing.Size(19, 21);
-            this.lblBeastOf.TabIndex = 31;
-            this.lblBeastOf.Text = "3";
-            // 
-            // lblMatchNumber
-            // 
-            this.lblMatchNumber.AutoSize = true;
-            this.lblMatchNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblMatchNumber.Location = new System.Drawing.Point(134, 66);
-            this.lblMatchNumber.Name = "lblMatchNumber";
-            this.lblMatchNumber.Size = new System.Drawing.Size(19, 21);
-            this.lblMatchNumber.TabIndex = 32;
-            this.lblMatchNumber.Text = "3";
-            // 
-            // lblReferee
-            // 
-            this.lblReferee.AutoSize = true;
-            this.lblReferee.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReferee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblReferee.Location = new System.Drawing.Point(134, 106);
-            this.lblReferee.Name = "lblReferee";
-            this.lblReferee.Size = new System.Drawing.Size(19, 21);
-            this.lblReferee.TabIndex = 33;
-            this.lblReferee.Text = "3";
-            // 
-            // lblScorer
-            // 
-            this.lblScorer.AutoSize = true;
-            this.lblScorer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScorer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblScorer.Location = new System.Drawing.Point(134, 145);
-            this.lblScorer.Name = "lblScorer";
-            this.lblScorer.Size = new System.Drawing.Size(19, 21);
-            this.lblScorer.TabIndex = 34;
-            this.lblScorer.Text = "3";
-            // 
-            // lblLineJudges1
-            // 
-            this.lblLineJudges1.AutoSize = true;
-            this.lblLineJudges1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLineJudges1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblLineJudges1.Location = new System.Drawing.Point(134, 181);
-            this.lblLineJudges1.Name = "lblLineJudges1";
-            this.lblLineJudges1.Size = new System.Drawing.Size(19, 21);
-            this.lblLineJudges1.TabIndex = 35;
-            this.lblLineJudges1.Text = "3";
-            // 
-            // lblDivision
-            // 
-            this.lblDivision.AutoSize = true;
-            this.lblDivision.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblDivision.Location = new System.Drawing.Point(134, 360);
-            this.lblDivision.Name = "lblDivision";
-            this.lblDivision.Size = new System.Drawing.Size(19, 21);
-            this.lblDivision.TabIndex = 36;
-            this.lblDivision.Text = "3";
-            // 
-            // lblMatchDate
-            // 
-            this.lblMatchDate.AutoSize = true;
-            this.lblMatchDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblMatchDate.Location = new System.Drawing.Point(134, 405);
-            this.lblMatchDate.Name = "lblMatchDate";
-            this.lblMatchDate.Size = new System.Drawing.Size(19, 21);
-            this.lblMatchDate.TabIndex = 37;
-            this.lblMatchDate.Text = "3";
-            // 
-            // lblMatchTime
-            // 
-            this.lblMatchTime.AutoSize = true;
-            this.lblMatchTime.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblMatchTime.Location = new System.Drawing.Point(134, 448);
-            this.lblMatchTime.Name = "lblMatchTime";
-            this.lblMatchTime.Size = new System.Drawing.Size(19, 21);
-            this.lblMatchTime.TabIndex = 38;
-            this.lblMatchTime.Text = "3";
-            // 
-            // lblLineJudges2
-            // 
-            this.lblLineJudges2.AutoSize = true;
-            this.lblLineJudges2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLineJudges2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblLineJudges2.Location = new System.Drawing.Point(134, 217);
-            this.lblLineJudges2.Name = "lblLineJudges2";
-            this.lblLineJudges2.Size = new System.Drawing.Size(19, 21);
-            this.lblLineJudges2.TabIndex = 39;
-            this.lblLineJudges2.Text = "3";
-            // 
-            // lblLineJudges3
-            // 
-            this.lblLineJudges3.AutoSize = true;
-            this.lblLineJudges3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLineJudges3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblLineJudges3.Location = new System.Drawing.Point(134, 248);
-            this.lblLineJudges3.Name = "lblLineJudges3";
-            this.lblLineJudges3.Size = new System.Drawing.Size(19, 21);
-            this.lblLineJudges3.TabIndex = 40;
-            this.lblLineJudges3.Text = "3";
-            // 
-            // lblLineJudges4
-            // 
-            this.lblLineJudges4.AutoSize = true;
-            this.lblLineJudges4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLineJudges4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblLineJudges4.Location = new System.Drawing.Point(134, 282);
-            this.lblLineJudges4.Name = "lblLineJudges4";
-            this.lblLineJudges4.Size = new System.Drawing.Size(19, 21);
-            this.lblLineJudges4.TabIndex = 41;
-            this.lblLineJudges4.Text = "3";
-            // 
-            // lblDateSaved
-            // 
-            this.lblDateSaved.AutoSize = true;
-            this.lblDateSaved.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateSaved.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblDateSaved.Location = new System.Drawing.Point(134, 516);
-            this.lblDateSaved.Name = "lblDateSaved";
-            this.lblDateSaved.Size = new System.Drawing.Size(19, 21);
-            this.lblDateSaved.TabIndex = 43;
-            this.lblDateSaved.Text = "3";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label48.Location = new System.Drawing.Point(11, 516);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(107, 21);
-            this.label48.TabIndex = 42;
-            this.label48.Text = "Date modified";
             // 
             // pnl3
             // 
@@ -1143,19 +1170,35 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(188)))), ((int)(((byte)(255)))));
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(400, 598);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(150, 62);
+            this.btnPrint.TabIndex = 58;
+            this.btnPrint.Text = "PRINT";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // frmMatches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1116, 677);
-            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl3);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.pnlMain);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ForeColor = System.Drawing.Color.Black;
@@ -1207,7 +1250,7 @@
         private System.Windows.Forms.Label lblDivision;
         private System.Windows.Forms.Label lblLineJudges1;
         private System.Windows.Forms.Label lblScorer;
-        private System.Windows.Forms.Label lblReferee;
+        private System.Windows.Forms.Label lblRefereeA;
         private System.Windows.Forms.Label lblMatchNumber;
         private System.Windows.Forms.Panel pnl3;
         private System.Windows.Forms.Label lblTeamBResult;
@@ -1267,5 +1310,8 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label lblRefereeB;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnPrint;
     }
 }

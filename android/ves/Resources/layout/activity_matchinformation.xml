@@ -75,7 +75,7 @@
                 android:id="@+id/etMatchNumber" />
 
                 <TextView
-                android:text="Referee"
+                android:text="Referee A"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -83,7 +83,18 @@
                 <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etReferee" />
+                android:id="@+id/etRefereeA" />
+
+                <TextView
+                android:text="Referee B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+                <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etRefereeB" />
 
                 <TextView
                 android:text="Scorer"
@@ -144,8 +155,13 @@
                     android:paddingTop="20dp"
                     
                 />
+ 
+      
+
+          
 
                 <EditText
+                    android:inputType="date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etDate" />
@@ -157,12 +173,11 @@
                 android:paddingTop="20dp"
                 />
 
-                <Spinner
-                android:id="@+id/sTime"
-                android:layout_width="fill_parent"
+               <EditText
+                    android:inputType="time"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:prompt="@string/selecttime_prompt"
-                />
+                android:id="@+id/etTime" />
 
 
             </LinearLayout>
@@ -222,6 +237,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+                        
 
                             <TextView
                             android:text="set 1: "
@@ -251,6 +267,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+             
 
 
                             <TextView
@@ -280,6 +297,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+     
                         
 
                             <TextView
@@ -309,6 +327,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+        
                         
 
                             <TextView
@@ -339,6 +358,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+     
 
 
                             <TextView
@@ -370,6 +390,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+  
 
 
                             <TextView
@@ -401,6 +422,7 @@
                         android:layout_height="wrap_content">
 
 
+
                             <TextView
                             android:text="Timeout 2: "
                             android:layout_width="wrap_content"
@@ -428,6 +450,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+      
 
                             <TextView
                             android:text="Timeout 3: "
@@ -456,6 +479,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+
 
 
                             <TextView
@@ -487,6 +511,7 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
 
+
                             <TextView
                             android:id="@+id/tvlTeamATimeout5"
                             android:text="Timeout 5: "
@@ -515,6 +540,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+
 
                             <TextView
                             android:text="Result "
@@ -592,6 +618,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+           
 
 
                             <TextView
@@ -623,6 +650,7 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
 
+
                             <TextView
                             android:text="set 2: "
                             android:layout_width="wrap_content"
@@ -651,6 +679,7 @@
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
 
+
                             <TextView
                             android:text="set 3: "
                             android:layout_width="wrap_content"
@@ -678,6 +707,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+
     
                             <TextView
                             android:id="@+id/tvlTeamBSet4"
@@ -709,6 +739,7 @@
                         android:layout_height="wrap_content">
 
 
+
                             <TextView
                             android:id="@+id/tvlTeamBSet5"
                             android:text="set 5: "
@@ -738,6 +769,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+   
 
 
                             <TextView
@@ -767,6 +799,7 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
+
 
 
                             <TextView
@@ -827,7 +860,6 @@
                         android:layout_height="wrap_content">
 
 
-
                             <TextView
                             android:id="@+id/tvlTeamBTimeout4"
                             android:text="Timeout 4: "
@@ -886,7 +918,6 @@
                         <TableRow
                         android:layout_width="match_parent" 
                         android:layout_height="wrap_content">
-
 
 
                             <TextView

@@ -31,11 +31,12 @@ namespace ves.DL
         {
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "insert into  matches set matchnumber = @matchnumber, refereename = @refereename, scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, matchsaveddatetime = @matchsaveddatetime, bestof = @bestof";
+                cmd.CommandText = "insert into  matches set matchnumber = @matchnumber, refereeaname = @refereeaname, refereebname = @refereebname,scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, matchsaveddatetime = @matchsaveddatetime, bestof = @bestof";
 
                 cmd.Parameters.AddWithValue("@matchid", matchEL.Matchid);
                 cmd.Parameters.AddWithValue("@matchnumber", matchEL.Matchnumber);
-                cmd.Parameters.AddWithValue("@refereename", matchEL.Refereename);
+                cmd.Parameters.AddWithValue("@refereeaname", matchEL.Refereeaname);
+                cmd.Parameters.AddWithValue("@refereebname", matchEL.Refereebname);
                 cmd.Parameters.AddWithValue("@scorername", matchEL.Scorername);
                 cmd.Parameters.AddWithValue("@linejudges1name", matchEL.Linejudges1name);
                 cmd.Parameters.AddWithValue("@linejudges2name", matchEL.Linejudges2name);
@@ -84,11 +85,12 @@ namespace ves.DL
         {
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "update matches set matchnumber = @matchnumber, refereename = @refereename, scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, bestof = @bestof where matchid = @matchid";
+                cmd.CommandText = "update matches set matchnumber = @matchnumber, refereeaname = @refereeaname,  refereebname = @refereebname,scorername = @scorername, linejudges1name = @linejudges1name, linejudges2name = @linejudges2name, linejudges3name = @linejudges3name, linejudges4name = @linejudges4name, division = @division, matchdate = @matchdate, matchtime = @matchtime, teamaname = @teamaname, teamacoach = @teamacoach, teamaset1 = @teamaset1, teamaset2 = @teamaset2, teamaset3 = @teamaset3, teamaset4 = @teamaset4, teamaset5 = @teamaset5, teamatimeout1 = @teamatimeout1, teamatimeout2= @teamatimeout2, teamatimeout3 = @teamatimeout3, teamatimeout4 = @teamatimeout4, teamatimeout5 = @teamatimeout5, teamawonsets = @teamawonsets,teamaresult= @teamaresult, teambname = @teambname, teambcoach = @teambcoach, teambset1= @teambset1, teambset2 = @teambset2,  teambset3 = @teambset3, teambset4 = @teambset4, teambset5 = @teambset5, teambtimeout1 = @teambtimeout1, teambtimeout2 = @teambtimeout2,  teambtimeout3 = @teambtimeout3, teambtimeout4 = @teambtimeout4, teambtimeout5 = @teambtimeout5, teambwonsets = @teambwonsets, teambresult = @teambresult, currentset = @currentset, bestof = @bestof where matchid = @matchid";
 
                 cmd.Parameters.AddWithValue("@matchid", matchEL.Matchid);
                 cmd.Parameters.AddWithValue("@matchnumber", matchEL.Matchnumber);
-                cmd.Parameters.AddWithValue("@refereename", matchEL.Refereename);
+                cmd.Parameters.AddWithValue("@refereeaname", matchEL.Refereeaname);
+                cmd.Parameters.AddWithValue("@refereebname", matchEL.Refereebname);
                 cmd.Parameters.AddWithValue("@scorername", matchEL.Scorername);
                 cmd.Parameters.AddWithValue("@linejudges1name", matchEL.Linejudges1name);
                 cmd.Parameters.AddWithValue("@linejudges2name", matchEL.Linejudges2name);
@@ -150,7 +152,8 @@ namespace ves.DL
             {
                 matchEL.Matchid = Convert.ToInt32(dt.Rows[0]["matchid"]);
                 matchEL.Matchnumber = dt.Rows[0]["matchnumber"].ToString();
-                matchEL.Refereename = dt.Rows[0]["refereename"].ToString();
+                matchEL.Refereeaname = dt.Rows[0]["refereeaname"].ToString();
+                matchEL.Refereebname = dt.Rows[0]["refereebname"].ToString();
                 matchEL.Scorername = dt.Rows[0]["scorername"].ToString();
                 matchEL.Linejudges1name = dt.Rows[0]["linejudges1name"].ToString();
                 matchEL.Linejudges2name = dt.Rows[0]["linejudges2name"].ToString();

@@ -16,7 +16,8 @@ namespace ves.EL
     {
         int matchid;
         string matchnumber;
-        string refereename;
+        string refereeaname;
+        string refereebname;
         string scorername;
         string linejudges1name;
         string linejudges2name;
@@ -60,7 +61,8 @@ namespace ves.EL
 
         public int Matchid { get => matchid; set => matchid = value; }
         public string Matchnumber { get => matchnumber; set => matchnumber = value; }
-        public string Refereename { get => refereename; set => refereename = value; }
+        public string Refereeaname { get => refereeaname; set => refereeaname = value; }
+        public string Refereebname { get => refereebname; set => refereebname = value; }
         public string Scorername { get => scorername; set => scorername = value; }
         public string Linejudges1name { get => linejudges1name; set => linejudges1name = value; }
         public string Linejudges2name { get => linejudges2name; set => linejudges2name = value; }
@@ -100,5 +102,6 @@ namespace ves.EL
         public int Currentset { get => currentset; set => currentset = value; }
         public string Matchsaveddatetime { get => matchsaveddatetime; set => matchsaveddatetime = value; }
         public int Bestof { get => bestof; set => bestof = value; }
+        
     }
 }

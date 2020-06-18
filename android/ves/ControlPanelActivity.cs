@@ -63,16 +63,17 @@ namespace ves
         private void ResetMatch()
         {
             matchEL.Matchnumber = "";
-            matchEL.Refereename = "";
+            matchEL.Refereeaname = "";
+            matchEL.Refereebname = "";
             matchEL.Scorername = "";
             matchEL.Linejudges1name = "";
             matchEL.Linejudges2name = "";
             matchEL.Linejudges3name = "";
             matchEL.Linejudges4name = "";
-            matchEL.Division = "MALE";
-            matchEL.Matchdate = DateTime.Now.ToString("MM.dd.yyyy");
-            matchEL.Matchtime = "12:00nn";
-            matchEL.Teamaname = "-";
+            matchEL.Division = "Men";
+            matchEL.Matchdate = DateTime.Now.ToString("yyyy-MM-dd");
+            matchEL.Matchtime = DateTime.Now.ToString("hh:mm tt");
+            matchEL.Teamaname = "Team A";
             matchEL.Teamacoach = "";
             matchEL.Teamaset1 = 0;
             matchEL.Teamaset2 = 0;
@@ -86,7 +87,7 @@ namespace ves
             matchEL.Teamatimeout5 = 0;
             matchEL.Teamawonsets = 0;
             matchEL.Teamaresult = "";
-            matchEL.Teambname = "-";
+            matchEL.Teambname = "Team B";
             matchEL.Teambcoach = "";
             matchEL.Teambset1 = 0;
             matchEL.Teambset2 = 0;

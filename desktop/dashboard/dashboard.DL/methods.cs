@@ -112,8 +112,8 @@ namespace dashboard.DL
                     dt.Load(cmd.ExecuteReader());
                     return dt;
                 }
-                catch (Exception ex)
-                {
+                catch 
+                {   //(Exception ex)
                     //throw ex;
                     return null;
                 }

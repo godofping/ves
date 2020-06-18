@@ -44,15 +44,16 @@ namespace dashboard.PL
         {
             cbBestOf.SelectedIndex = cbBestOf.FindStringExact(matchEL.Bestof.ToString());
             txtMatchNumber.Text = matchEL.Matchnumber;
-            txtReferee.Text = matchEL.Refereename;
+            txtRefereeA.Text = matchEL.Refereeaname;
+            txtRefereeB.Text = matchEL.Refereenbame;
             txtScorer.Text = matchEL.Scorername;
             txtLineJudges1.Text = matchEL.Linejudges1name;
             txtLineJudges2.Text = matchEL.Linejudges2name;
             txtLineJudges3.Text = matchEL.Linejudges3name;
             txtLineJudges4.Text = matchEL.Linejudges4name;
-            txtDivision.Text = matchEL.Division;
-            txtDate.Text = matchEL.Matchdate;
-            txtTime.Text = matchEL.Matchtime;
+            cbDivision.Text = matchEL.Division;
+            dtpDate.Text = matchEL.Matchdate;
+            dtpTime.Text = matchEL.Matchtime;
             txtTeamAName.Text = matchEL.Teamaname;
             txtTeamACoach.Text = matchEL.Teamacoach;
             txtTeamBName.Text = matchEL.Teambname;
@@ -129,19 +130,21 @@ namespace dashboard.PL
         {
             matchEL.Bestof = Convert.ToInt32(cbBestOf.Text);
             matchEL.Matchnumber = txtMatchNumber.Text;
-            matchEL.Refereename = txtReferee.Text;
+            matchEL.Refereeaname = txtRefereeA.Text;
+            matchEL.Refereenbame = txtRefereeB.Text;
             matchEL.Scorername = txtScorer.Text;
             matchEL.Linejudges1name = txtLineJudges1.Text;
             matchEL.Linejudges2name = txtLineJudges2.Text;
             matchEL.Linejudges3name = txtLineJudges3.Text;
             matchEL.Linejudges4name = txtLineJudges4.Text;
-            matchEL.Division = txtDivision.Text;
-            matchEL.Matchdate = txtDate.Text;
-            matchEL.Matchtime = txtTime.Text;
+            matchEL.Division = cbDivision.Text;
+            matchEL.Matchdate = dtpDate.Text;
+            matchEL.Matchtime = dtpTime.Text;
             matchEL.Teamaname = txtTeamAName.Text;
             matchEL.Teamacoach = txtTeamACoach.Text;
             matchEL.Teambname = txtTeamBName.Text;
             matchEL.Teambcoach = txtTeamBCoach.Text;
+
             if (frmControlPanel.UpdateMatch())
                 this.Close();
             else
