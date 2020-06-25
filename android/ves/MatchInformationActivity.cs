@@ -19,14 +19,13 @@ namespace ves
         DL.Matches matchDL = new DL.Matches();
 
         string val; //best of
-        string val1; //time
         string val2; //division
-        Spinner sBestof, sTime, sDivision;
+        Spinner sBestof, sDivision;
         EditText etMatchNumber, etRefereeA,etRefereeB, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDate, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
         TextView tvTeamBSet1, tvTeamBSet2, tvTeamBSet3, tvTeamBSet4, tvTeamBSet5, tvTeamBTimeou1, tvTeamBTimeou2, tvTeamBTimeou3, tvTeamBTimeou4, tvTeamBTimeou5, tvTeamBResult;
         TextView tvTeamASet1, tvTeamASet2, tvTeamASet3, tvTeamASet4, tvTeamASet5, tvTeamATimeou1, tvTeamATimeou2, tvTeamATimeou3, tvTeamATimeou4, tvTeamATimeou5, tvTeamAResult;
         TextView tvlTeamASet4, tvlTeamASet5, tvlTeamBSet4, tvlTeamBSet5, tvlTeamATimeout4, tvlTeamATimeout5, tvlTeamBTimeout4, tvlTeamBTimeout5;
-        Button btnSave, btnCancel;
+        Button btnSave, btnCancel, btnSelectTime, btnSelectDate;
 
         private void initialize()
         {
@@ -34,8 +33,10 @@ namespace ves
             btnSave = FindViewById<Button>(Resource.Id.btnSave);
             btnCancel = FindViewById<Button>(Resource.Id.btnCancel);
 
+            btnSelectDate = FindViewById<Button>(Resource.Id.btnSelectDate);
+            btnSelectTime = FindViewById<Button>(Resource.Id.btnSelectTime);
+
             sBestof = FindViewById<Spinner>(Resource.Id.sBestof);
-            sTime = FindViewById<Spinner>(Resource.Id.sTime);
             sDivision = FindViewById<Spinner>(Resource.Id.sDivision);
 
             etMatchNumber = FindViewById<EditText>(Resource.Id.etMatchNumber);
@@ -92,34 +93,30 @@ namespace ves
             matchEL = matchDL.Select(matchEL);
 
 
-            var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.bestof_array, Android.Resource.Layout.SimpleSpinnerItem);
+            var adapter = new ArrayAdapter<string>(
+                this,
+                Android.Resource.Layout.SimpleSpinnerItem,
+                Resource.Array.bestof_array
+            );
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             sBestof.Adapter = adapter;
 
-            sBestof.SetSelection(adapter.GetPosition(matchEL.Bestof.ToString()));
 
-            var adapter1 = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.time_array, Android.Resource.Layout.SimpleSpinnerItem);
 
-            adapter1.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            sTime.Adapter = adapter1;
+            //var adapter2 = ArrayAdapter.CreateFromResource(
+            //        this, Resource.Array.division_array, Android.Resource.Layout.SimpleSpinnerItem);
 
-            sTime.SetSelection(adapter1.GetPosition(matchEL.Matchtime.ToString()));
+            //adapter2.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            //sDivision.Adapter = adapter2;
 
-            var adapter2 = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.division_array, Android.Resource.Layout.SimpleSpinnerItem);
-
-            adapter2.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            sDivision.Adapter = adapter2;
-
-            sDivision.SetSelection(adapter2.GetPosition(matchEL.Division.ToString()));
+            //sDivision.SetSelection(adapter2.GetPosition(matchEL.Division.ToString()));
 
 
 
             etMatchNumber.Text = matchEL.Matchnumber;
-            etReferee.Text = matchEL.Refereeaname;
+            etRefereeA.Text = matchEL.Refereeaname;
+            etRefereeB.Text = matchEL.Refereebname;
             etScorer.Text = matchEL.Scorername;
             etLineJudge1.Text = matchEL.Linejudges1name;
             etLineJudge2.Text = matchEL.Linejudges2name;
@@ -224,8 +221,13 @@ namespace ves
 
             btnSave.Click += btnSave_Click;
             btnCancel.Click += btnCancel_Click;
+
+            btnSelectDate.Click += btnSelectDate_Click;
+            btnSelectTime.Click += btnSelectTime_Click;
+
+
+
             sBestof.ItemSelected += sBestof_ItemSelected;
-            sTime.ItemSelected += sTime_ItemSelected;
             sDivision.ItemSelected += sDivision_ItemSelected;
 
             etDate.Enabled = false;
@@ -254,17 +256,22 @@ namespace ves
 
         }
 
+        private void btnSelectTime_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btnSelectDate_Click(object sender, EventArgs e)
+        {
+          
+        }
+
         private void sDivision_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
             val2 = spinner.GetItemAtPosition(e.Position).ToString();
         }
 
-        private void sTime_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
-        {
-            Spinner spinner = (Spinner)sender;
-            val1 = spinner.GetItemAtPosition(e.Position).ToString();
-        }
 
         private void sBestof_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
@@ -303,7 +310,7 @@ namespace ves
             matchEL.Linejudges4name = etLineJudge4.Text;
             matchEL.Division = val2;
             matchEL.Matchdate = etDate.Text;
-            matchEL.Matchtime = val1;
+      
             matchEL.Teamaname = etTeamAName.Text;
             matchEL.Teamacoach = etTeamACoach.Text;
             matchEL.Teambname = etTeamBName.Text;

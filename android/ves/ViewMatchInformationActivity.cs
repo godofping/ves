@@ -16,7 +16,7 @@ namespace ves
 
    
         TextView sBestof, tvMatchModified;
-        TextView etMatchNumber, etReferee, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDivision, etDate, etTime, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
+        TextView etMatchNumber, etRefereeA, etRefereeB, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDivision, etDate, etTime, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
         TextView tvTeamBSet1, tvTeamBSet2, tvTeamBSet3, tvTeamBSet4, tvTeamBSet5, tvTeamBTimeou1, tvTeamBTimeou2, tvTeamBTimeou3, tvTeamBTimeou4, tvTeamBTimeou5, tvTeamBResult;
         TextView tvTeamASet1, tvTeamASet2, tvTeamASet3, tvTeamASet4, tvTeamASet5, tvTeamATimeou1, tvTeamATimeou2, tvTeamATimeou3, tvTeamATimeou4, tvTeamATimeou5, tvTeamAResult;
         TextView tvlTeamASet4, tvlTeamASet5, tvlTeamBSet4, tvlTeamBSet5, tvlTeamATimeout4, tvlTeamATimeout5, tvlTeamBTimeout4, tvlTeamBTimeout5;
@@ -31,7 +31,8 @@ namespace ves
             tvMatchModified = FindViewById<TextView>(Resource.Id.tvMatchModified);
             sBestof = FindViewById<TextView>(Resource.Id.tvBestOf);
             etMatchNumber = FindViewById<TextView>(Resource.Id.tvMatchNumber);
-            etReferee = FindViewById<TextView>(Resource.Id.tvReferee);
+            etRefereeA = FindViewById<TextView>(Resource.Id.tvRefereeA);
+            etRefereeB = FindViewById<TextView>(Resource.Id.tvRefereeB);
             etScorer = FindViewById<TextView>(Resource.Id.tvScorer);
             etLineJudge1 = FindViewById<TextView>(Resource.Id.tvLineJudges1);
             etLineJudge2 = FindViewById<TextView>(Resource.Id.tvLineJudges2);
@@ -87,7 +88,8 @@ namespace ves
             tvMatchModified.Text = matchEL.Matchsaveddatetime;
             sBestof.Text = matchEL.Bestof.ToString();
             etMatchNumber.Text = matchEL.Matchnumber;
-            etReferee.Text = matchEL.Refereename;
+            etRefereeA.Text = matchEL.Refereeaname;
+            etRefereeB.Text = matchEL.Refereebname;
             etScorer.Text = matchEL.Scorername;
             etLineJudge1.Text = matchEL.Linejudges1name;
             etLineJudge2.Text = matchEL.Linejudges2name;
