@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System;
+using System.Collections.Generic;
+using static Android.App.DatePickerDialog;
 
 namespace ves
 {
     [Activity(Label = "MatchInformationActivity")]
-    public class MatchInformationActivity : Activity
+
+    public class MatchInformationActivity : Activity, IOnDateSetListener
     {
         EL.Matches matchEL = new EL.Matches();
         DL.Matches matchDL = new DL.Matches();
@@ -21,11 +19,21 @@ namespace ves
         string val; //best of
         string val2; //division
         Spinner sBestof, sDivision;
-        EditText etMatchNumber, etRefereeA,etRefereeB, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDate, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
+        EditText etMatchNumber, etRefereeA, etRefereeB, etScorer, etLineJudge1, etLineJudge2, etLineJudge3, etLineJudge4, etDate, etTime, etTeamAName, etTeamACoach, etTeamBName, etTeamBCoach;
         TextView tvTeamBSet1, tvTeamBSet2, tvTeamBSet3, tvTeamBSet4, tvTeamBSet5, tvTeamBTimeou1, tvTeamBTimeou2, tvTeamBTimeou3, tvTeamBTimeou4, tvTeamBTimeou5, tvTeamBResult;
         TextView tvTeamASet1, tvTeamASet2, tvTeamASet3, tvTeamASet4, tvTeamASet5, tvTeamATimeou1, tvTeamATimeou2, tvTeamATimeou3, tvTeamATimeou4, tvTeamATimeou5, tvTeamAResult;
         TextView tvlTeamASet4, tvlTeamASet5, tvlTeamBSet4, tvlTeamBSet5, tvlTeamATimeout4, tvlTeamATimeout5, tvlTeamBTimeout4, tvlTeamBTimeout5;
         Button btnSave, btnCancel, btnSelectTime, btnSelectDate;
+
+        private const int DATE_DIALOG = 1;
+        private const int TIME_DIALOG = 1;
+        private int year = Convert.ToInt32(DateTime.Now.ToString("yyyy"));
+        private int month = Convert.ToInt32(DateTime.Now.ToString("MM"));
+        private int day = Convert.ToInt32(DateTime.Now.ToString("dd"));
+
+        private int hour = Convert.ToInt32(DateTime.Now.ToString("hh"));
+        private int minutes = Convert.ToInt32(DateTime.Now.ToString("ii"));
+
 
         private void initialize()
         {
@@ -47,7 +55,7 @@ namespace ves
             etLineJudge2 = FindViewById<EditText>(Resource.Id.etLineJudge2);
             etLineJudge3 = FindViewById<EditText>(Resource.Id.etLineJudge3);
             etLineJudge4 = FindViewById<EditText>(Resource.Id.etLineJudge4);
-            
+            etTime = FindViewById<EditText>(Resource.Id.etTime);
             etDate = FindViewById<EditText>(Resource.Id.etDate);
             etTeamAName = FindViewById<EditText>(Resource.Id.etTeamAName);
             etTeamACoach = FindViewById<EditText>(Resource.Id.etTeamACoach);
@@ -92,26 +100,17 @@ namespace ves
             matchEL.Matchid = 1;
             matchEL = matchDL.Select(matchEL);
 
+            var items = new List<string>() { "3", "5" };
+            var items2 = new List<string>() { "Men", "Women", "Mixed" };
 
-            var adapter = new ArrayAdapter<string>(
-                this,
-                Android.Resource.Layout.SimpleSpinnerItem,
-                Resource.Array.bestof_array
-            );
+            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);
+            var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items2);
 
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             sBestof.Adapter = adapter;
+            sDivision.Adapter = adapter2;
 
-
-
-            //var adapter2 = ArrayAdapter.CreateFromResource(
-            //        this, Resource.Array.division_array, Android.Resource.Layout.SimpleSpinnerItem);
-
-            //adapter2.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            //sDivision.Adapter = adapter2;
-
-            //sDivision.SetSelection(adapter2.GetPosition(matchEL.Division.ToString()));
-
+            sBestof.SetSelection(adapter.GetPosition(matchEL.Bestof.ToString()));
+            sDivision.SetSelection(adapter2.GetPosition(matchEL.Division.ToString()));
 
 
             etMatchNumber.Text = matchEL.Matchnumber;
@@ -122,7 +121,8 @@ namespace ves
             etLineJudge2.Text = matchEL.Linejudges2name;
             etLineJudge3.Text = matchEL.Linejudges3name;
             etLineJudge4.Text = matchEL.Linejudges4name;
-            etDate.Text = DateTime.Now.ToString("MM.dd.yyyy");
+            etDate.Text = matchEL.Matchdate;
+            etTime.Text = matchEL.Matchtime;
             etTeamAName.Text = matchEL.Teamaname;
             etTeamACoach.Text = matchEL.Teamacoach;
             etTeamBName.Text = matchEL.Teambname;
@@ -216,7 +216,7 @@ namespace ves
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.activity_matchinformation);
+            SetContentView(Resource.Layout.activity_match_information);
             initialize();
 
             btnSave.Click += btnSave_Click;
@@ -231,6 +231,7 @@ namespace ves
             sDivision.ItemSelected += sDivision_ItemSelected;
 
             etDate.Enabled = false;
+            etTime.Enabled = false;
 
             GetInformation();
 
@@ -258,12 +259,32 @@ namespace ves
 
         private void btnSelectTime_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btnSelectDate_Click(object sender, EventArgs e)
         {
-          
+            ShowDialog(DATE_DIALOG);
+
+        }
+
+        public void OnDateSet(DatePicker view, int year, int month, int dayOfMonth)
+        {
+            etDate.Text = year + "/" + month + "/" + dayOfMonth;
+        }
+
+        protected override Dialog OnCreateDialog(int id)
+        {
+            switch (id)
+            {
+                case DATE_DIALOG:
+                    {
+                        return new DatePickerDialog(this, this, year, month, day);
+                    }
+                default:
+                    break;
+            }
+            return null;
         }
 
         private void sDivision_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
@@ -299,6 +320,8 @@ namespace ves
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+
+
             matchEL.Bestof = Convert.ToInt32(val);
             matchEL.Matchnumber = etMatchNumber.Text;
             matchEL.Refereeaname = etRefereeA.Text;
@@ -310,7 +333,7 @@ namespace ves
             matchEL.Linejudges4name = etLineJudge4.Text;
             matchEL.Division = val2;
             matchEL.Matchdate = etDate.Text;
-      
+
             matchEL.Teamaname = etTeamAName.Text;
             matchEL.Teamacoach = etTeamACoach.Text;
             matchEL.Teambname = etTeamBName.Text;
@@ -325,5 +348,7 @@ namespace ves
             else
                 Toast.MakeText(this, "Error!", ToastLength.Long).Show();
         }
+
+
     }
 }
