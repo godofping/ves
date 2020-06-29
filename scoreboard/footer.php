@@ -58,6 +58,17 @@ function getData()
     			$("#rb2").show();
     			$("#rb3").hide();
     			$('#fullscreenh1').text(info.announcementtextfullscreen);
+
+    			if(info.announcementtextfullscreen.length < 550 && info.announcementtextfullscreen.length > 400)
+    			{
+    				 $('#fullscreenh1').css("font-size", "4rem");
+    			}
+    			else if(info.announcementtextfullscreen.length < 650 && info.announcementtextfullscreen.length > 551)
+    			{
+    				 $('#fullscreenh1').css("font-size", "3.7rem");
+    				 $('#fullscreenh1').css("line-height", "60px");
+    			}
+
     		}
 
     		if(info.announcementtype == 3)

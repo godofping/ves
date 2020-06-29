@@ -57,7 +57,7 @@
                   </div>
                 
                   <div class="col-12" style="background-color: #FFFAF0;">
-                      <h3 id="currentset" style="font-size: 7rem; margin-top: -1.7rem; margin-bottom: -0.8rem;">1</h3>
+                      <h3 id="currentset" style="font-size: 15rem; margin-top: -1.7rem; margin-bottom: -0.8rem;">1</h3>
                   </div>
 
                 </div>
@@ -71,7 +71,7 @@
                 
                 <h3 style="font-size: 2.3rem; color: #fff">WON SET</h3>
                   <div class="col-12" style="background-color: #FFFAF0;">
-                  <h3 id="teamawonsets" style="font-size: 4.5rem;">0</h3>
+                  <h3 id="teamawonsets" style="font-size: 9rem;">0</h3>
                 </div>
 
               </div>
@@ -80,7 +80,7 @@
                 
                 <h3 style="font-size: 2.3rem; color: #fff;">WON SET</h3>
                   <div class="col-12" style="background-color: #FFFAF0;">
-                  <h3 id="teambwonsets" style="font-size: 4.5rem;">0</h3>
+                  <h3 id="teambwonsets" style="font-size: 9rem;">0</h3>
                 </div>
 
               </div>
@@ -109,7 +109,7 @@
       
         </div>
 
-        <div class="row mt-3">
+        <div class="row" style="margin-top: -100px;">
 
           <div class="col"></div>
           
@@ -226,7 +226,9 @@
           <div class="col-12" style="height: 95vh;">
 
             <h1 class="text-center" style="color: white; font-size: 8.5vh; text-decoration: underline;">Announcement</h1>
-            <h1 id="fullscreenh1" class="text-center" style="color: white; font-size: 8.85vh; max-width: 100vw"></h1>
+            <div style="height: 83vh; width: 97vw; align-self: center;">
+              <p id="fullscreenh1" class="text-break text-center" style="color: white; font-size: 8.85vh; max-width: 100vw; line-height: 90px;"></p>
+            </div>
 
           </div>
         </div>

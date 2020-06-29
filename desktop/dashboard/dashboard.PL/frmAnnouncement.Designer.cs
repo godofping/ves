@@ -128,6 +128,7 @@
             this.txtFullscreenMessage.MaxLength = 300;
             this.txtFullscreenMessage.Multiline = true;
             this.txtFullscreenMessage.Name = "txtFullscreenMessage";
+            this.txtFullscreenMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtFullscreenMessage.Size = new System.Drawing.Size(957, 81);
             this.txtFullscreenMessage.TabIndex = 4;
             // 
