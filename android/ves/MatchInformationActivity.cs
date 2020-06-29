@@ -1,8 +1,10 @@
 ﻿using Android.App;
 using Android.Content;
+using Android.Icu.Text;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using Java.Sql;
 using System;
 using System.Collections.Generic;
 using static Android.App.DatePickerDialog;
@@ -32,7 +34,8 @@ namespace ves
         private int month = Convert.ToInt32(DateTime.Now.ToString("MM"));
         private int day = Convert.ToInt32(DateTime.Now.ToString("dd"));
 
-
+        private int hour = Convert.ToInt32(DateTime.Now.ToString("hh"));
+        private int minutes = Convert.ToInt32(DateTime.Now.ToString("mm"));
 
 
         private void initialize()
@@ -275,7 +278,10 @@ namespace ves
 
         public void OnTimeSet(TimePicker view, int hourOfDay, int minute)
         {
-            throw new NotImplementedException();
+            SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:aa");
+            Time time = new Time(hourOfDay, minute, 0);
+            String strDate = timeFormat.Format(time);
+            etTime.Text = strDate;
         }
 
         protected override Dialog OnCreateDialog(int id)
@@ -286,12 +292,12 @@ namespace ves
                 case DATE_DIALOG:
                     {
                         return new DatePickerDialog(this, this, year, month, day);
-                        break;
+
                     }
-                case DATE_DIALOG:
+                case TIME_DIALOG:
                     {
-                        return new DatePickerDialog(this, this, year, month, day);
-                        break;
+                        return new TimePickerDialog(this,this, hour,minutes, false);
+
                     }
                 default:
                     break;
@@ -347,7 +353,7 @@ namespace ves
             matchEL.Linejudges4name = etLineJudge4.Text;
             matchEL.Division = val2;
             matchEL.Matchdate = etDate.Text;
-
+            matchEL.Matchtime = etTime.Text;
             matchEL.Teamaname = etTeamAName.Text;
             matchEL.Teamacoach = etTeamACoach.Text;
             matchEL.Teambname = etTeamBName.Text;
