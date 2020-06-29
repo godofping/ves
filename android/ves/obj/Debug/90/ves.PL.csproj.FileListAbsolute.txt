@@ -7,7 +7,6 @@ C:\xampp\htdocs\ves\android\ves\bin\Debug\com.companyname.ves-Signed.apk
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\build.props
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\adb.props
-C:\xampp\htdocs\ves\android\ves\obj\Debug\90\ves.PL.csprojAssemblyReference.cache
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
 C:\xampp\htdocs\ves\android\ves\obj\Debug\90\res.flag

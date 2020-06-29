@@ -6,12 +6,13 @@ using Android.Widget;
 using System;
 using System.Collections.Generic;
 using static Android.App.DatePickerDialog;
+using static Android.App.TimePickerDialog;
 
 namespace ves
 {
     [Activity(Label = "MatchInformationActivity")]
 
-    public class MatchInformationActivity : Activity, IOnDateSetListener
+    public class MatchInformationActivity : Activity, IOnDateSetListener, IOnTimeSetListener
     {
         EL.Matches matchEL = new EL.Matches();
         DL.Matches matchDL = new DL.Matches();
@@ -26,13 +27,12 @@ namespace ves
         Button btnSave, btnCancel, btnSelectTime, btnSelectDate;
 
         private const int DATE_DIALOG = 1;
-        private const int TIME_DIALOG = 1;
+        private const int TIME_DIALOG = 2;
         private int year = Convert.ToInt32(DateTime.Now.ToString("yyyy"));
         private int month = Convert.ToInt32(DateTime.Now.ToString("MM"));
         private int day = Convert.ToInt32(DateTime.Now.ToString("dd"));
 
-        private int hour = Convert.ToInt32(DateTime.Now.ToString("hh"));
-        private int minutes = Convert.ToInt32(DateTime.Now.ToString("ii"));
+
 
 
         private void initialize()
@@ -259,7 +259,7 @@ namespace ves
 
         private void btnSelectTime_Click(object sender, EventArgs e)
         {
-
+            ShowDialog(TIME_DIALOG);
         }
 
         private void btnSelectDate_Click(object sender, EventArgs e)
@@ -273,13 +273,25 @@ namespace ves
             etDate.Text = year + "/" + month + "/" + dayOfMonth;
         }
 
+        public void OnTimeSet(TimePicker view, int hourOfDay, int minute)
+        {
+            throw new NotImplementedException();
+        }
+
         protected override Dialog OnCreateDialog(int id)
         {
+
             switch (id)
             {
                 case DATE_DIALOG:
                     {
                         return new DatePickerDialog(this, this, year, month, day);
+                        break;
+                    }
+                case DATE_DIALOG:
+                    {
+                        return new DatePickerDialog(this, this, year, month, day);
+                        break;
                     }
                 default:
                     break;
@@ -292,6 +304,8 @@ namespace ves
             Spinner spinner = (Spinner)sender;
             val2 = spinner.GetItemAtPosition(e.Position).ToString();
         }
+
+
 
 
         private void sBestof_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
@@ -349,6 +363,6 @@ namespace ves
                 Toast.MakeText(this, "Error!", ToastLength.Long).Show();
         }
 
-
+        
     }
 }
